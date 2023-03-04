@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# Chatter - Seu App de Mensageria!
 
-`CURSO`
+`PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`DESENVOLVIMENTO DE UMA APLICAÇÃO DISTRIBUÍDA`
 
-`SEMESTRE`
+`EIXO 4`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Este projeto tem como intuito criar uma aplicação de mensagens distribuída que possa ser usada para comunicação em grupo. O sistema deve ser escalável e tolerante a falhas, permitindo que vários usuários possam se conectar ao mesmo tempo e enviar mensagens.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Allana Tavares
+* Gabriel Garcia
+* Leonardo Filter 
+* Kaique Rocha
+* Mariane Serapião
+* Sabrina Gomes
 
 ## Orientador
 
-* Nome completo do professor 1
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
