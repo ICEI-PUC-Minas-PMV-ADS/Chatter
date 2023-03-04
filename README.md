@@ -1,4 +1,4 @@
-# Chatter - Seu App de Mensageria!
+# Chatter 💬
 
 `PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
@@ -10,17 +10,17 @@ _Este projeto tem como intuito criar uma aplicação de mensagens distribuída q
 
 ## Integrantes
 
-<a href="https://github.com/allana-tb" target="_blank"> **Allana Tavares**</a>
+💬<a href="https://github.com/allana-tb" target="_blank"> **Allana Tavares**</a>
 
-<a href="https://github.com/Gabrie1Garcia"> **Gabriel Garcia**</a>
+💬<a href="https://github.com/Gabrie1Garcia"> **Gabriel Garcia**</a>
 
-<a href="https://github.com/kaiqueRoc"> **Kaique  Rocha** </a>
+💬<a href="https://github.com/kaiqueRoc"> **Kaique  Rocha** </a>
 
-<a href="https://github.com/leofilter"> **Leonardo Filter** </a>
+💬<a href="https://github.com/leofilter"> **Leonardo Filter** </a>
 
-<a href="https://github.com/Mariane03"> **Mariane Serapião** </a>
+💬<a href="https://github.com/Mariane03"> **Mariane Serapião** </a>
 
-<a href="https://github.com/sabrinagomessilva"> **Sabrina Gomes** </a>
+💬<a href="https://github.com/sabrinagomessilva"> **Sabrina Gomes** </a>
 
 ## Orientador
 
