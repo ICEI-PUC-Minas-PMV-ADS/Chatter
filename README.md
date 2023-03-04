@@ -1,4 +1,5 @@
-# Chatter 💬
+![ Chatter 💬](https://media2.giphy.com/media/uHoEK4EvfwW6gT1f9t/200w.webp?cid=ecf05e47ygc96sox5jcedhqmqf3rcdseg8n13w20jyyailji&rid=200w.webp&ct=s)
+# Chatter
 
 `PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
@@ -7,6 +8,7 @@
 `EIXO 4`
 
 _Este projeto tem como intuito criar uma aplicação de mensagens distribuída que possa ser usada para comunicação em grupo. O sistema deve ser escalável e tolerante a falhas, permitindo que vários usuários possam se conectar ao mesmo tempo e enviar mensagens._
+
 
 ## Integrantes
 
