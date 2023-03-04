@@ -5,9 +5,13 @@ Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o pr
 ## Problema
 
 Apesar de haver muitos aplicativos de mensagens disponíveis no mercado, muitos deles podem ser complicados de usar ou possuir uma interface desagradável para os usuários. Além disso, alguns aplicativos de mensagens podem ser direcionados apenas para um público específico, como jovens ou profissionais.
+
 Para resolver esse problema, a criação de um aplicativo de mensagens para web e mobile com uma interface simples e minimalista, porém atraente, pode ser uma solução eficaz. Isso permitiria que pessoas de todas as idades, com ou sem habilidade tecnológica, se sentissem confortáveis usando o aplicativo.
+
 O Chatter, nosso aplicativo de mensagens, foi projetado para ser fácil de navegar e usar, com recursos intuitivos e de fácil acesso. Por exemplo, os usuários podem se comunicar com seus contatos independentemente da plataforma que estiverem usando, tornando a comunicação mais eficiente e dinâmica. Além disso, nosso aplicativo de mensagens pode ajudar empresas e equipes a se comunicarem melhor e mais rapidamente.
+
 Ao criar um aplicativo de mensagens com uma interface simples e atraente, ele pode atrair uma ampla variedade de usuários. Isso é especialmente importante para atrair usuários mais velhos, que podem ter dificuldades com aplicativos mais complexos.
+
 A aplicação visa trazer uma solução eficaz para o problema de comunicação entre diferentes dispositivos e sistemas, permitindo que as pessoas se comuniquem facilmente. Isso pode tornar o aplicativo de mensagens mais acessível e popular entre um público mais amplo.
 
 ## Objetivos
