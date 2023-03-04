@@ -22,9 +22,9 @@ _Este projeto tem como intuito criar uma aplicação de mensagens distribuída q
 
 💬<a href="https://github.com/sabrinagomessilva"> **Sabrina Gomes** </a>
 
-## Orientador
+## Orientador 
 
-* Leonardo Vilela Cardoso
+* <a href="https://https://github.com/lvcardoso"> **Leonardo Vilela Cardoso** </a>
 
 ## Instruções de utilização
 
