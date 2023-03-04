@@ -10,12 +10,17 @@ _Este projeto tem como intuito criar uma aplicação de mensagens distribuída q
 
 ## Integrantes
 
-* Allana Tavares
-* Gabriel Garcia
-* Leonardo Filter 
-* Kaique Rocha
-* Mariane Serapião
-* Sabrina Gomes
+<a href="https://github.com/allana-tb" target="_blank"> **Allana Tavares**</a>
+
+<a href="https://github.com/Gabrie1Garcia"> **Gabriel Garcia**</a>
+
+<a href="https://github.com/kaiqueRoc"> **Kaique  Rocha** </a>
+
+<a href="https://github.com/leofilter"> **Leonardo Filter** </a>
+
+<a href="https://github.com/Mariane03"> **Mariane Serapião** </a>
+
+<a href="https://github.com/sabrinagomessilva"> **Sabrina Gomes** </a>
 
 ## Orientador
 
