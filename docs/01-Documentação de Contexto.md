@@ -8,17 +8,17 @@ Além disso, as aplicações distribuídas de troca de mensagens geralmente forn
 
 Em resumo, uma aplicação distribuída de troca de mensagens é uma solução poderosa para a comunicação e coordenação entre sistemas distribuídos, permitindo que eles se comuniquem de forma assíncrona, escalável e segura.
 
-**Existem muitos exemplos de aplicações distribuídas de troca de mensagens. Aqui estão alguns exemplos:**
+## Existem muitos exemplos de aplicações distribuídas de troca de mensagens. Aqui estão alguns exemplos:
 
-WhatsApp: o WhatsApp é um aplicativo de mensagens instantâneas amplamente utilizado em todo o mundo. Ele usa uma arquitetura distribuída para permitir que os usuários se comuniquem entre si de forma assíncrona e segura.
+- WhatsApp: o WhatsApp é um aplicativo de mensagens instantâneas amplamente utilizado em todo o mundo. Ele usa uma arquitetura distribuída para permitir que os usuários se comuniquem entre si de forma assíncrona e segura.
 
-Apache Kafka: o Apache Kafka é uma plataforma de streaming distribuída que permite a troca de mensagens em tempo real entre sistemas. Ele é frequentemente usado em ambientes de Big Data para processar grandes volumes de dados em tempo real.
+- Apache Kafka: o Apache Kafka é uma plataforma de streaming distribuída que permite a troca de mensagens em tempo real entre sistemas. Ele é frequentemente usado em ambientes de Big Data para processar grandes volumes de dados em tempo real.
 
-RabbitMQ: o RabbitMQ é um middleware de mensagens distribuído que permite a comunicação entre sistemas heterogêneos. Ele é frequentemente usado em ambientes corporativos para gerenciar a comunicação entre sistemas legados e modernos.
+- RabbitMQ: o RabbitMQ é um middleware de mensagens distribuído que permite a comunicação entre sistemas heterogêneos. Ele é frequentemente usado em ambientes corporativos para gerenciar a comunicação entre sistemas legados e modernos.
 
-XMPP: o Extensible Messaging and Presence Protocol (XMPP) é um protocolo de comunicação distribuído usado para troca de mensagens em tempo real. Ele é frequentemente usado em aplicativos de mensagens instantâneas e em sistemas de comunicação empresarial.
+- XMPP: o Extensible Messaging and Presence Protocol (XMPP) é um protocolo de comunicação distribuído usado para troca de mensagens em tempo real. Ele é frequentemente usado em aplicativos de mensagens instantâneas e em sistemas de comunicação empresarial.
 
-MQTT: o MQTT é um protocolo de comunicação leve e distribuído usado para a troca de mensagens em ambientes com recursos limitados, como dispositivos IoT. Ele é frequentemente usado em ambientes industriais para monitorar e controlar dispositivos conectados à rede.
+- MQTT: o MQTT é um protocolo de comunicação leve e distribuído usado para a troca de mensagens em ambientes com recursos limitados, como dispositivos IoT. Ele é frequentemente usado em ambientes industriais para monitorar e controlar dispositivos conectados à rede.
 
 ## Problema
 
