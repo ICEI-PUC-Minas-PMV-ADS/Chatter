@@ -43,14 +43,16 @@ Para reforçar o comprometimento com o gerenciamento dos processos, iremos reali
 
 A imagem abaixo demonstra o monitoramento e controle dos 6 elementos, gerados através de dados no Planner, registrados pelos membros, de suas respectivas atividades:
 
-![image](https://user-images.githubusercontent.com/78277341/194153089-17408fe4-229e-4fc3-911f-f0ab0736ab9e.png)
 
+
+![Projeto Messageria](https://user-images.githubusercontent.com/75712250/222975674-d29ec7e7-b084-4523-9eb7-36709a5a67ba.png)
 
 ### Modelo e Notação de Processos de Negócio
 O modelo *Business Process Model and Notation* (BPMN ou em português Modelo e Notação de Processos de Negócio), foi utilizado para descrever o processo de metodologia adotado para o processo de desenvolvimento e para o processo de negócios. Por ser padronizada, a notação BPMN facilitará o entendimento das pessoas envolvidas no projeto.
 Neste sentido, com o modelo BPMN, utilizaremos o seu conjunto de elementos gráficos para representar aquelas atividades de trabalho, agrupadas em processos, para indicar como eles serão executados.
 
 
+![modelo BPMN](https://user-images.githubusercontent.com/75712250/222975679-7836974f-0df3-48d2-94b0-205221c46422.png)
 
 
 ## Modelo ER
