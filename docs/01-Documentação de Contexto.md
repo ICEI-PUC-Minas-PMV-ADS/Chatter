@@ -1,6 +1,24 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Uma aplicação distribuída de troca de mensagens é uma solução que permite a comunicação entre sistemas e dispositivos em uma rede distribuída, como a internet. Essas aplicações geralmente são construídas com o objetivo de fornecer uma forma de comunicação assíncrona e escalável entre sistemas heterogêneos, permitindo que eles compartilhem informações e coordenem atividades sem depender de um único ponto de falha.
+
+Ao contrário dos sistemas centralizados, onde todas as informações e comunicações são gerenciadas por um único servidor, as aplicações distribuídas de troca de mensagens dividem a carga de trabalho entre vários nós ou servidores, permitindo que a rede seja mais flexível e escalável. Essas aplicações são comumente usadas em ambientes onde é necessário lidar com grandes volumes de dados e tráfego, como sistemas de comércio eletrônico, redes sociais e aplicativos de mensagens instantâneas.
+
+Além disso, as aplicações distribuídas de troca de mensagens geralmente fornecem recursos de segurança, como criptografia de ponta a ponta, autenticação de usuários e controle de acesso, para garantir a integridade e a privacidade das informações compartilhadas entre os sistemas.
+
+Em resumo, uma aplicação distribuída de troca de mensagens é uma solução poderosa para a comunicação e coordenação entre sistemas distribuídos, permitindo que eles se comuniquem de forma assíncrona, escalável e segura.
+
+**Existem muitos exemplos de aplicações distribuídas de troca de mensagens. Aqui estão alguns exemplos:**
+
+WhatsApp: o WhatsApp é um aplicativo de mensagens instantâneas amplamente utilizado em todo o mundo. Ele usa uma arquitetura distribuída para permitir que os usuários se comuniquem entre si de forma assíncrona e segura.
+
+Apache Kafka: o Apache Kafka é uma plataforma de streaming distribuída que permite a troca de mensagens em tempo real entre sistemas. Ele é frequentemente usado em ambientes de Big Data para processar grandes volumes de dados em tempo real.
+
+RabbitMQ: o RabbitMQ é um middleware de mensagens distribuído que permite a comunicação entre sistemas heterogêneos. Ele é frequentemente usado em ambientes corporativos para gerenciar a comunicação entre sistemas legados e modernos.
+
+XMPP: o Extensible Messaging and Presence Protocol (XMPP) é um protocolo de comunicação distribuído usado para troca de mensagens em tempo real. Ele é frequentemente usado em aplicativos de mensagens instantâneas e em sistemas de comunicação empresarial.
+
+MQTT: o MQTT é um protocolo de comunicação leve e distribuído usado para a troca de mensagens em ambientes com recursos limitados, como dispositivos IoT. Ele é frequentemente usado em ambientes industriais para monitorar e controlar dispositivos conectados à rede.
 
 ## Problema
 
