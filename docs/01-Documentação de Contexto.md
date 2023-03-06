@@ -50,22 +50,20 @@ A aplicação visa trazer uma solução eficaz para o problema de comunicação 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Este projeto de aplicação de mensageria pode ser justificado para atender às necessidades de comunicação e organização de empresas, estudantes universitários e familiares e amigos, oferecendo recursos que ajudam a melhorar a eficiência, a produtividade e o contato entre os membros da equipe, estudantes e amigos.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Uma aplicação como esta pode ajudar as pessoas a manter contato uns com os outros e compartilhar momentos importantes de suas vidas, sem os riscos e distrações que se verificam nas tradicionais aplicações, como WhatsApp e Facebook Messenger. Desta forma, nosso público alvo terá mais segurança e privacidade para garantir que as conversas e informações compartilhadas sejam mantidas em segurança e em privado.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+De início, foram definidos três possíveis públicos-alvo para o Chatter:
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+**Empresas:** Nossa aplicação poderá ser muito útil para empresas que precisam se comunicar com seus funcionários de forma rápida e eficiente. A aplicação poderia oferecer recursos como grupos de chat, chamadas de áudio e vídeo, compartilhamento de arquivos e integração com outras ferramentas de trabalho, como calendários e planilhas.
+
+**Estudantes universitários**: muitos estudantes universitários dependem de aplicativos de mensageria para se comunicar com colegas de classe, professores e membros da equipe administrativa da universidade. Para esse público, nossa aplicação poderia incluir recursos como salas de aula virtuais, grupos de estudo, lembretes de prazos e integração com outras ferramentas de estudo, como plataformas de aprendizagem on-line.
+
+**Familiares e amigos**: um público-alvo mais geral para nossa aplicação poderia ser famílias e amigos que desejam manter em contato uns com os outros. Além disso, este público requer uma aplicação que propicie mais segurança e privacidade para garantir que as conversas e informações compartilhadas sejam mantidas em segurança e a intimidade familiar permaneça preservada.
+
+![Storyboard](https://user-images.githubusercontent.com/78277341/223198522-11007a5d-fef9-4a44-991c-f0b3e36e96d9.gif)
