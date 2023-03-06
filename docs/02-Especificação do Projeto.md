@@ -37,11 +37,13 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Atualmente, há uma diversidade de aplicativos de mensageri.
 
 ### Descrição Geral da Proposta
 
 Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+
+A proposta do Chatter é ser 
 
 ### Processo 1 – NOME DO PROCESSO
 
@@ -154,13 +156,6 @@ No momento, o diagrama mostra o planejamento mais geral das entregas de cada eta
 ## Gerenciamento de Equipe
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
-
-A divisão de papéis entre os membros é:
-
-- **Product Owner**: Kaique Rocha
-- **Scrum Master**: Sabrina Gomes
-- **Design**: Allana Tavares
-- **Desenvolvimento**: Allana Tavares, Gabriel Garcia, Kaique Rocha, Leonardo Filter, Mariane Serapião, Sabrina Gomes
 
 Conforme mencionado no item anterior, o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM) apresenta o detalhamento de cada sprint:
 
