@@ -1,5 +1,6 @@
-![ Chatter 💬](https://media2.giphy.com/media/uHoEK4EvfwW6gT1f9t/200w.webp?cid=ecf05e47ygc96sox5jcedhqmqf3rcdseg8n13w20jyyailji&rid=200w.webp&ct=s)
-# Chatter
+![ Chatter 💬](https://media0.giphy.com/media/MfnJATkfrAIBG/giphy.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=giphy.webp&ct=s)
+![ Chatter 💬](https://img.freepik.com/vetores-gratis/efeitos-sonoros-do-livro-de-bolhas-de-fala-em-quadrinhos-de-arte-pop-do-chatter_1142-9085.jpg?size=338&ext=jpg&uid=R95443873&ga=GA1.2.1495297026.1678124990&semt=sph) ![ Chatter 💬](https://media0.giphy.com/media/MfnJATkfrAIBG/giphy.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=giphy.webp&ct=s)
+
 
 `PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
@@ -32,6 +33,10 @@ _Este projeto tem como intuito criar uma aplicação de mensagens distribuída q
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
+## Planejamento de Tarefas
+
+✨ <a href="https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM"> **Confira aqui nosso Backlog e planos de Sprints.**</a>
+
 # Documentação
 
 <ol>
@@ -57,3 +62,4 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+
