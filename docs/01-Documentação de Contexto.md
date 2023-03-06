@@ -34,19 +34,19 @@ A aplicação visa trazer uma solução eficaz para o problema de comunicação 
 
 ## Objetivos
 
-Criar um aplicativo de mensagens para web e mobile com uma interface simples e minimalista, porém atraente, para resolver o problema de muitos aplicativos de mensagens complicados de usar ou com interface desagradável para os usuários.
+- Criar um aplicativo de mensagens para web e mobile com uma interface simples e minimalista, porém atraente, para resolver o problema de muitos aplicativos de mensagens complicados de usar ou com interface desagradável para os usuários.
 
-Tornar o aplicativo de mensagens acessível e popular para todas as idades e habilidades tecnológicas.
+- Tornar o aplicativo de mensagens acessível e popular para todas as idades e habilidades tecnológicas.
 
-Oferecer recursos intuitivos e de fácil acesso, como a possibilidade de comunicação entre diferentes plataformas, para tornar a comunicação mais eficiente e dinâmica.
+- Oferecer recursos intuitivos e de fácil acesso, como a possibilidade de comunicação entre diferentes plataformas, para tornar a comunicação mais eficiente e dinâmica.
 
-Ajudar empresas e equipes a se comunicarem melhor e mais rapidamente.
+- Ajudar empresas e equipes a se comunicarem melhor e mais rapidamente.
 
-Atrair uma ampla variedade de usuários, incluindo usuários mais velhos, que podem ter dificuldades com aplicativos mais complexos.
+- Atrair uma ampla variedade de usuários, incluindo usuários mais velhos, que podem ter dificuldades com aplicativos mais complexos.
 
-Resolver o problema de comunicação entre diferentes dispositivos e sistemas, permitindo que as pessoas se comuniquem facilmente.
+- Resolver o problema de comunicação entre diferentes dispositivos e sistemas, permitindo que as pessoas se comuniquem facilmente.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+- Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
 ## Justificativa
 
