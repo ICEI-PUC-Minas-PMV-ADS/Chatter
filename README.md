@@ -1,4 +1,4 @@
-![ Chatter 💬](https://media0.giphy.com/media/MfnJATkfrAIBG/giphy.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=giphy.webp&ct=s)
+![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)
 ![ Chatter 💬](https://img.freepik.com/vetores-gratis/efeitos-sonoros-do-livro-de-bolhas-de-fala-em-quadrinhos-de-arte-pop-do-chatter_1142-9085.jpg?size=338&ext=jpg&uid=R95443873&ga=GA1.2.1495297026.1678124990&semt=sph)  ![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)
 
 
