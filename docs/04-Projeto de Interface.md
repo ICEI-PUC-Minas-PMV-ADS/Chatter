@@ -9,16 +9,17 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
+O diagrama de caso de uso foi essencial para o processo de desenvolvimento de software. Ele representa graficamente os principais requisitos funcionais do sistema, identificando as principais interações entre os usuários e a plataforma. Abaixo segue como o diagrama de caso de uso foi elaborado a partir dos requisitos funcionais da plataforma Chatter.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
+Esses requisitos incluem a criação de grupos, o compartilhamento de arquivos, a troca de mensagens privadas entre usuários e a publicação de atualizações de status. A partir desses requisitos, é possível identificar os principais atores do sistema, que são os usuários um e dois.
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+Com base nos requisitos e nos atores identificados, foi possível elaborar o diagrama de caso de uso da plataforma Chatter. Esse diagrama representa de forma clara e concisa os principais casos de uso do sistema, incluindo as principais funcionalidades que cada ator pode utilizar.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
+Cada caso de uso foi descrito, incluindo informações como os pré-requisitos para a execução do caso de uso, as principais etapas do processo e as saídas esperadas.
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visualizar de forma clara e organizada as principais funcionalidades do sistema e as principais interações entre os usuários e a plataforma. Isso permitirá que os desenvolvedores tenham uma visão clara dos principais requisitos do sistema e possam desenvolver o software de forma mais eficiente e eficaz.
+
+[chatter 3.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/files/10951745/chatter.3.pdf)
 
 ## Wireframes
 
