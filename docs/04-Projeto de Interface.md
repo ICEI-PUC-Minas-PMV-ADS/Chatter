@@ -21,6 +21,12 @@ Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visu
 
 ![chatter 3_page-0001](https://user-images.githubusercontent.com/90660755/224566502-adf0687c-10d6-4bba-8976-0347e8f68af1.jpg)
 
+Segue o link do caso de uso da plataforma Chatter criado no Lucid Chart:
+
+https://lucid.app/lucidchart/4272b0b8-c43d-499d-ab3d-67cc1e0e873d/edit?viewport_loc=-1117%2C98%2C3139%2C1367%2C0_0&invitationId=inv_74b46407-e9b4-43f5-b57d-15a242d2e6a1
+
+Abaixo segue o link da 
+
 ## Wireframes
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
