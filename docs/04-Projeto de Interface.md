@@ -15,7 +15,7 @@ Esses requisitos incluem a criação de grupos, o compartilhamento de arquivos, 
 
 Com base nos requisitos e nos atores identificados, foi possível elaborar o diagrama de caso de uso da plataforma Chatter. Esse diagrama representa de forma clara e concisa os principais casos de uso do sistema, incluindo as principais funcionalidades que cada ator pode utilizar.
 
-Cada caso de uso foi descrito, incluindo informações como os pré-requisitos para a execução do caso de uso, as principais etapas do processo e as saídas esperadas.
+Cada caso de uso foi descrito, incluindo informações como os pré-requisitos para a execução de cada caso, as principais etapas do processo e as saídas esperadas.
 
 Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visualizar de forma clara e organizada as principais funcionalidades do sistema e as principais interações entre os usuários e a plataforma. Isso permitirá que os desenvolvedores tenham uma visão clara dos principais requisitos do sistema e possam desenvolver o software de forma mais eficiente e eficaz.
 
