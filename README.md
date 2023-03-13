@@ -1,4 +1,4 @@
-![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)![049950546172-removebg-preview](https://user-images.githubusercontent.com/78277341/224847908-e3515606-e712-4ad8-9dbe-8df608aa8688.png)![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)
+![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)![049950546172-removebg-preview](https://o.remove.bg/downloads/6acd7126-8e08-4595-91f5-c6d5628c237b/049950546172-removebg-preview.png)![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)
 
 
 `PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
