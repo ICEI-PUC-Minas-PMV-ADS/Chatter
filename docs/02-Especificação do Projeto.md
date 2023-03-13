@@ -79,49 +79,36 @@ Sabendo que um requisito é a propriedade que um software exibe para solucionar 
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Registro de usuário: O aplicativo deve permitir que os usuários se registrem e criem uma conta para acessar seus recursos. | ALTA | 
+|RF-001| Registro de usuário: O aplicativo deve permitir que os usuários se registrem e criem uma conta para acessar seus recursos, sendo eles as mensagens e as funcionalidades da aplicação. | ALTA | 
 |RF-002| Enviar mensagem: O aplicativo deve permitir que os usuários enviem mensagens de texto, imagens, áudio e vídeo para outros usuários.   | ALTA |
 |RF-003| Receber mensagem: O aplicativo deve permitir que os usuários recebam mensagens enviadas por outros usuários.   | ALTA |
 |RF-004| Compartilhamento de arquivos: O aplicativo deve permitir que os usuários compartilhem arquivos (como fotos e vídeos) com outros usuários.   | MÉDIA |
-|RF-005| Histórico de mensagens: O aplicativo deve permitir que os usuários acessem seu histórico de mensagens e procurem por mensagens específicas.   | ALTA |
+|RF-005| Histórico de mensagens: O aplicativo deve permitir que os usuários acessem seu histórico de mensagens e possam procurar por mensagens específicas.   | BAIXA |
 |RF-006| Personalização de perfil: O aplicativo deve permitir que os usuários personalizem seu perfil, incluindo imagem de perfil, status e outras informações pessoais.  | MÉDIA |
-|RF-007| Suporte a múltiplas plataformas: O aplicativo deve estar disponível em dispositivos Android e Windows, para que os usuários possam acessá-lo em seus dispositivos preferidos.   | ALTA |
-|RF-008| Excluir mensagens: O aplicativo deve permitir que os usuários excluam mensagens específicas ou toda uma conversa, sendo a mesma excluída de seu próprio dispositivo.   | MÉDIA |
-|RF-009| Notificação de mensagens: O aplicativo deve notificar o usuário quando uma nova mensagem é recebida.     | ALTA |
-|RF-010| Notificações push: O aplicativo deve ser capaz de enviar notificações push para alertar os usuários sobre novas mensagens recebidas.   | BAIXA |
-|RF-011| Listas de contatos: Os usuários devem ser capazes de criar e gerenciar listas de contatos para que possam facilmente enviar mensagens a grupos específicos de pessoas.   | ALTA |
-|RF-012| Verificação de status de entrega: Os usuários devem ser capazes de verificar se as mensagens que enviaram foram entregues com sucesso.   | MÉDIA |
-|RF-013| Integração de emoji e GIFs: O aplicativo deve permitir que os usuários enviem e recebam emoji e GIFs em suas mensagens.   | BAIXA |
-|RF-014| Sincronização entre dispositivos: permitir que os usuários acessem suas mensagens em vários dispositivos, como smartphones, tablets e computadores.   | ALTA |
+|RF-007| Excluir mensagens: O aplicativo deve permitir que os usuários excluam mensagens específicas ou toda uma conversa, sendo a mesma excluída de seu próprio dispositivo.   | MÉDIA |
+|RF-008| Notificação de mensagens: O aplicativo deve notificar o usuário quando uma nova mensagem é recebida, através de um alerta sonoro.     | ALTA |
+|RF-009| Notificações push: O aplicativo deve ser capaz de enviar notificações push para alertar os usuários sobre novas mensagens recebidas.   | ALTA |
+|RF-010| Listas de contatos: Os usuários devem ser capazes de criar e gerenciar listas de contatos, para que possam facilmente enviar mensagens a grupos específicos de pessoas.   | MÉDIA |
+|RF-011| Verificação de status de entrega: Os usuários devem ser capazes de verificar se as mensagens que enviaram foram entregues com sucesso.   | MÉDIA |
+|RF-012| Integração de emoji e GIFs: O aplicativo deve permitir que os usuários enviem e recebam emoji e GIFs em suas mensagens.   | BAIXA |
+|RF-013| Sincronização entre dispositivos: permitir que os usuários acessem suas mensagens em vários dispositivos, como smartphones, tablets e computadores.   | ALTA |
+|RF-014| Busca de mensagens: A aplicação deve permitir que os usuários pesquisem suas mensagens antigas.   | ALTA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Usabilidade: O aplicativo deve ser fácil de usar e entender, com uma interface intuitiva e recursos úteis para os usuários. Isso pode incluir requisitos de design, experiência do usuário e acessibilidade. | ALTA | 
-|RNF-002| Confiabilidade: O aplicativo deve ser confiável, com mensagens entregues consistentemente e sem erros ou falhas. Isso pode incluir requisitos de redundância, backup de dados e testes de qualidade. |  ALTA | 
-|RNF-003| Compatibilidade: O aplicativo deve ser compatível com sistemas operacionais Android e Windowns, e em dispositivos e versões de software diferentes, para que os usuários possam usá-lo em diferentes plataformas. |  ALTA |
+|RNF-001| Usabilidade: O aplicativo deve focar nos conceitos de usabilidade, dando ênfase a critérios dentro de design e acessibilidade. | ALTA | 
+|RNF-002| Confiabilidade: O aplicativo deve ser confiável, com mensagens entregues consistentemente e sem erros ou falhas. |  ALTA | 
+|RNF-003| Compatibilidade: O aplicativo deve ser compatível com sistemas operacionais Android e Windowns, para que os usuários possam usá-lo em diferentes plataformas. |  MÉDIA |
 |RNF-004| Manutenibilidade: O aplicativo deve ser fácil de manter e atualizar, com código limpo e bem documentado, além de possuir recursos que facilitem a resolução de problemas. |  MÉDIA |
-|RNF-005| Desempenho: O aplicativo deve ser capaz de lidar com um grande número de mensagens simultaneas, sem atrasos ou falhas. |  BAIXA |
-|RNF-006| Personalização: o aplicativo deve permitir que os usuários personalizem suas configurações e preferências de notificação. |  MÉDIA |
-|RNF-007| Manutenção: o aplicativo deve ser fácil de atualizar e manter, sem causar interrupções para os usuários ou perder dados. |  ALTA |
-|RNF-008| Desempenho: o aplicativo deve ser rápido e responsivo, sem atrasos significativos na entrega de mensagens ou na atualização da interface. |  ALTA |
-|RNF-009| Customização: o aplicativo deve permitir que os usuários personalizem a aparência e o comportamento do aplicativo de acordo com suas preferências pessoais. |  BAIXA |
+|RNF-005| Desempenho: O aplicativo deve ser capaz de lidar com um grande número de mensagens simultaneas, sem atrasos ou falhas. |  MÉDIA |
+|RNF-006| Personalização: o aplicativo deve permitir que os usuários personalizem suas configurações e preferências de notificação. |  BAIXA |
+|RNF-007| Desempenho: O aplicativo deve ser rápido e responsivo, sem atrasos significativos na entrega de mensagens ou na atualização da interface. |  ALTA |
+|RNF-008| Regulamentação: O aplicativo deve estar em conformidade com as regulamentações de privacidade e segurança de dados. |  ALTA |
 
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -129,15 +116,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
+|01| O projeto deve ser implementado com uso de tecnologias front end, back end e mobile, podendo fazer uso de bibliotecas que influenciem positivamente na qualidade do software. |
+|02| O projeto deverá ter seu código versionado utilizando Git.       |
+|03| A primeira etapa do projeto deverá ser entregue até o dia 19/03/2023, respeitando o prazo estipulado.        |
+|04| A segunda etapa do projeto deverá ser entregue até o dia 23/04/2023, respeitando o prazo estipulado.        |
+|05| A terceira etapa do projeto deverá ser entregue até o dia 15/05/2023, respeitando o prazo estipulado.        |
+|06| A quarta etapa do projeto deverá ser entregue até o dia 04/06/2023, respeitando o prazo estipulado.        |
+|07| O projeto completo, com suas respectivas funcionalidades, necessita ser entregue até o dia 25/06/2023, respeitando o prazo estipulado.        |
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
