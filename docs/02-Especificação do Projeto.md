@@ -48,13 +48,19 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Atualmente, há uma diversidade de aplicativos de mensageri.
+Atualmente, há uma diversidade de aplicativos de mensageria, como WhatsApp, Telegram, Signal, RabbitMQ, XMPP e MQTT. Cada um desses aplicativos oferece recursos diferentes para os usuários, como a capacidade de enviar mensagens de texto, fotos e vídeos, fazer chamadas de voz e vídeo, criar grupos e compartilhar arquivos. Alguns aplicativos também têm recursos de segurança avançados, como criptografia de ponta a ponta, opções de bloqueio e verificação em duas etapas.
+
+No entanto, cada aplicativo tem suas limitações. Alguns podem ser difíceis de usar para usuários mais velhos ou com deficiências, enquanto outros podem não ter recursos avançados de segurança. Além disso, alguns aplicativos podem não estar disponíveis em todos os países ou podem ter restrições de uso. Por isso, os usuários podem precisar usar vários aplicativos diferentes para atender às suas necessidades de mensageria, o que pode ser confuso e inconveniente.
+
+Com a crescente demanda por soluções de mensageria distribuída, espera-se que surjam novos aplicativos e recursos no futuro para atender às necessidades dos usuários. Um exemplo disso é a inclusão de pessoas mais idosas, visto que populações mundiais tem envelhecido. Porém, como o grupo de introdução de trends são jovens, esse precisa ser o público-alvo para a garantia da ampla adoção do aplicativo.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta do Chatter é ser um aplicativo puramente de mensageria que tenha os recursos necessários a um público-alvo jovem, mas também com recursos de inclusividade. Para atender às necessidades de idosos, o aplicativo deve ser fácil de usar e ter uma interface intuitiva. Isso inclui opções de botões maiores, fontes claras e opções de acessibilidade para usuários com deficiências visuais ou auditivas - alterações essas que devem ser intuitivas para configuração no primeiro uso do aplicativo. O aplicativo também deve incluir recursos para ajudar os idosos a se conectarem com seus amigos e familiares, como um diretório de contatos e uma lista de favoritos.
 
-A proposta do Chatter é ser 
+Além de limitações de volume da aplicação desenvolvida, recursos de segurança não serão tão avançados quanto outras soluções no mercado. Além disso, não serão incluídos recursos de stories, que fogem ao escopo do projeto apesar de presentes em alguns aplicativos de mensageria.
+
+Em resumo, a solução ideal seria um aplicativo de mensageria distribuído que combina recursos modernos e divertidos com uma interface fácil de usar para atender às necessidades de jovens e idosos. 
 
 ### Processo 1 – NOME DO PROCESSO
 
