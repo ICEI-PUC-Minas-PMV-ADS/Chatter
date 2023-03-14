@@ -195,7 +195,7 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 Conforme mencionado no item anterior, o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM) apresenta o detalhamento de cada sprint:
 
-![Planejamento](img/plannertd.png)
+![Planejamento](img/progress.png)
 
 No Microsoft Planner, as tarefas podem também ser rastreadas em um quadro Kanban por status, bucket, prioridade e responsável, bem como seu estado de execução:
 
@@ -203,8 +203,8 @@ No Microsoft Planner, as tarefas podem também ser rastreadas em um quadro Kanba
 
 Além disso, o Planner permite acompanhar a produtividade dos membros, demonstrado na imagem:
 
-![Planejamento](img/plannergraph.png)
 ![Planejamento](img/image.png)
+![Planejamento](img/plannergraph.png)
 
 ## Gestão de Orçamento
 
