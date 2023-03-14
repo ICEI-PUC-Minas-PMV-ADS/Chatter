@@ -137,17 +137,13 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
+
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Descrição       |   Restrição  |                                   |
-|--|-----------------| -------------| ----------------------------------|
-|01|  Prazo: |O projeto deverá ser entregue até o final do semestre      |
-|03|  Comunicação: | A comunicação entre os diferentes componentes da aplicação distribuída deve ser eficiente e confiável, de forma a garantir a sincronização adequada das informações. A rede de comunicação deve ser capaz de lidar com a latência e a largura de banda necessárias para suportar a aplicação distribuída. |
-|04|  Escalabilidade: | A aplicação distribuída deve ser escalável, ou seja, deve ser capaz de lidar com um grande número de usuários ou transações sem comprometer a eficiência ou a capacidade de resposta. Isso pode envolver a adição de recursos adicionais para a rede, como servidores adicionais ou capacidade de armazenamento.|
-|05|  Segurança:| Não pode ser desenvolvido um módulo de backend |
-|06|  Consistência: | Deve ser implementar um mecanismo de controle de versão e garantir que todos os componentes estejam atualizados com as informações mais recentes.|
-|07|  Tolerância a falha: s| A aplicação deve ser capaz de lidar com falhas, como a perda de comunicação ou a falha de um componente. É necessário implementar mecanismos de redundância e recuperação de falhas, para garantir que a aplicação continue funcionando mesmo em situações de falha. |
-|08|  Interoperabilidade: |A aplicação distribuída deve garantir que interação de forma adequada com as demais integrações e que os dados possam ser compartilhados entre elas|
+|ID| Restrição                                             |
+|--|-------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre |
+|02| Não pode ser desenvolvido um módulo de backend        |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
