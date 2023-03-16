@@ -19,7 +19,7 @@ Cada caso de uso foi descrito, incluindo informações como os pré-requisitos p
 
 Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visualizar de forma clara e organizada as principais funcionalidades do sistema e as principais interações entre os usuários e a plataforma. Isso permitirá que os desenvolvedores tenham uma visão clara dos principais requisitos do sistema e possam desenvolver o software de forma mais eficiente e eficaz.
 
-![Chatter](https://user-images.githubusercontent.com/90660755/225732017-0a707e10-7523-4d8a-a4fd-9a6154b7b8da.jpg)
+![chatter](https://user-images.githubusercontent.com/90660755/225733270-4478d3d5-2c4c-465e-96af-9866b8cffd34.jpeg)
 
 Segue o link do caso de uso da plataforma Chatter criado no Lucid Chart:
 
