@@ -1,5 +1,11 @@
-![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)
-![ Chatter 💬](https://img.freepik.com/vetores-gratis/efeitos-sonoros-do-livro-de-bolhas-de-fala-em-quadrinhos-de-arte-pop-do-chatter_1142-9085.jpg?size=338&ext=jpg&uid=R95443873&ga=GA1.2.1495297026.1678124990&semt=sph)  ![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)
+![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)![33 -removebg-preview (1)](https://user-images.githubusercontent.com/78277341/224851627-36e6ee01-9678-4f20-802c-2c06426d6c59.png)
+
+
+
+
+
+
+
 
 
 `PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
@@ -60,6 +66,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="src/README.md"> Código Fonte</a></li>
 
 # Apresentação
+
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
 
