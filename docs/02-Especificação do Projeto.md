@@ -118,11 +118,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deve ser implementado com uso de tecnologias front end, back end e mobile, podendo fazer uso de bibliotecas que influenciem positivamente na qualidade do software. |
 |02| O projeto deverá ter seu código versionado utilizando Git.       |
-|03| A primeira etapa do projeto deverá ser entregue até o dia 19/03/2023, respeitando o prazo estipulado.        |
-|04| A segunda etapa do projeto deverá ser entregue até o dia 23/04/2023, respeitando o prazo estipulado.        |
-|05| A terceira etapa do projeto deverá ser entregue até o dia 15/05/2023, respeitando o prazo estipulado.        |
-|06| A quarta etapa do projeto deverá ser entregue até o dia 04/06/2023, respeitando o prazo estipulado.        |
-|07| O projeto completo, com suas respectivas funcionalidades, necessita ser entregue até o dia 25/06/2023, respeitando o prazo estipulado.        |
+|03| O projeto completo, com suas respectivas funcionalidades, necessita ser entregue até o dia 25/06/2023, respeitando o prazo estipulado.        |
+|04| Restrições de idade: a aplicação deverá exigir que os usuários tenham no mínimo 13 anos para usar o serviço, para que sejam cumpridas as leis de privacidade de dados.        |
+|05| Restrições de contato: a aplicaçaõ deverá permitir que os usuários restrinjam quem pode entrar em contato com eles, por meio de bloqueios.         |
+|06| Opções de privacidade de perfil: A aplicação deverá conter opções para limitar quem pode ver o perfil do usuário ou suas informações de contato.       |
+
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
