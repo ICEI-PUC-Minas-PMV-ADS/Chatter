@@ -1,54 +1,66 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Este projeto tem como intuito criar uma aplicação de mensagens distribuída que possa ser usada para comunicação em grupo. O sistema deve ser escalável e tolerante a falhas, permitindo que vários usuários possam se conectar ao mesmo tempo e enviar mensagens.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foram consolidados com a participação dos usuários em um trabalho de imersão feito pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Desta forma, constatou-se que o presente projeto possui 3 principais personas:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+- **Jovens, universitários**: alunos de uma mesma sala de aula que buscam uma forma mais ágil para estudar em grupo e trocar informações, sem a distração das redes sociais. (na faixa de idade entre 18 e 39 anos).
+- **Adultos:** pais e mães com filhos menores, preocupados com a segurança e privacidade de sua família. (na faixa de idade entre 40 e 59 anos ).
+- **Idosos/aposentados:** pessoas que possuem dificuldades com as aplicações tradicionais de mensageria e buscam uma forma de comunicação à distância mais simples e segura. (faixa de idade acima de 60 anos de idade).
+
+A seguir, passamos à análise detalhada das principais personas e suas respectivas histórias de usuários.
+
+| Lana Del Rey                                                                                                           |                                                                                                                                                                                                                                              |                                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/78277341/223223051-1ae29f68-e5d0-4a20-8c24-e1b7dd525ef5.png)             | **Idade:** 22  anos - **Ocupação:** Estudante de Medicina.                                                                                                                                                                                   | Aplicativos: Instagram, Facebook, WhatsApp.                                                                                               |
+| **Motivações:**  Lana gosta de trabalhar em grupo e está sempre em contato com os colegas da faculdade. Seu sonho é ser médica cardiologista. | **Frustrações:** Sempre que usa o WhatsApp ou Facebook, Lana acaba se distraindo com postagens e notícias banais. Ela e seus amigos buscam uma aplicação mais restrita para trocarem mensagens sobre os trabalhos e projetos da faculdade.   | **Hobbies, História:** Lana gosta de compor música e escrever poemas. As conversas com seus amigos são sua principal fonte de inspiração. | 
+
+| Kênio e Kinca                                                                                                   |                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/78277341/223237926-618aea52-6b29-4a18-8f13-f626f1a2bb35.png) | **Idade:** 42 anos - **Ocupação:** Pais de 4 filhos.                                                                                                                                                                                                                                                                    | Aplicativos: Instagram, TikTok e WhatsApp.                                                                                                                                                                 |
+| **Motivações:** Proporcionar aos filhos, segurança e proteção.                                                  | **Frustrações:** As crianças já estão inseridas no mundo das redes sociais e são curiosas. Os pais se preocupam em fornecer meios seguros para que os filhos possam utilizar a tecnologia de forma benéfica. Precisam de uma aplicação segura para manter conversas com os filhos quando estão na escola ou na natação. | **Hobbies, História:** Kênio e Kinca trabalham em casa e os filhos fazem muitas atividades externas, como cursos e esportes. Nas horas vagas, eles gostam de conversar com as crianças e postar fotos nas redes sociais. | 
+
+
+
+| Tarcísio e Glória                                                                                                                                                                                                       |                                                                                                                                                                                                            |                                                                                                                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/78277341/223230286-4519eeee-584d-47db-9fee-bbdfde7dbbce.png)                                                                                                         | **Idade:** 69 anos - **Ocupação:** Aposentados, do lar.                                                                                                                                                    | Aplicativos: Facebook e Whatsapp.                                                                                                                |
+| **Motivações:**  O casal de idosos moram juntos em uma bela casa no interior. Utilizam aplicativos de mensagens para manter seus familiares informados sobre como eles estão de saúde e para conversar sobre a família. | **Frustrações:** Por causa da idade avançada, o casal tem dificuldades para enchergar as mensagens no celular e dificuldades para enviar arquivos com segurança, como documentos e informações pessoais.   | **Hobbies, História:** Juntos, eles gostam de fotografar o jardim e as receitas que fazem juntos. Eles sempre enviam belas fotos para a família. | 
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                       | PARA ... `MOTIVO/VALOR`                                             |
+|--------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------|
+|**Lana Del Rey** | *Uma aplicação que me mantenha longe de distrações e das redes sociais*. | Otimizar seu tempo e focar nas atividades escolares com seus colegas de classe. 
+|**Kênio e Kinca** | *Manter conversas da família em segurança e preservar a privacidade*.    | Ter uma aplicação mais restrita ao grupo familiar, fortalecendo a proteção dos filhos. 
+| **Tarcísio e Glória**  | *Aplicação mais simplista, dinâmica e minimalista.*                      | Manter comunicação com os filhos que moram na capital.              |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Atualmente, há uma diversidade de aplicativos de mensageria, como WhatsApp, Telegram, Signal, RabbitMQ, XMPP e MQTT. Cada um desses aplicativos oferece recursos diferentes para os usuários, como a capacidade de enviar mensagens de texto, fotos e vídeos, fazer chamadas de voz e vídeo, criar grupos e compartilhar arquivos. Alguns aplicativos também têm recursos de segurança avançados, como criptografia de ponta a ponta, opções de bloqueio e verificação em duas etapas.
+
+No entanto, cada aplicativo tem suas limitações. Alguns podem ser difíceis de usar para usuários mais velhos ou com deficiências, enquanto outros podem não ter recursos avançados de segurança. Além disso, alguns aplicativos podem não estar disponíveis em todos os países ou podem ter restrições de uso. Por isso, os usuários podem precisar usar vários aplicativos diferentes para atender às suas necessidades de mensageria, o que pode ser confuso e inconveniente.
+
+Com a crescente demanda por soluções de mensageria distribuída, espera-se que surjam novos aplicativos e recursos no futuro para atender às necessidades dos usuários. Um exemplo disso é a inclusão de pessoas mais idosas, visto que populações mundiais tem envelhecido. Porém, como o grupo de introdução de trends são jovens, esse precisa ser o público-alvo para a garantia da ampla adoção do aplicativo.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta do Chatter é ser um aplicativo puramente de mensageria que tenha os recursos necessários a um público-alvo jovem, mas também com recursos de inclusividade. Para atender às necessidades de idosos, o aplicativo deve ser fácil de usar e ter uma interface intuitiva. Isso inclui opções de botões maiores, fontes claras e opções de acessibilidade para usuários com deficiências visuais ou auditivas - alterações essas que devem ser intuitivas para configuração no primeiro uso do aplicativo. O aplicativo também deve incluir recursos para ajudar os idosos a se conectarem com seus amigos e familiares, como um diretório de contatos e uma lista de favoritos.
+
+Além de limitações de volume da aplicação desenvolvida, recursos de segurança não serão tão avançados quanto outras soluções no mercado. Além disso, não serão incluídos recursos de stories, que fogem ao escopo do projeto apesar de presentes em alguns aplicativos de mensageria.
+
+Em resumo, a solução ideal seria um aplicativo de mensageria distribuído que combina recursos modernos e divertidos com uma interface fácil de usar para atender às necessidades de jovens e idosos. 
 
 ### Processo 1 – NOME DO PROCESSO
 
@@ -112,6 +124,7 @@ Sabendo que um requisito é a propriedade que um software exibe para solucionar 
 
 ## Restrições
 
+
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
@@ -149,36 +162,48 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 | Solução para comunicação entre diferentes dispositivos e sistemas | X | X | X | X |
 
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
-
-
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+De acordo com o PMBoK v6, as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Devido a sua interconexão, é essencial detalhar esses aspectos do projeto.
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
-
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
-
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![Gráfico de Gantt](img/planejamentocrest.png)
+
+No momento, o diagrama mostra o planejamento mais geral das entregas de cada etapa, sendo que as tarefas específicas e seus responsáveis são definidos a cada sprint e gerenciados no [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM). O Microsoft Planner é um aplicativo de planejamento disponível na plataforma Microsoft 365, orientado ao trabalho em equipe. De acordo com o planejamento mais generalizado feito com antecedência, o grupo planejará, a cada sprint, a divisão de tarefas, bem como a estimativa de tempo necessário para completá-las. Por meio do Planner, também será feita a visualização geral das atividades, bem como o acompanhamento da evolução dos requisitos.
+
 
 ## Gerenciamento de Equipe
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
 
-![Simple Project Timeline](img/02-project-timeline.png)
+Conforme mencionado no item anterior, o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM) apresenta o detalhamento de cada sprint:
+
+![Planejamento](img/progress.png)
+
+No Microsoft Planner, as tarefas podem também ser rastreadas em um quadro Kanban por status, bucket, prioridade e responsável, bem como seu estado de execução:
+
+![Planejamento](img/planner.png)
+
+Além disso, o Planner permite acompanhar a produtividade dos membros, demonstrado na imagem:
+
+![Planejamento](img/image.png)
+![Planejamento](img/plannergraph.png)
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo. Foram feitos cálculos considerando custos relativos a pessoal para um total de 6 pessoas.
 
-![Orçamento](img/02-orcamento.png)
+| Item de orçamento	|	Custo estimado (em reais) |
+| -------- | ------------- |
+| Hardware	| R$80.000	|
+| Desenvolvedores	| R$60.000/mês |
+| Gerente de Projeto	| R$15.000/mês |
+| Investimento em Pessoal | R$30.000 |
+| Registro de domínio e Certificado SSL	|	R$3.000 |
+| Publicidade e marketing	|	R$10.000 |
+| Contingência	|	R$30.000 |
+| Total | R$512.000 |
+
