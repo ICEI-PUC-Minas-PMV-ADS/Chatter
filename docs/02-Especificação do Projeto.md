@@ -62,17 +62,17 @@ Além de limitações de volume da aplicação desenvolvida, recursos de seguran
 
 Em resumo, a solução ideal seria um aplicativo de mensageria distribuído que combina recursos modernos e divertidos com uma interface fácil de usar para atender às necessidades de jovens e idosos. 
 
-### Processo 1 – NOME DO PROCESSO
+### Envio de mensagens atualmente
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+A grande quantidade de aplicativos de mensageria sobrecarrega a memória dos celulares de jovens e pode confundir os mais idosos.
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/bpmn1.png)
 
-### Processo 2 – NOME DO PROCESSO
+### Envio de mensagens com o Chatter
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+Unificando o envio de mensagens em uma solução intuitiva e acessível, o processo é bem simplificado para quaisquer usuários.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![Processo 2](img/bpmn2.png)
 
 ## Indicadores de Desempenho
 
