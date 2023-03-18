@@ -32,6 +32,13 @@ A seguir, passamos à análise detalhada das principais personas e suas respecti
 | ![image](https://user-images.githubusercontent.com/78277341/223230286-4519eeee-584d-47db-9fee-bbdfde7dbbce.png)                                                                                                         | **Idade:** 69 anos - **Ocupação:** Aposentados, do lar.                                                                                                                                                    | Aplicativos: Facebook e Whatsapp.                                                                                                                |
 | **Motivações:**  O casal de idosos moram juntos em uma bela casa no interior. Utilizam aplicativos de mensagens para manter seus familiares informados sobre como eles estão de saúde e para conversar sobre a família. | **Frustrações:** Por causa da idade avançada, o casal tem dificuldades para enchergar as mensagens no celular e dificuldades para enviar arquivos com segurança, como documentos e informações pessoais.   | **Hobbies, História:** Juntos, eles gostam de fotografar o jardim e as receitas que fazem juntos. Eles sempre enviam belas fotos para a família. | 
 
+
+### Persona em Destaque:
+
+As três personas apresentadas foram identificadas como possíveis usuários de nossa aplicação, e conhecer suas respectivas histórias é importante para que o grupo possa identificar as principais metas a traçar, estabelecendo as funcionalidades e requisitos mais importantes. Contudo, conforme aprendemos nas aulas de "Microfundamento: Projeto de Software" (Projeto de UX, tema 1, Unidade 1): "as interfaces devem promover a interação utilizável, acessível e prazerosa por parte das personas de usuário identificadas. Além de resolver um problema do usuário, o software deve oferecer uma experiência positiva durante o seu uso."
+
+Assim, ressaltamos que a persona "Universitário" será nosso foco a princípio, considerando que as demais personas irão requerer o desenvolvimento de soluções mais específicas, pois tratam-se de crianças e idosos. Dessa forma, os elementos estéticos, como a combinação de cores, tipografias, tamanhos e estilos de textos, deverão atender às suas características e necessidades especiais.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
