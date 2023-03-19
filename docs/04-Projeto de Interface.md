@@ -21,9 +21,8 @@ Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visu
 
 ![chatter](https://user-images.githubusercontent.com/90660755/225733270-4478d3d5-2c4c-465e-96af-9866b8cffd34.jpeg)
 
-👉🏿 Acesse o caso de uso da plataforma **_Chatter_** criado no [**Lucid Chart**]( [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)).
-
-
+Acesse o caso de uso da plataforma Chatter criado no: [Lucid Chart](https://lucid.app/lucidchart/4272b0b8-c43d-499d-ab3d-67cc1e0e873d/edit?viewport_loc=-1117%2C98%2C3139%2C1367%2C0_0&invitationId=inv_74b46407-e9b4-43f5-b57d-15a242d2e6a1.
+)
 
 
 ## Wireframes
