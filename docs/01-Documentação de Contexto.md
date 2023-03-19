@@ -34,6 +34,8 @@ A aplicação visa trazer uma solução eficaz para o problema de comunicação 
 
 ## Objetivos
 
+As aplicações distribuídas de troca de mensagens permitem a comunicação entre sistemas e dispositivos em uma rede distribuída, como a internet, de forma assíncrona e escalável, dividindo a carga de trabalho entre vários nós ou servidores, o que torna a rede mais flexível e resistente a falhas. Essa solução é comumente utilizada em ambientes que precisam lidar com grandes volumes de dados e tráfego, como sistemas de comércio eletrônico, redes sociais e aplicativos de mensagens instantâneas. Além disso, as aplicações distribuídas de troca de mensagens fornecem recursos de segurança, como criptografia de ponta a ponta, autenticação de usuários e controle de acesso, para garantir a integridade e a privacidade das informações compartilhadas entre os sistemas. Em resumo, a aplicação distribuída de troca de mensagens é uma solução poderosa para a comunicação e coordenação entre sistemas distribuídos, permitindo que eles se comuniquem de forma assíncrona, escalável e segura, o que a torna uma ferramenta importante para diversos setores da tecnologia. Com isso escrevo esses topicos para complementar o objetivo geral.
+
 - Criar um aplicativo de mensagens para web e mobile com uma interface simples e minimalista, porém atraente, para resolver o problema de muitos aplicativos de mensagens complicados de usar ou com interface desagradável para os usuários.
 
 - Tornar o aplicativo de mensagens acessível e popular para todas as idades e habilidades tecnológicas.
