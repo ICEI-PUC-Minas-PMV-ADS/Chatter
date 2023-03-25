@@ -11,7 +11,6 @@ graph TD;
     TwilioAPI-->Node.js-Backend-->MongoDB-NoSQL;
     Node.js-Backend-->TwilioAPI;
     
-  
 ```
 
  > - Nesse diagrama, a plataforma Twilio é usada para enviar e receber mensagens de texto e mídia, bem como para autenticação de dois fatores e verificação de números de telefone. A API do Twilio é acessada por meio do backend Node.js, que processa as solicitações do frontend ReactJS e armazena dados usando o banco de dados NoSQL MongoDB.
