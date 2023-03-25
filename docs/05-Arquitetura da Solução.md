@@ -1,10 +1,20 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+Iremos utilizar a Twilio que é uma plataforma de comunicação em nuvem que oferece uma API para enviar e receber mensagens de texto (SMS) e mensagens de mídia (MMS). A plataforma também oferece recursos como autenticação de dois fatores e verificação de número de telefone.
+Para integração dessa api iremos utilizar React JS e  para armazenamento dos dados será usado o tipo noSQL que será usado com MongoDB.
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+```mermaid
+graph TD;
+   
+    ReactJS-Frontend--->Node.js-Backend-->MongoDB-NoSQL;
+    Node.js-Backend--->ReactJS-Frontend;
+    TwilioAPI-->Node.js-Backend-->MongoDB-NoSQL;
+    Node.js-Backend-->TwilioAPI;
+    
+  
+```
 
-![Arquitetura da Solução](img/02-mob-arch.png)
+ > - Nesse diagrama, a plataforma Twilio é usada para enviar e receber mensagens de texto e mídia, bem como para autenticação de dois fatores e verificação de números de telefone. A API do Twilio é acessada por meio do backend Node.js, que processa as solicitações do frontend ReactJS e armazena dados usando o banco de dados NoSQL MongoDB.
 
 ## Diagrama de Classes
 
