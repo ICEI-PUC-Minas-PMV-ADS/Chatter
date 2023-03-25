@@ -32,6 +32,13 @@ A seguir, passamos à análise detalhada das principais personas e suas respecti
 | ![image](https://user-images.githubusercontent.com/78277341/223230286-4519eeee-584d-47db-9fee-bbdfde7dbbce.png)                                                                                                         | **Idade:** 69 anos - **Ocupação:** Aposentados, do lar.                                                                                                                                                    | Aplicativos: Facebook e Whatsapp.                                                                                                                |
 | **Motivações:**  O casal de idosos moram juntos em uma bela casa no interior. Utilizam aplicativos de mensagens para manter seus familiares informados sobre como eles estão de saúde e para conversar sobre a família. | **Frustrações:** Por causa da idade avançada, o casal tem dificuldades para enchergar as mensagens no celular e dificuldades para enviar arquivos com segurança, como documentos e informações pessoais.   | **Hobbies, História:** Juntos, eles gostam de fotografar o jardim e as receitas que fazem juntos. Eles sempre enviam belas fotos para a família. | 
 
+
+### Persona em Destaque:
+
+As três personas apresentadas foram identificadas como possíveis usuários de nossa aplicação, e conhecer suas respectivas histórias é importante para que o grupo possa identificar as principais metas a traçar, estabelecendo as funcionalidades e requisitos mais importantes. Contudo, conforme aprendemos nas aulas de "Microfundamento: Projeto de Software" (Projeto de UX, tema 1, Unidade 1): "as interfaces devem promover a interação utilizável, acessível e prazerosa por parte das personas de usuário identificadas. Além de resolver um problema do usuário, o software deve oferecer uma experiência positiva durante o seu uso."
+
+Assim, ressaltamos que a persona "Universitário" será nosso foco a princípio, considerando que as demais personas irão requerer o desenvolvimento de soluções mais específicas, pois tratam-se de crianças e idosos. Dessa forma, os elementos estéticos, como a combinação de cores, tipografias, tamanhos e estilos de textos, deverão atender às suas características e necessidades especiais.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -48,25 +55,31 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Atualmente, há uma diversidade de aplicativos de mensageri.
+Atualmente, há uma diversidade de aplicativos de mensageria, como WhatsApp, Telegram, Signal, RabbitMQ, XMPP e MQTT. Cada um desses aplicativos oferece recursos diferentes para os usuários, como a capacidade de enviar mensagens de texto, fotos e vídeos, fazer chamadas de voz e vídeo, criar grupos e compartilhar arquivos. Alguns aplicativos também têm recursos de segurança avançados, como criptografia de ponta a ponta, opções de bloqueio e verificação em duas etapas.
+
+No entanto, cada aplicativo tem suas limitações. Alguns podem ser difíceis de usar para usuários mais velhos ou com deficiências, enquanto outros podem não ter recursos avançados de segurança. Além disso, alguns aplicativos podem não estar disponíveis em todos os países ou podem ter restrições de uso. Por isso, os usuários podem precisar usar vários aplicativos diferentes para atender às suas necessidades de mensageria, o que pode ser confuso e inconveniente.
+
+Com a crescente demanda por soluções de mensageria distribuída, espera-se que surjam novos aplicativos e recursos no futuro para atender às necessidades dos usuários. Um exemplo disso é a inclusão de pessoas mais idosas, visto que populações mundiais tem envelhecido. Porém, como o grupo de introdução de trends são jovens, esse precisa ser o público-alvo para a garantia da ampla adoção do aplicativo.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta do Chatter é ser um aplicativo puramente de mensageria que tenha os recursos necessários a um público-alvo jovem, mas também com recursos de inclusividade. Para atender às necessidades de idosos, o aplicativo deve ser fácil de usar e ter uma interface intuitiva. Isso inclui opções de botões maiores, fontes claras e opções de acessibilidade para usuários com deficiências visuais ou auditivas - alterações essas que devem ser intuitivas para configuração no primeiro uso do aplicativo. O aplicativo também deve incluir recursos para ajudar os idosos a se conectarem com seus amigos e familiares, como um diretório de contatos e uma lista de favoritos.
 
-A proposta do Chatter é ser 
+Além de limitações de volume da aplicação desenvolvida, recursos de segurança não serão tão avançados quanto outras soluções no mercado. Além disso, não serão incluídos recursos de stories, que fogem ao escopo do projeto apesar de presentes em alguns aplicativos de mensageria.
 
-### Processo 1 – NOME DO PROCESSO
+Em resumo, a solução ideal seria um aplicativo de mensageria distribuído que combina recursos modernos e divertidos com uma interface fácil de usar para atender às necessidades de jovens e idosos. 
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+### Envio de mensagens atualmente
 
-![Processo 1](img/02-bpmn-proc1.png)
+A grande quantidade de aplicativos de mensageria sobrecarrega a memória dos celulares de jovens e pode confundir os mais idosos.
 
-### Processo 2 – NOME DO PROCESSO
+![Processo 1](img/bpmn1.png)
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+### Envio de mensagens com o Chatter
 
-![Processo 2](img/02-bpmn-proc2.png)
+Unificando o envio de mensagens em uma solução intuitiva e acessível, o processo é bem simplificado para quaisquer usuários.
+
+![Processo 2](img/bpmn2.png)
 
 ## Indicadores de Desempenho
 
@@ -85,49 +98,36 @@ Sabendo que um requisito é a propriedade que um software exibe para solucionar 
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Registro de usuário: O aplicativo deve permitir que os usuários se registrem e criem uma conta para acessar seus recursos. | ALTA | 
+|RF-001| Registro de usuário: O aplicativo deve permitir que os usuários se registrem e criem uma conta para acessar seus recursos, sendo eles as mensagens e as funcionalidades da aplicação. | ALTA | 
 |RF-002| Enviar mensagem: O aplicativo deve permitir que os usuários enviem mensagens de texto, imagens, áudio e vídeo para outros usuários.   | ALTA |
 |RF-003| Receber mensagem: O aplicativo deve permitir que os usuários recebam mensagens enviadas por outros usuários.   | ALTA |
 |RF-004| Compartilhamento de arquivos: O aplicativo deve permitir que os usuários compartilhem arquivos (como fotos e vídeos) com outros usuários.   | MÉDIA |
-|RF-005| Histórico de mensagens: O aplicativo deve permitir que os usuários acessem seu histórico de mensagens e procurem por mensagens específicas.   | ALTA |
+|RF-005| Histórico de mensagens: O aplicativo deve permitir que os usuários acessem seu histórico de mensagens e possam procurar por mensagens específicas.   | BAIXA |
 |RF-006| Personalização de perfil: O aplicativo deve permitir que os usuários personalizem seu perfil, incluindo imagem de perfil, status e outras informações pessoais.  | MÉDIA |
-|RF-007| Suporte a múltiplas plataformas: O aplicativo deve estar disponível em dispositivos Android e Windows, para que os usuários possam acessá-lo em seus dispositivos preferidos.   | ALTA |
-|RF-008| Excluir mensagens: O aplicativo deve permitir que os usuários excluam mensagens específicas ou toda uma conversa, sendo a mesma excluída de seu próprio dispositivo.   | MÉDIA |
-|RF-009| Notificação de mensagens: O aplicativo deve notificar o usuário quando uma nova mensagem é recebida.     | ALTA |
-|RF-010| Notificações push: O aplicativo deve ser capaz de enviar notificações push para alertar os usuários sobre novas mensagens recebidas.   | BAIXA |
-|RF-011| Listas de contatos: Os usuários devem ser capazes de criar e gerenciar listas de contatos para que possam facilmente enviar mensagens a grupos específicos de pessoas.   | ALTA |
-|RF-012| Verificação de status de entrega: Os usuários devem ser capazes de verificar se as mensagens que enviaram foram entregues com sucesso.   | MÉDIA |
-|RF-013| Integração de emoji e GIFs: O aplicativo deve permitir que os usuários enviem e recebam emoji e GIFs em suas mensagens.   | BAIXA |
-|RF-014| Sincronização entre dispositivos: permitir que os usuários acessem suas mensagens em vários dispositivos, como smartphones, tablets e computadores.   | ALTA |
+|RF-007| Excluir mensagens: O aplicativo deve permitir que os usuários excluam mensagens específicas ou toda uma conversa, sendo a mesma excluída de seu próprio dispositivo.   | MÉDIA |
+|RF-008| Notificação de mensagens: O aplicativo deve notificar o usuário quando uma nova mensagem é recebida, através de um alerta sonoro.     | ALTA |
+|RF-009| Notificações push: O aplicativo deve ser capaz de enviar notificações push para alertar os usuários sobre novas mensagens recebidas.   | ALTA |
+|RF-010| Listas de contatos: Os usuários devem ser capazes de criar e gerenciar listas de contatos, para que possam facilmente enviar mensagens a grupos específicos de pessoas.   | MÉDIA |
+|RF-011| Verificação de status de entrega: Os usuários devem ser capazes de verificar se as mensagens que enviaram foram entregues com sucesso.   | MÉDIA |
+|RF-012| Integração de emoji e GIFs: O aplicativo deve permitir que os usuários enviem e recebam emoji e GIFs em suas mensagens.   | BAIXA |
+|RF-013| Sincronização entre dispositivos: permitir que os usuários acessem suas mensagens em vários dispositivos, como smartphones, tablets e computadores.   | ALTA |
+|RF-014| Busca de mensagens: A aplicação deve permitir que os usuários pesquisem suas mensagens antigas.   | ALTA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Usabilidade: O aplicativo deve ser fácil de usar e entender, com uma interface intuitiva e recursos úteis para os usuários. Isso pode incluir requisitos de design, experiência do usuário e acessibilidade. | ALTA | 
-|RNF-002| Confiabilidade: O aplicativo deve ser confiável, com mensagens entregues consistentemente e sem erros ou falhas. Isso pode incluir requisitos de redundância, backup de dados e testes de qualidade. |  ALTA | 
-|RNF-003| Compatibilidade: O aplicativo deve ser compatível com sistemas operacionais Android e Windowns, e em dispositivos e versões de software diferentes, para que os usuários possam usá-lo em diferentes plataformas. |  ALTA |
+|RNF-001| Usabilidade: O aplicativo deve focar nos conceitos de usabilidade, dando ênfase a critérios dentro de design e acessibilidade. | ALTA | 
+|RNF-002| Confiabilidade: O aplicativo deve ser confiável, com mensagens entregues consistentemente e sem erros ou falhas. |  ALTA | 
+|RNF-003| Compatibilidade: O aplicativo deve ser compatível com sistemas operacionais Android e Windowns, para que os usuários possam usá-lo em diferentes plataformas. |  MÉDIA |
 |RNF-004| Manutenibilidade: O aplicativo deve ser fácil de manter e atualizar, com código limpo e bem documentado, além de possuir recursos que facilitem a resolução de problemas. |  MÉDIA |
-|RNF-005| Desempenho: O aplicativo deve ser capaz de lidar com um grande número de mensagens simultaneas, sem atrasos ou falhas. |  BAIXA |
-|RNF-006| Personalização: o aplicativo deve permitir que os usuários personalizem suas configurações e preferências de notificação. |  MÉDIA |
-|RNF-007| Manutenção: o aplicativo deve ser fácil de atualizar e manter, sem causar interrupções para os usuários ou perder dados. |  ALTA |
-|RNF-008| Desempenho: o aplicativo deve ser rápido e responsivo, sem atrasos significativos na entrega de mensagens ou na atualização da interface. |  ALTA |
-|RNF-009| Customização: o aplicativo deve permitir que os usuários personalizem a aparência e o comportamento do aplicativo de acordo com suas preferências pessoais. |  BAIXA |
+|RNF-005| Desempenho: O aplicativo deve ser capaz de lidar com um grande número de mensagens simultaneas, sem atrasos ou falhas. |  MÉDIA |
+|RNF-006| Personalização: o aplicativo deve permitir que os usuários personalizem suas configurações e preferências de notificação. |  BAIXA |
+|RNF-007| Desempenho: O aplicativo deve ser rápido e responsivo, sem atrasos significativos na entrega de mensagens ou na atualização da interface. |  ALTA |
+|RNF-008| Regulamentação: O aplicativo deve estar em conformidade com as regulamentações de privacidade e segurança de dados. |  ALTA |
 
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -136,14 +136,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|01| O projeto deve ser implementado com uso de tecnologias front end, back end e mobile, podendo fazer uso de bibliotecas que influenciem positivamente na qualidade do software. |
+|02| O projeto deverá ter seu código versionado utilizando Git.       |
+|03| O projeto completo, com suas respectivas funcionalidades, necessita ser entregue até o dia 25/06/2023, respeitando o prazo estipulado.        |
+|04| Restrições de idade: a aplicação deverá exigir que os usuários tenham no mínimo 13 anos para usar o serviço, para que sejam cumpridas as leis de privacidade de dados.        |
+|05| Restrições de contato: a aplicaçaõ deverá permitir que os usuários restrinjam quem pode entrar em contato com eles, por meio de bloqueios.         |
+|06| Opções de privacidade de perfil: A aplicação deverá conter opções para limitar quem pode ver o perfil do usuário ou suas informações de contato.       |
 
 ## Diagrama de Casos de Uso
 
@@ -190,9 +188,16 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 Conforme mencionado no item anterior, o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM) apresenta o detalhamento de cada sprint:
 
-No Microsoft Planner, as tarefas podem também ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução:
+![Planejamento](img/progress.png)
 
-Além disso, o quadro Kanban no Planner é atualizado após a realização de commits associados a tarefas nas sprints, demonstrado na imagem:
+No Microsoft Planner, as tarefas podem também ser rastreadas em um quadro Kanban por status, bucket, prioridade e responsável, bem como seu estado de execução:
+
+![Planejamento](img/planner.png)
+
+Além disso, o Planner permite acompanhar a produtividade dos membros, demonstrado na imagem:
+
+![Planejamento](img/image.png)
+![Planejamento](img/plannergraph.png)
 
 ## Gestão de Orçamento
 
