@@ -2,8 +2,8 @@
 
 Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). Para integração dessa API, iremos utilizar React JS e para armazenamento dos dados persistentes será usado o MongoDB.
 
-![image](img/imp.jpeg)
-![image](img/impflow.jpeg)
+![image](img/imp.jpg)
+![image](img/impflow.jpg)
 
 
 ## Diagrama de Classes
