@@ -1,6 +1,6 @@
 # Arquitetura da Solução
 
-Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). Para integração dessa API, iremos utilizar React JS e para armazenamento dos dados persistentes será usado o MongoDB.
+Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). A comunicação com o cliente será feita por node.js. No entanto, para uma comunicação em tempo real entre o cliente e o servidor, como um chat em tempo real, é necessário utilizar sockets. Nesse caso, a socket.io se comunica com o servidor node.js e o Kafka para enviar e receber mensagens em tempo real. Para integração dessa API, iremos utilizar React JS e para armazenamento dos dados persistentes será usado o MongoDB.
 
 ![image](img/imp.jpg)
 ![image](img/impflow.jpg)
