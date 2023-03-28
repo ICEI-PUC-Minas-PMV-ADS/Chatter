@@ -1,19 +1,10 @@
 # Arquitetura da Solução
 
-Iremos utilizar a Twilio que é uma plataforma de comunicação em nuvem que oferece uma API para enviar e receber mensagens de texto (SMS) e mensagens de mídia (MMS). A plataforma também oferece recursos como autenticação de dois fatores e verificação de número de telefone.
-Para integração dessa api iremos utilizar React JS e  para armazenamento dos dados será usado o tipo noSQL que será usado com MongoDB.
+Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). A comunicação com o cliente será feita por node.js. No entanto, para uma comunicação em tempo real entre o cliente e o servidor, como um chat em tempo real, é necessário utilizar sockets. Nesse caso, a socket.io se comunica com o servidor node.js. Para integração dessa API, iremos utilizar React JS e para armazenamento dos dados persistentes será usado o MongoDB.
 
-```mermaid
-graph TD;
-   
-    ReactJS-Frontend--->Node.js-Backend-->MongoDB-NoSQL;
-    Node.js-Backend--->ReactJS-Frontend;
-    TwilioAPI-->Node.js-Backend-->MongoDB-NoSQL;
-    Node.js-Backend-->TwilioAPI;
-    
-```
+![image](img/imp.jpg)
+![image](img/impflow.jpg)
 
- > - Nesse diagrama, a plataforma Twilio é usada para enviar e receber mensagens de texto e mídia, bem como para autenticação de dois fatores e verificação de números de telefone. A API do Twilio é acessada por meio do backend Node.js, que processa as solicitações do frontend ReactJS e armazena dados usando o banco de dados NoSQL MongoDB.
 
 ## Diagrama de Classes
 
