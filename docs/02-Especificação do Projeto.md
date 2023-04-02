@@ -145,16 +145,18 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama de caso de uso foi essencial para o processo de desenvolvimento de software. Ele representa graficamente os principais requisitos funcionais do sistema, identificando as principais interações entre os usuários e a plataforma. Abaixo segue como o diagrama de caso de uso foi elaborado a partir dos requisitos funcionais da plataforma Chatter.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+Esses requisitos incluem a criação de grupos, o compartilhamento de arquivos, a troca de mensagens privadas entre usuários e a publicação de atualizações de status. A partir desses requisitos, é possível identificar os principais atores do sistema, que são os usuários um e dois.
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+Com base nos requisitos e nos atores identificados, foi possível elaborar o diagrama de caso de uso da plataforma Chatter. Esse diagrama representa de forma clara e concisa os principais casos de uso do sistema, incluindo as principais funcionalidades que cada ator pode utilizar.
+
+Cada caso de uso foi descrito, incluindo informações como os pré-requisitos para a execução de cada caso, as principais etapas do processo e as saídas esperadas.
+
+Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visualizar de forma clara e organizada as principais funcionalidades do sistema e as principais interações entre os usuários e a plataforma. Isso permitirá que os desenvolvedores tenham uma visão clara dos principais requisitos do sistema e possam desenvolver o software de forma mais eficiente e eficaz.
+
+![CHATTER](https://user-images.githubusercontent.com/90660755/229373018-a937d406-15ba-4bf1-ac3f-41fa8dd752d9.jpeg)
+
 
 # Matriz de Rastreabilidade
 
