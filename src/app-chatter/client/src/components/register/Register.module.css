@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #0077ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
