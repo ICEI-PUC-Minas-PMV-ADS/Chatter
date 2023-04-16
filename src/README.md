@@ -6,6 +6,7 @@ cd server
 - npm install
 - npm i express mongoose nodemon socket.io bcrypt cors dotenv
 - npm start
+
 cd public
 - npm install
 - npm i express mongoose nodemon socket.io bcrypt cors dotenv
