@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
@@ -24,6 +24,7 @@ export default function Register() {
   });
 
   useEffect(() => {
+  
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/");
     }
@@ -37,24 +38,24 @@ export default function Register() {
     const { password, confirmPassword, username, email } = values;
     if (password !== confirmPassword) {
       toast.error(
-        "Password and confirm password should be same.",
+        "A senha e a senha de confirmação devem ser iguais.",
         toastOptions
       );
       return false;
     } else if (username.length < 3) {
       toast.error(
-        "Username should be greater than 3 characters.",
+        "O nome de usuário deve ter mais de 3 caracteres.",
         toastOptions
       );
       return false;
     } else if (password.length < 8) {
       toast.error(
-        "Password should be equal or greater than 8 characters.",
+        "A senha deve ser igual ou maior que 8 caracteres.",
         toastOptions
       );
       return false;
     } else if (email === "") {
-      toast.error("Email is required.", toastOptions);
+      toast.error("Email é obrigatório.", toastOptions);
       return false;
     }
 
@@ -89,12 +90,11 @@ export default function Register() {
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
+            <img src={Logo} alt="logo" />        
           </div>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Usuario"
             name="username"
             onChange={(e) => handleChange(e)}
           />
@@ -106,19 +106,19 @@ export default function Register() {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Senha"
             name="password"
             onChange={(e) => handleChange(e)}
           />
           <input
             type="password"
-            placeholder="Confirm Password"
+            placeholder="Confirme sua senha"
             name="confirmPassword"
             onChange={(e) => handleChange(e)}
           />
-          <button type="submit">Create User</button>
+          <button type="submit">Criar usuario</button>
           <span>
-            Already have an account ? <Link to="/login">Login.</Link>
+           Já tem uma conta? <Link to="/login"> Ir para Login</Link>
           </span>
         </form>
       </FormContainer>
@@ -135,14 +135,14 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background-color: #7c558ba0;
   .brand {
     display: flex;
     align-items: center;
     gap: 1rem;
     justify-content: center;
     img {
-      height: 5rem;
+      height: 10rem;
     }
     h1 {
       color: white;
@@ -154,16 +154,16 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: #F5F5F5;
     border-radius: 2rem;
     padding: 3rem 5rem;
   }
   input {
     background-color: transparent;
     padding: 1rem;
-    border: 0.1rem solid #4e0eff;
+    border: 0.1rem solid #985BCF;
     border-radius: 0.4rem;
-    color: white;
+    color: #000000;
     width: 100%;
     font-size: 1rem;
     &:focus {
@@ -172,7 +172,7 @@ const FormContainer = styled.div`
     }
   }
   button {
-    background-color: #4e0eff;
+    background-color: #985BCF;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -182,14 +182,14 @@ const FormContainer = styled.div`
     font-size: 1rem;
     text-transform: uppercase;
     &:hover {
-      background-color: #4e0eff;
+      background-color: #9592a0;
     }
   }
   span {
-    color: white;
+    color: #7a7979;
     text-transform: uppercase;
     a {
-      color: #4e0eff;
+      color: #985BCF;
       text-decoration: none;
       font-weight: bold;
     }
