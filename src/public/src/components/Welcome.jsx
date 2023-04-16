@@ -11,12 +11,14 @@ export default function Welcome() {
     );
   }, []);
   return (
+    
     <Container>
       <img src={Robot} alt="" />
       <h1>
-        Welcome, <span>{userName}!</span>
+        Bem vindo, <span>{userName}!</span>
       </h1>
-      <h3>Please select a chat to Start messaging.</h3>
+      <br></br>
+      <h3>Selecione uma conversa para inicar</h3>
     </Container>
   );
 }
@@ -25,12 +27,12 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #eee6e6;
   flex-direction: column;
   img {
     height: 20rem;
   }
   span {
-    color: #4e0eff;
+    color: #37266B;
   }
 `;

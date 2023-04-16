@@ -17,7 +17,7 @@ export default function Logout() {
     }
   };
   return (
-    <Button onClick={handleClick}>
+    <Button title="Sair" onClick={handleClick}>
       <BiPowerOff />
     </Button>
   );
@@ -25,15 +25,16 @@ export default function Logout() {
 
 const Button = styled.button`
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #9a86f3;
+  background-color: #281f52;
   border: none;
   cursor: pointer;
+  margin-left: 50%;
   svg {
     font-size: 1.3rem;
     color: #ebe7ff;
   }
 `;
+
