@@ -9,23 +9,11 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-O diagrama de caso de uso foi essencial para o processo de desenvolvimento de software. Ele representa graficamente os principais requisitos funcionais do sistema, identificando as principais interações entre os usuários e a plataforma. Abaixo segue como o diagrama de caso de uso foi elaborado a partir dos requisitos funcionais da plataforma Chatter.
+O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-Esses requisitos incluem a criação de grupos, o compartilhamento de arquivos, a troca de mensagens privadas entre usuários e a publicação de atualizações de status. A partir desses requisitos, é possível identificar os principais atores do sistema, que são os usuários um e dois.
+O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
 
-Com base nos requisitos e nos atores identificados, foi possível elaborar o diagrama de caso de uso da plataforma Chatter. Esse diagrama representa de forma clara e concisa os principais casos de uso do sistema, incluindo as principais funcionalidades que cada ator pode utilizar.
-
-Cada caso de uso foi descrito, incluindo informações como os pré-requisitos para a execução de cada caso, as principais etapas do processo e as saídas esperadas.
-
-Ao finalizar o diagrama de caso de uso da plataforma Chatter, foi possível visualizar de forma clara e organizada as principais funcionalidades do sistema e as principais interações entre os usuários e a plataforma. Isso permitirá que os desenvolvedores tenham uma visão clara dos principais requisitos do sistema e possam desenvolver o software de forma mais eficiente e eficaz.
-
-![chatter](https://user-images.githubusercontent.com/90660755/225733270-4478d3d5-2c4c-465e-96af-9866b8cffd34.jpeg)
-
-Segue o link do caso de uso da plataforma Chatter criado no Lucid Chart:
-
-https://lucid.app/lucidchart/4272b0b8-c43d-499d-ab3d-67cc1e0e873d/edit?viewport_loc=-1117%2C98%2C3139%2C1367%2C0_0&invitationId=inv_74b46407-e9b4-43f5-b57d-15a242d2e6a1
-
-
+![diagramafluxo2](https://user-images.githubusercontent.com/90660755/229373218-7e375397-9701-40c9-b49b-0438fd879762.jpg)
 
 ## Wireframes
 

@@ -70,6 +70,7 @@ module.exports.setAvatar = async (req, res, next) => {
       image: userData.avatarImage,
     });
   } catch (ex) {
+
     next(ex);
   }
 };
