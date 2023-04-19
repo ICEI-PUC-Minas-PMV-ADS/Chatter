@@ -87,6 +87,24 @@ Outro motivo para a escolha dessas linguagens de programação foi a experiênci
 
 ![chatter aplicação](https://user-images.githubusercontent.com/90660755/232940106-ebbcb65b-d8f8-4753-ae6f-3a005eb4ad76.png)
 
+## Documentação da Implementação da WEB API Rest:
+
+| Operação | Chamada HTTP |
+|----------|--------------|
+| Read     | GET          |
+| Create   | POST         |
+| Create   | POST         |
+| Create   | POST         |
+
+![test register](https://user-images.githubusercontent.com/90660755/233220152-99ca67f2-1c1d-4cd6-abc2-324ccf998151.PNG)
+
+
+![user test](https://user-images.githubusercontent.com/90660755/233220541-72a07e9f-f509-444f-a319-c313861074be.jpeg)
+
+
+![msg test](https://user-images.githubusercontent.com/90660755/233220623-15716bb7-2d60-4375-934b-718324998522.jpeg)
+
+
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
