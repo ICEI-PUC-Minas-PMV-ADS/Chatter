@@ -62,7 +62,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-As linguagens de programação Javascript, React Native e Node.js foram escolhidas para a aplicação distribuída "chatter" por vários motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
+As linguagens de programação Javascript, React Native e Node.js foram escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
 Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os desenvolvedores já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "chatter"
 
 | Linguagem         | Aplicação       |
