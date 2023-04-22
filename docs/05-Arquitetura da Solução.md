@@ -56,15 +56,15 @@ Abaixo está o modelo do fluxo de mensagens entre os usuarios A e B e suas deter
 
 ## Modelo Físico
 
-Segue abaixo o modelo físico contendo o  Json de criação da tabela "usuário" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+Segue abaixo o modelo físico contendo o  JSON de criação da tabela "usuário" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
 
 ![modelo fisico usuario](https://user-images.githubusercontent.com/90660755/232941488-fcbfab16-4e3c-4182-ac4f-bde4fee740d4.PNG)
 
-Segue abaixo o modelo físico contendo  o  Json  de criação da tabela "mensagem" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "mensagem" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
 
 ![modelo fisico mensagem](https://user-images.githubusercontent.com/90660755/232941799-11bd805a-3992-4bf8-8f18-33fe971ed987.PNG)
 
-Segue abaixo o modelo físico contendo  o  Json  de criação da tabela "conversa" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "conversa" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
 
 ![modelo fisico conversa](https://user-images.githubusercontent.com/90660755/232941869-1616c6c6-b625-4e76-ae5f-a425cb687ce0.PNG)
 
