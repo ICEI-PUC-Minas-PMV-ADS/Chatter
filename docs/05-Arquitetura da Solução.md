@@ -10,7 +10,7 @@ Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). A
 
 A arquitetura de um aplicativo de mensagens distribuído pode ser complexa, mas geralmente segue um modelo cliente-servidor. No modelo deste projeto o servidor fornece serviços para os clientes, através da troca de mensagens, que pode ser realizada por intermédio do aplicativo móvel ou desktop, desde que conectados à Internet. Segue abaixo os diagramas Web e Mobile respectivamente.
 
-![DC Web](https://user-images.githubusercontent.com/90533356/229646530-d24e2aad-2c41-41fe-85e5-057268055bd9.jpg)
+![DC Web](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/blob/Mariane/docs/img/diagrama.png?raw=true)
 
 
 ## Processos e suas Respectivas Atividades
@@ -70,8 +70,8 @@ Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "convers
 
 ## Tecnologias Utilizadas
 
-As linguagens de programação Javascript, React Native e Node.js foram escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
-Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os desenvolvedores já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "chatter"
+A linguagem de programação Javascript, atrelado a biblioteca React Native e React JS, juntamente com o framework e Node.js foi escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
+Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os integrantes já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "Chatter".
 
 | Linguagem         | Aplicação       |
 |------------------|-----------------|
@@ -79,6 +79,7 @@ Outro motivo para a escolha dessas linguagens de programação foi a experiênci
 | Node.js          | WebAPI Rest     |
 | Javascript       | FrontEnd WEB    |
 | React Native     | FrontEnd Mobile |
+| React JS          | FrontEnd Mobile |
 | VSCode           | Software de Código |
 | Mongo DB        | Banco de Dados |
 | Postman         | Teste de API    |
