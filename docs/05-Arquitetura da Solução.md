@@ -8,12 +8,10 @@ Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). A
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+A arquitetura de um aplicativo de mensagens distribuído pode ser complexa, mas geralmente segue um modelo cliente-servidor. No modelo deste projeto o servidor fornece serviços para os clientes, através da troca de mensagens, que pode ser realizada por intermédio do aplicativo móvel ou desktop, desde que conectados à Internet. Segue abaixo os diagramas Web e Mobile respectivamente.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+![DC Web](https://user-images.githubusercontent.com/90533356/229646530-d24e2aad-2c41-41fe-85e5-057268055bd9.jpg)
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Processos e suas Respectivas Atividades
 
