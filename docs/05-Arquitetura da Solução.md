@@ -54,31 +54,54 @@ Abaixo está o modelo do fluxo de mensagens entre os usuarios A e B e suas deter
 ![modelo BPMN](https://user-images.githubusercontent.com/75712250/222975679-7836974f-0df3-48d2-94b0-205221c46422.png)
 
 
-## Modelo ER
-
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
-## Esquema Relacional
-
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
-
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Segue abaixo o modelo físico contendo o  Json de criação da tabela "usuário" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+
+![modelo fisico usuario](https://user-images.githubusercontent.com/90660755/232941488-fcbfab16-4e3c-4182-ac4f-bde4fee740d4.PNG)
+
+Segue abaixo o modelo físico contendo  o  Json  de criação da tabela "mensagem" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+
+![modelo fisico mensagem](https://user-images.githubusercontent.com/90660755/232941799-11bd805a-3992-4bf8-8f18-33fe971ed987.PNG)
+
+Segue abaixo o modelo físico contendo  o  Json  de criação da tabela "conversa" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+
+![modelo fisico conversa](https://user-images.githubusercontent.com/90660755/232941869-1616c6c6-b625-4e76-ae5f-a425cb687ce0.PNG)
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+As linguagens de programação Javascript, React Native e Node.js foram escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
+Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os desenvolvedores já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "chatter"
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+| Linguagem         | Aplicação       |
+|------------------|-----------------|
+| Node.js          | BackEnd         |
+| Node.js          | WebAPI Rest     |
+| Javascript       | FrontEnd WEB    |
+| React Native     | FrontEnd Mobile |
+| VSCode           | Software de Código |
+| Mongo DB        | Banco de Dados |
+| Postman         | Teste de API    |
+
+![chatter aplicação](https://user-images.githubusercontent.com/90660755/232940106-ebbcb65b-d8f8-4753-ae6f-3a005eb4ad76.png)
+
+## Documentação da Implementação da WEB API Rest:
+
+| Operação | Chamada HTTP |
+|----------|--------------|
+| Read     | GET          |
+| Create   | POST         |
+| Create   | POST         |
+| Create   | POST         |
+
+![test register](https://user-images.githubusercontent.com/90660755/233220152-99ca67f2-1c1d-4cd6-abc2-324ccf998151.PNG)
+
+
+![user test](https://user-images.githubusercontent.com/90660755/233220541-72a07e9f-f509-444f-a319-c313861074be.jpeg)
+
+
+![msg test](https://user-images.githubusercontent.com/90660755/233220623-15716bb7-2d60-4375-934b-718324998522.jpeg)
+
 
 ## Hospedagem
 
