@@ -10,7 +10,7 @@ Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). A
 
 A arquitetura de um aplicativo de mensagens distribuído pode ser complexa, mas geralmente segue um modelo cliente-servidor. No modelo deste projeto o servidor fornece serviços para os clientes, através da troca de mensagens, que pode ser realizada por intermédio do aplicativo móvel ou desktop, desde que conectados à Internet. Segue abaixo os diagramas Web e Mobile respectivamente.
 
-![DC Web](https://user-images.githubusercontent.com/90533356/229646530-d24e2aad-2c41-41fe-85e5-057268055bd9.jpg)
+![DC Web](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/blob/Mariane/docs/img/diagrama.png?raw=true)
 
 
 ## Processos e suas Respectivas Atividades
@@ -56,22 +56,22 @@ Abaixo está o modelo do fluxo de mensagens entre os usuarios A e B e suas deter
 
 ## Modelo Físico
 
-Segue abaixo o modelo físico contendo o  Json de criação da tabela "usuário" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+Segue abaixo o modelo físico contendo o  JSON de criação da tabela "usuário" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
 
 ![modelo fisico usuario](https://user-images.githubusercontent.com/90660755/232941488-fcbfab16-4e3c-4182-ac4f-bde4fee740d4.PNG)
 
-Segue abaixo o modelo físico contendo  o  Json  de criação da tabela "mensagem" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "mensagem" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
 
 ![modelo fisico mensagem](https://user-images.githubusercontent.com/90660755/232941799-11bd805a-3992-4bf8-8f18-33fe971ed987.PNG)
 
-Segue abaixo o modelo físico contendo  o  Json  de criação da tabela "conversa" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "conversa" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
 
 ![modelo fisico conversa](https://user-images.githubusercontent.com/90660755/232941869-1616c6c6-b625-4e76-ae5f-a425cb687ce0.PNG)
 
 ## Tecnologias Utilizadas
 
-As linguagens de programação Javascript, React Native e Node.js foram escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
-Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os desenvolvedores já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "chatter"
+A linguagem de programação Javascript, atrelado a biblioteca React Native e React JS, juntamente com o framework e Node.js foi escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
+Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os integrantes já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "Chatter".
 
 | Linguagem         | Aplicação       |
 |------------------|-----------------|
@@ -79,6 +79,7 @@ Outro motivo para a escolha dessas linguagens de programação foi a experiênci
 | Node.js          | WebAPI Rest     |
 | Javascript       | FrontEnd WEB    |
 | React Native     | FrontEnd Mobile |
+| React JS          | FrontEnd Mobile |
 | VSCode           | Software de Código |
 | Mongo DB        | Banco de Dados |
 | Postman         | Teste de API    |
