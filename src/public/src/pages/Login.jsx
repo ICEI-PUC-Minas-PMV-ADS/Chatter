@@ -57,7 +57,6 @@ export default function Login() {
       }
     
       if (data.status === true) {     
-        console.log( data.user); 
         localStorage.setItem(
           process.env.REACT_APP_LOCALHOST_KEY,
           JSON.stringify(data.user)
