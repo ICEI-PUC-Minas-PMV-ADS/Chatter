@@ -41,7 +41,9 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 ## Planejamento de Tarefas
 
-✨ <a href="https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM"> **Confira aqui nosso Backlog e planos de Sprints.**</a>
+✨ <a href="https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM"> **Confira aqui nosso Backlog e Planos de Sprints.**</a>
+
+✨ <a href="https://www.notion.so/sabrinagomes/GRUPO-3-Eixo-4-Turma-2-150f5d61c0c64d3b9d4a6d4fd995fcd2"> **Notion - Nossas Anotações, Agenda e Planejamentos.**</a>
 
 # Documentação
 
