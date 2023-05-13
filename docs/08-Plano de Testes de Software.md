@@ -31,12 +31,12 @@ Após a instalação do node.js, é preciso abrir o terminal e acessar a pasta o
 
 ## Executando os testes
 
-Segue pontos iportantes para execução do teste realizado:
+Para realizar a execução dos testes, é importante seguir as seguintes instruções:
 
-1. Certifique-se de que o servidor não esteja em execução.
+- Certifique-se de que o servidor não esteja em execução antes de executar os testes. Isso garantirá que os testes sejam executados corretamente, sem interferências externas.
 
-2. Na pasta raiz do projeto, execute o comando npm run test.
+- Na pasta raiz do projeto, execute o comando "npm run test" no terminal. Esse comando irá executar todos os testes presentes na pasta "tests" e exibirá os resultados no terminal.
 
-3. O Jest executará os testes e exibirá os resultados no terminal.
+- Os testes de integração foram armazenados na pasta *"tests"*. Cada arquivo de teste tem o sufixo ".test.js" para que o Jest possa reconhecê-los e executá-los corretamente.
 
-4. Os testes de integração são armazenados na pasta  "__tests__". Cada arquivo de teste deve ter o sufixo .test.js.
+Seguindo essas instruções, será possível executar os testes de forma eficiente e garantir a qualidade da aplicação.
