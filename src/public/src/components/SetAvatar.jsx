@@ -30,7 +30,6 @@ export default function SetAvatar() {
   const setProfilePicture = async () => {
     if (selectedAvatar === undefined) {
       toast.error("Por favor selecione um avatar!", toastOptions);
-      console.log('aqui')
     } else {
       const user = await JSON.parse(
         localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
