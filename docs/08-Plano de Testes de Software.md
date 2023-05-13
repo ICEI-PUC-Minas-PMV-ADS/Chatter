@@ -5,33 +5,24 @@ Aqui, vamos descrever como fizemos para testar a nossa aplicação de mensageria
 
 Vale lembrar, que a aplicação de mensageria consiste em um servidor que recebe mensagens de usuários e as envia para outros usuários. A aplicação usa um banco de dados para armazenar as mensagens enviadas e recebidas.
 
-<div align="center">
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90533356/ee870eee-f902-429a-afc3-2dd334155ad7)
-
-</div>
  
 ## Ferramentas de Testes
 
-### Pré-requisitos
+Após a análise do que já existia no mercado foram escolhidas as seguintes ferramentas/frameworks open source para proceder à automatização de testes de APIs. 
 
-Para executar os testes de integração, nos certificamos de ter as seguintes ferramentas instaladas:
+<div align="center">
 
-- Node.js
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90533356/74f50361-9b31-43a8-b8f1-c369a190879a)
+ 
+ </div>
 
-- NPM
+Para se proceder á instalação, primeiramente tem que se instalar o node.js na máquina pretendida, para isso basta fazer o download do executável.
 
-- MongoDB
+De seguida, através da linha de comandos aceder a uma pasta onde se queira guardar os testes e executar os seguintes comandos:
 
-Para criar o nosso plano de testes utilizando Node.js como linguagem e Jest como a ferramenta para execução dos testes, seguimos as seguintes etapas:
+- npm init — para inicializarmos a utilização do npm e definirmos algumas informações sobre os testes/projeto, nomeadamente a parte em que definimos qual o comando que vai fazer com que corram os testes, neste caso colocou-se “test”. Após a execução deste comando vamos ter na pasta selecionada um ficheiro cujo nome é “package.json” que serve para guardar algumas definições, como scritps de execução de comandos, caminhos de diretorias onde são guardados outputs dos resultados dos testes, dependências, etc;
 
-1. Identificamos as funcionalidades fundamentais do sistema: antes de começar a escrever testes, identificamos as funcionalidades fundamentais do sistem  a que precisam ser testadas. Incluindo operações relacionadas ao banco de dados e API.
-
-2. Definimos os cenários de teste: para cada funcionalidade fundamental identificada, definimos cenários de teste que cobrem possíveis situações de uso. Por exemplo, 
-
-3. Escrevemos os testes: usando a sintaxe do Jest, escrevemos os testes para cada cenário de teste definido na etapa anterior. Testando tanto os casos de sucesso quanto os casos de falha.
-
-4. Executamos os testes: executamos todos os testes escritos para garantir que o sistema está funcionando conforme o esperado, nos certificando de que todos os testes passam e que nenhum erro é lançado.
+- npm install jest supertest — para instalarmos os packages do jest e supertest.
 
 ## Executando os testes
 
