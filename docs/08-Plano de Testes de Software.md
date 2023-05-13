@@ -35,5 +35,3 @@ Segue pontos iportantes para execução do teste realizado:
 3. O Jest executará os testes e exibirá os resultados no terminal.
 
 4. Os testes de integração são armazenados na pasta  "__tests__". Cada arquivo de teste deve ter o sufixo .test.js.
-
-Segue exemplo de teste realizado:
