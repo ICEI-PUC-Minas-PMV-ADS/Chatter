@@ -8,12 +8,10 @@ Iremos utilizar o Kafka Apache para enviar e receber mensagens de texto (SMS). A
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+A arquitetura de um aplicativo de mensagens distribuído pode ser complexa, mas geralmente segue um modelo cliente-servidor. No modelo deste projeto o servidor fornece serviços para os clientes, através da troca de mensagens, que pode ser realizada por intermédio do aplicativo móvel ou desktop, desde que conectados à Internet. Segue abaixo os diagramas Web e Mobile respectivamente.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+![DC Web](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/blob/Mariane/docs/img/diagrama.png?raw=true)
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Processos e suas Respectivas Atividades
 
@@ -56,31 +54,143 @@ Abaixo está o modelo do fluxo de mensagens entre os usuarios A e B e suas deter
 ![modelo BPMN](https://user-images.githubusercontent.com/75712250/222975679-7836974f-0df3-48d2-94b0-205221c46422.png)
 
 
-## Modelo ER
-
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
-## Esquema Relacional
-
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
-
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Segue abaixo o modelo físico contendo o  JSON de criação da tabela "usuário" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+
+![modelo fisico usuario](https://user-images.githubusercontent.com/90660755/232941488-fcbfab16-4e3c-4182-ac4f-bde4fee740d4.PNG)
+
+Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "mensagem" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+
+![modelo fisico mensagem](https://user-images.githubusercontent.com/90660755/232941799-11bd805a-3992-4bf8-8f18-33fe971ed987.PNG)
+
+Segue abaixo o modelo físico contendo  o  JSON  de criação da tabela "conversa" do banco de dados. Este modelo inclui a definição dos campos que farão parte da tabela, bem como as restrições de integridade necessárias.
+
+![modelo fisico conversa](https://user-images.githubusercontent.com/90660755/232941869-1616c6c6-b625-4e76-ae5f-a425cb687ce0.PNG)
+
+### Metas e Indicadores
+
+A BPMN utiliza o seu conjunto de elementos gráficos para representar aquelas atividades de trabalho, agrupadas em processos, para indicar como eles são executados:
+
+
+![image](https://user-images.githubusercontent.com/78277341/194154347-06506bbc-662f-43fc-a011-3124266b0553.png)
+
+Diante disso, o grupo estabeleceu as seguintes metas e indicadores nesse processo de desenvolvimento:
+
+1. Separar regras de negócio das aplicações - **visibilidade e processos mais inteligentes**.
+2. Automatizar as regras - **Consistência**
+3. Gerenciar um repositório de regras - **Regras como ativos**.
+4. Expressar regras de negócio em termos que as pessoas de negócio compreendam - **Visibilidade dos modelos de decisão**
+5. Estimular a colaboração entre pessoas de negócio e TI - **Agilidade**
+
+Como meta de negócio, sabe-se que o cliente utilizará o produto com o fim de otimizar o tempo.
+Não faz sentido, portanto, que ele gaste muito tempo configurando o serviço. Assim, o grupo estabeleceu que o procedimento de instalar, logar, ver tutorial de uso, determinar tempo e alarme, não deverá ultrapassar 10 minutos.
+
+O objetivo é criar um produto simples e rápido, onde o tempo de instalação e configurações de uso fiquem dentro da margem de aceite (MA) estabelecida pela meta.
+
+
+| Classificação <br/>de Indicadores | Métrica      |
+| ------------- |--------------|
+| Viável  | Dentro da Meta |
+| Aceitável  | Meta + MA |
+| Inviável  | Acima de Meta + MA |
+
+| Evento                    | Descrição                                                        | Meta       | Margem de Aceite (MA) |
+|---------------------------|------------------------------------------------------------------|------------|-----------------------|
+| Instalação                | Período entre a compra do produto até a completa instalação (**) | 5 minutos  | 3 minutos             |
+| Configuração              | Acesso ao app, configurações de conta e configurações de uso      | 5 minutos | 3 minutos             |
+| Instalação e Configuração | até 10 minutos                                                   | 10 minutos | 3 minutos             |
+
+
+| Metas de Negócio | Meta      |      MA      | 
+| ------------- |--------------|--------------|      
+| downloads  | aumento de 35% em downloads no app |    3.0   |
+| receita  | aumento de 25% na receita de anúncios no app |     3.0  |
+| retenção  | nenhuma redução na retenção |   3.0    |
+
+Para acompanhar as metas de negócio, o grupo irá integrar o app ao Google Analytics para Firebase, que permite criar um registro quando os usuários abrem o app. O núcleo do Firebase é o Google Analytics, uma solução de análise ilimitada disponível sem custos financeiros. O Analytics se integra a recursos do Firebase e oferece geração ilimitada de relatórios para até 500 eventos distintos que podem ser definidos usando o SDK do Firebase. Com os relatórios do Analytics, o grupo poderá compreender a compenhar claramente o comportamento dos usuários, podendo assim, obter melhores decisões sobre otimizações de desempenho do app.
+
+![image](https://user-images.githubusercontent.com/78277341/194724407-77a13510-ee1a-4743-baae-b1dc860d8f09.png)
+
+
+Para alcançar as metas, o grupo utilizará o método **_SMART_**, estabelecendo-se 5 indicadores de desempenho:
+
+![image](https://user-images.githubusercontent.com/78277341/194154472-573a0947-e7ed-41dc-b421-821696eb8017.png)
+
+1. **Specific/Específico** = Projeto completo até a data 07/12/2022. Utilização do aplicativo em 10 minutos pelo usuário.
+
+2. **Measurable/Mensurável** = em quanto tempo o resultado deve ser alcançado alcançado? Em 3 meses.
+
+3. **Attainable/Atingível** = considerando a capacidade produtiva dos membros do grupo, é viável a construção de um pomodoro cuja utilização e configuração para uso, não ultrapasse 10 minutos até a data final da conclusão do projeto.
+
+4. **Relevante/Relevant** = a meta é importante pois o serviço está relacionado à administração de tempo e produtividade. Caso o produto atrase o usuário em seus estudos ou tarefas, o produto torna-se completamente inútil. É importante que os membros estabeleçam funcionalidades simples e de fácil usuabilidade para que o principal objetivo do cliente seja atingido: não disperdiçar tempo.
+
+5. **Time Base** = Os membros do grupo deverão ser consultados sobre os prazos de cada etapa do processo, de modo que o cronograma seja definido de forma conjunta entre todos os envolvidos. Cada atividade deverá constar o nome do responsável e data de conclusão.
+
+As etiquetas SMART são definidas no momento em que as atividades são criadas e distribuídas no backlog:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/assets/78277341/a70a64b0-dbe5-4f75-8f0a-37884732684a)
+
+A figura a seguir mostra uma visão geral e atual do método SMART no backlog do projeto:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/assets/78277341/d07c752c-f501-4a47-88d9-8d53aa9bb566)
+
+Para acompanhar o custo e a dificuldade de cada atividade desenvolvida no projeto, foi criado também 3 indicadores de medida: Difícil, Média e Fácil.
+
+![image](https://user-images.githubusercontent.com/78277341/194154763-cbbc3d01-b14c-477d-b4c6-75a6c163b7db.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/assets/78277341/131d21d7-c690-4d82-81b5-d9a4873286b7)
+Assim, é possível visualizar as tarefas que irão requerer maior atenção e maior gasto de tempo, servindo inclusive de parâmetro para futuras medições ou atualizações de processos existêntes. Outra vantagem, é a possibilidade de se visualizar possível excesso ao atribuir tarefas à um determinado membro, de modo a distribuir as atividades de forma mais justa e eficiênte de acordo com o grau de dificuldade, sem sobrecarregar os integrantes.
+
+
+
+
+### Quadro Visual Atual de Gestão de Trabalho
+Conforme estabelecido na "Figura Processo de Desenvolvimento", após cada integrante chamar uma atividade, ele realizará também o registro do andamento e os indicadores já demonstrados.
+A figura a seguir, demonstra o atual quadro de divisão de tarefas, conforme a terceira etapa do projeto. O acompanhamento dinâmico desse quadro, pode ser acessado em nosso Planner [aqui](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM) (_é necessário está logado em sua conta Microsoft_).
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/assets/78277341/253d4c89-c835-48ab-a7ca-4f3dddcf0c28)
+
+Na mesma ferramenta, podemos ainda visualizar o  gráfico geral do controle de desempenho dos integrantes:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/assets/78277341/e351e779-8c6e-4b68-a89f-0ad8852e9d79)
+
+
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+A linguagem de programação Javascript, atrelado a biblioteca React Native e React JS, juntamente com o framework e Node.js foi escolhidas para a aplicação por dois motivos. Primeiro, essas tecnologias são altamente escaláveis e permitem que a aplicação suporte muitos usuários simultâneos.
+Outro motivo para a escolha dessas linguagens de programação foi a experiência do grupo de desenvolvimento com elas. Como os integrantes já possuíam habilidades prévias com Javascript, React Native e Node.js, foi mais eficiente para eles implementar essas tecnologias no app "Chatter".
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+| Linguagem         | Aplicação       |
+|------------------|-----------------|
+| Node.js          | BackEnd         |
+| Node.js          | WebAPI Rest     |
+| Javascript       | FrontEnd WEB    |
+| React Native     | FrontEnd Mobile |
+| React JS          | FrontEnd Mobile |
+| VSCode           | Software de Código |
+| Mongo DB        | Banco de Dados |
+| Postman         | Teste de API    |
+
+![chatter aplicação](https://user-images.githubusercontent.com/90660755/232940106-ebbcb65b-d8f8-4753-ae6f-3a005eb4ad76.png)
+
+## Documentação da Implementação da WEB API Rest:
+
+| Operação | Chamada HTTP |
+|----------|--------------|
+| Read     | GET          |
+| Create   | POST         |
+| Create   | POST         |
+| Create   | POST         |
+
+![test register](https://user-images.githubusercontent.com/90660755/233220152-99ca67f2-1c1d-4cd6-abc2-324ccf998151.PNG)
+
+
+![user test](https://user-images.githubusercontent.com/90660755/233220541-72a07e9f-f509-444f-a319-c313861074be.jpeg)
+
+
+![msg test](https://user-images.githubusercontent.com/90660755/233220623-15716bb7-2d60-4375-934b-718324998522.jpeg)
+
 
 ## Hospedagem
 
