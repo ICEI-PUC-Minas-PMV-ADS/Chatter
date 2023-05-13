@@ -1,6 +1,6 @@
 # Plano de Testes de Software
 
-O objetivo dos testes foi garantir que todos os componentes do frontend e do backend estejaão funcionando corretamente. Para realizar esses testes, a equipe utilizou a biblioteca de testes Jest, um framework de teste de JavaScript.
+O objetivo dos testes foi garantir que todos os componentes do frontend e do backend estão funcionando corretamente. Para realizar esses testes, a equipe utilizou a biblioteca de testes Jest, um framework de teste de JavaScript.
 
 É importante destacar que a aplicação de mensageria é composta por um servidor que recebe mensagens de usuários e as envia para outros usuários. Além disso, a aplicação utiliza um banco de dados para armazenar as mensagens enviadas e recebidas.
 
