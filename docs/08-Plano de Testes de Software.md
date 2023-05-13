@@ -9,21 +9,25 @@ Os testes de integração permitram verificar se todos os componentes da aplica�
 
 ## Ferramentas de Testes
 
-Após a análise do que já existia no mercado foram escolhidas as seguintes ferramentas/frameworks open source para proceder à automatização de testes de APIs. 
+Após a análise das opções disponíveis no mercado, a equipe responsável pela automatização de testes de APIs escolheu as seguintes ferramentas e frameworks open source para realizar os testes:
 
 <div align="center">
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90533356/74f50361-9b31-43a8-b8f1-c369a190879a)
  
  </div>
+ 
+ A análise prévia das opções disponíveis no mercado foi fundamental para escolher as ferramentas e frameworks mais adequados para o projeto. Ao avaliar as características e funcionalidades de cada ferramenta, foi possível selecionar as que melhor atendem às necessidades da equipe e da aplicação.
+ 
+ ## Instalação 
 
-Para se proceder á instalação, primeiramente tem que se instalar o node.js na máquina pretendida, para isso basta fazer o download do executável.
+Para realizar a instalação das ferramentas necessárias para executar os testes, é necessário seguir alguns passos. Primeiramente, é preciso instalar o node.js na máquina desejada. Para isso, é possível baixar o executável a partir do site oficial do node.js.
 
-De seguida, através da linha de comandos aceder a uma pasta onde se queira guardar os testes e executar os seguintes comandos:
+Após a instalação do node.js, é preciso abrir o terminal e acessar a pasta onde deseja guardar os testes. Em seguida, deve-se executar os seguintes comandos:
 
-- npm init — para inicializarmos a utilização do npm e definirmos algumas informações sobre os testes/projeto, nomeadamente a parte em que definimos qual o comando que vai fazer com que corram os testes, neste caso colocou-se “test”. Após a execução deste comando vamos ter na pasta selecionada um ficheiro cujo nome é “package.json” que serve para guardar algumas definições, como scritps de execução de comandos, caminhos de diretorias onde são guardados outputs dos resultados dos testes, dependências, etc;
+- npm init: Esse comando serve para inicializar a utilização do npm e definir algumas informações sobre os testes/projeto, como o nome, a descrição, a versão e o comando que vai fazer com que os testes sejam executados. Nesse caso, o comando que vai executar os testes foi definido como "test". Ao final da execução desse comando, um arquivo chamado "package.json" será criado na pasta selecionada. Esse arquivo serve para guardar algumas definições, como os scripts de execução de comandos, os caminhos de diretórios onde são guardados os outputs dos resultados dos testes, as dependências, entre outros.
 
-- npm install jest supertest — para instalarmos os packages do jest e supertest.
+- npm install jest supertest: Esse comando serve para instalar os pacotes necessários para a execução dos testes, que são o Jest e o Supertest. O Jest é um framework de teste para JavaScript e o Supertest é uma biblioteca para testar APIs.
 
 ## Executando os testes
 
