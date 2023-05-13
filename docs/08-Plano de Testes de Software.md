@@ -19,6 +19,20 @@ Após a análise das opções disponíveis no mercado, a equipe responsável pel
  
  A análise prévia das opções disponíveis no mercado foi fundamental para escolher as ferramentas e frameworks mais adequados para o projeto. Ao avaliar as características e funcionalidades de cada ferramenta, foi possível selecionar as que melhor atendem às necessidades da equipe e da aplicação.
  
+ ## Jest
+ 
+Jest é um framework de teste de JavaScript que é amplamente utilizado para testes unitários, de integração e end-to-end. Ele fornece uma ampla gama de recursos, como testes assíncronos, testes em tempo real, suporte a mock, entre outros recursos que o tornam uma ferramenta poderosa para testes em JavaScript.
+
+O Jest é especialmente popular em projetos que utilizam o React, mas pode ser utilizado em qualquer projeto JavaScript, pois é fácil de configurar e usar. Ele é executado em Node.js e é conhecido por sua velocidade e eficiência na execução de testes. Além disso, o Jest é uma ferramenta de código aberto, mantida pelo Facebook, e tem uma comunidade ativa de desenvolvedores que contribuem para o seu desenvolvimento e evolução.
+ 
+ ## Supertest
+ 
+ O Supertest é uma biblioteca de testes de integração para aplicativos Node.js que permite fazer requisições HTTP em um servidor e testar sua resposta. Ele é frequentemente utilizado em conjunto com frameworks de teste como o Mocha, Jasmine e o Jest.
+
+Com o Supertest, é possível realizar testes de integração de forma simples e eficiente, enviando requisições HTTP para a API e verificando as respostas recebidas, sem a necessidade de iniciar um servidor separado para os testes.
+
+Entre os recursos oferecidos pelo Supertest estão a possibilidade de enviar diferentes tipos de requisições, como GET, POST, PUT e DELETE, e a capacidade de enviar parâmetros de consulta e corpo da solicitação. Além disso, é possível verificar a resposta recebida do servidor, incluindo o status da resposta, cabeçalhos e corpo da resposta.
+ 
  ## Instalação 
 
 Para realizar a instalação das ferramentas necessárias para executar os testes, é necessário seguir alguns passos. Primeiramente, é preciso instalar o node.js na máquina desejada. Para isso, é possível baixar o executável a partir do site oficial do node.js.
