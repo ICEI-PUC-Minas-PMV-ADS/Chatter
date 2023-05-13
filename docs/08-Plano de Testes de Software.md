@@ -1,11 +1,12 @@
 # Plano de Testes de Software
 
+O objetivo dos testes foi garantir que todos os componentes do frontend e do backend estejaão funcionando corretamente. Para realizar esses testes, a equipe utilizou a biblioteca de testes Jest, um framework de teste de JavaScript.
 
-Aqui, vamos descrever como fizemos para testar a nossa aplicação de mensageria com testes de integração usando a biblioteca de testes Jest. A aplicação de mensagens inclui testes de integração para garantir que os componentes do frontend e do backend estejam funcionando corretamente. Os testes são escritos usando o Jest, um framework de teste de JavaScript.
+É importante destacar que a aplicação de mensageria é composta por um servidor que recebe mensagens de usuários e as envia para outros usuários. Além disso, a aplicação utiliza um banco de dados para armazenar as mensagens enviadas e recebidas.
 
-Vale lembrar, que a aplicação de mensageria consiste em um servidor que recebe mensagens de usuários e as envia para outros usuários. A aplicação usa um banco de dados para armazenar as mensagens enviadas e recebidas.
+Os testes de integração permitram verificar se todos os componentes da aplicação estão funcionando em conjunto de forma adequada. Isso significa que, além de testar as funcionalidades de cada componente individualmente, foi possível testar a comunicação entre eles e avaliar a integração como um todo.
 
- 
+
 ## Ferramentas de Testes
 
 Após a análise do que já existia no mercado foram escolhidas as seguintes ferramentas/frameworks open source para proceder à automatização de testes de APIs. 
