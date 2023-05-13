@@ -31,7 +31,7 @@ describe("POST /api/auth/register", () => {
         expect(res.body.user.username).toBe(username);
         expect(res.body.user.email).toBe(email);
       });
-  }, 10000);
+  });
 
   it("should return user already in use", async () => {
     await request(app)
@@ -46,7 +46,7 @@ describe("POST /api/auth/register", () => {
         expect(res.body.status).toBe(false);
         expect(res.body.msg).toBe('Usuario já esta sendo utilizado!');
       });
-  }, 10000);
+  });
 });
 
 describe("POST /api/auth/login/:id", () => {

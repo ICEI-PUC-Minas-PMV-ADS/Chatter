@@ -23,7 +23,7 @@ describe("POST /api/messages/addmsg", () => {
       .then((res) => {
         expect(res.body.msg).toBe("Message added successfully.");
       });
-  }, 10000);
+  });
 });
 
 describe("GET /api/messages/getmsg", () => {
@@ -42,5 +42,5 @@ describe("GET /api/messages/getmsg", () => {
         expect(res.body[0].fromSelf).toBe(true);
         expect(res.body[0].message).toBe("This is a test message");
       });
-  }, 10000);
+  });
 });
