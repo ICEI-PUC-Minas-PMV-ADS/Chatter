@@ -17,6 +17,32 @@
 
 ![auth test js3](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90660755/cc822b3c-04ac-41c5-9021-2bf9795610f0)
 
+| CT-02 | Enviar mensagens |
+| --- | --- |
+| Requisito Associado | RF-002 |
+| Descrição | O teste consiste em verificar se é possível enviar mensagens de texto, imagens, áudio e vídeo para outros usuários na aplicação. |
+| Passos | 
+| 1. Abrir a página de mensagens |
+| 2. Selecionar o contato para o qual deseja enviar a mensagem |
+| 3. Escrever a mensagem ou selecionar o arquivo a ser enviado |
+| 4. Clicar no botão "Enviar" |
+| 5. Verificar se a mensagem foi enviada com sucesso e recebida pelo destinatário |
+| Resultado Esperado | O usuário deve ser capaz de enviar mensagens de texto, imagens, áudio e vídeo para outros usuários com sucesso e a mensagem deve ser recebida pelo destinatário. |
+
+![menu test js](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90660755/868941cd-89ad-4b0d-8e8e-7285aeea9b9d)
+
+| CT-03 | Verificar cadastro de novos usuários no Banco de Dados |
+| --- | --- |
+| Descrição | O teste consiste em verificar se o Banco de Dados está realizando o cadastro de novos usuários. |
+| Passos | 
+| 1. Cadastrar um novo usuário na aplicação |
+| 2. Acessar o Banco de Dados da aplicação |
+| 3. Verificar se o usuário cadastrado foi adicionado ao Banco de Dados |
+| Resultado Esperado | O usuário cadastrado deve ser adicionado corretamente ao Banco de Dados da aplicação. |
+
+![db_test js](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90660755/d6328592-4445-402c-8710-eb3240de7eb3)
+
+
 
  
 
