@@ -1,30 +1,10 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require('mongoose');
-mongoose.set('strictQuery', false);
-const authRoutes = require("./routes/auth");
-const messageRoutes = require("./routes/messages");
-const app = express();
-const socket = require("socket.io");
 require("dotenv").config();
 
-app.use(cors());
-app.use(express.json());
+require("./db.js");
 
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("DB Connetion Successfull");
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+const app = require("./app.js");
 
-app.use("/api/auth", authRoutes);
-app.use("/api/messages", messageRoutes);
+const socket = require("socket.io");
 
 const server = app.listen(process.env.PORT, () =>
   console.log(`Server started on ${process.env.PORT}`)
