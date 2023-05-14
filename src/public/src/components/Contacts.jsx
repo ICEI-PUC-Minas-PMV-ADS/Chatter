@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/chatterlet.png";
 import Logout from "./Logout";
 import MessagePopup from "./MessagePopup.jsx";
 export default function Contacts({ contacts, changeChat }) {
@@ -23,7 +23,7 @@ export default function Contacts({ contacts, changeChat }) {
       {currentUserImage && currentUserImage && (
         <Container>
           <div className="brand">
-            <h3>Conversas</h3>
+            <img className="logo" src={Logo} alt="logo" />
             <Logout />  
           </div>
           <div className="contacts">
@@ -72,6 +72,7 @@ const Container = styled.div`
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
   background-color: #c8b7e7;
+  border-radius: 10px 0 0 10px;
   .brand {
     display: flex;
     align-items: center;
@@ -80,9 +81,8 @@ const Container = styled.div`
     img {
       height: 2rem;
     }
-    h3 {
-      color: #231c27da;
-      text-transform: uppercase;
+    .logo{
+      height:2.5em;
     }
   }
   .contacts {
@@ -92,15 +92,15 @@ const Container = styled.div`
     overflow: auto;
     gap: 0.8rem;
     &::-webkit-scrollbar {
-      width: 0.2rem;
+      width: 0.5rem;
       &-thumb {
-        background-color: #3f363634;
+        background-color: #B2A8B8;
         width: 0.1rem;
         border-radius: 1rem;
       }
     }
     .contact {
-      background-color: #6d3e7537;
+      background-color: #BDA0D3;
       min-height: 5rem;
       cursor: pointer;
       width: 90%;
@@ -117,21 +117,30 @@ const Container = styled.div`
       }
       .username {
         h3 {
-          color: #efecf1;
+          color: #FEF7FF;
         }
+      }
+      :hover{
+        background-color: #00BCD480;
       }
     }
     .selected {
       background-color: #9a86f3;
+      .username {
+        h3 {
+          color: #673AB7;
+        }
+      }
     }
   }
 
   .current-user {
-    background-color: #741a86;
+    background-color: #985BCF;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    border-radius: 0 0 0 10px;
     .avatar {
       img {
         height: 4rem;

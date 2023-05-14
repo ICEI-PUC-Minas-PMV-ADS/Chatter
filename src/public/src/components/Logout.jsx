@@ -28,13 +28,16 @@ const Button = styled.button`
   align-items: flex-end;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #281f52;
+  background-color: #37266B;
   border: none;
   cursor: pointer;
   
   svg {
     font-size: 1.3rem;
     color: #ebe7ff;
+  }
+  :hover{
+    background-color: #FF976B;
   }
 `;
 
