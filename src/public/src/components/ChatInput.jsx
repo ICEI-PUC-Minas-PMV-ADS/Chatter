@@ -52,8 +52,9 @@ const Container = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: 5% 95%;
-  background-color: #250e35;
+  background-color: #a37cb4d2;
   padding: 0 2rem;
+  border-radius: 0 0 10px 0;
   @media screen and (min-width: 720px) and (max-width: 1080px) {
     padding: 0 1rem;
     gap: 1rem;
@@ -67,20 +68,23 @@ const Container = styled.div`
       position: relative;
       svg {
         font-size: 1.5rem;
-        color: #ffff00c8;
+        color: #FEF7FF;
         cursor: pointer;
+        :hover{
+          color: #673AB7 ;
+        }
       }
       .emoji-picker-react {
         position: absolute;
         top: -350px;
-        background-color: #080420;
-        box-shadow: 0 5px 10px #9a86f3;
-        border-color: #9a86f3;
+        background-color: #37266B;
+        box-shadow: 0 5px 10px #37266B;
+        border: #37266B;
         .emoji-scroll-wrapper::-webkit-scrollbar {
           background-color: #080420;
           width: 5px;
           &-thumb {
-            background-color: #9a86f3;
+            background-color: #F1ADFF;
           }
         }
         .emoji-categories {
@@ -89,11 +93,11 @@ const Container = styled.div`
           }
         }
         .emoji-search {
-          background-color: transparent;
+          background-color: #FEF7FF30;
           border-color: #9a86f3;
         }
         .emoji-group:before {
-          background-color: #080420;
+          background-color: #37266B;
         }
       }
     }
@@ -109,7 +113,7 @@ const Container = styled.div`
       width: 90%;
       height: 60%;
       background-color: transparent;
-      color: white;
+      color: #4C4452;
       border: none;
       padding-left: 1rem;
       font-size: 1.2rem;
@@ -122,18 +126,21 @@ const Container = styled.div`
       }
     }
     button {
-      padding: 0.3rem 2rem;
+      padding: 0.3rem 1rem;
       border-radius: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #9a86f3;
+      background-color: #6F35A5;
       border: none;
       @media screen and (min-width: 720px) and (max-width: 1080px) {
-        padding: 0.3rem 1rem;
+        padding: 0.3rem 0.6rem;
         svg {
           font-size: 1rem;
         }
+      :hover{
+        background-color: #62BAAC;
+      }
       }
       svg {
         font-size: 2rem;

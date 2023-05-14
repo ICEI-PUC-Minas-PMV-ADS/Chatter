@@ -15,10 +15,10 @@ export default function Welcome() {
     <Container>
       <img src={Robot} alt="" />
       <h1>
-        Bem vindo, <span>{userName}!</span>
+        Olá, <span>{userName}!</span>
       </h1>
       <br></br>
-      <h3>Selecione uma conversa para inicar</h3>
+      <h3>Selecione uma conversa para iniciar</h3>
     </Container>
   );
 }
@@ -29,6 +29,9 @@ const Container = styled.div`
   align-items: center;
   color: #eee6e6;
   flex-direction: column;
+  h1, h3{
+    color: #37266B ;
+  }
   img {
     height: 20rem;
   }

@@ -69,15 +69,17 @@ const Container = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #4e2e49ba;
+  background-color: #4C4452;
   .container {
     height: 85vh;
     width: 85vw;
     background-color: #a37cb4d2;
     display: grid;
     grid-template-columns: 25% 75%;
+    border-radius: 10px;
     @media screen and (min-width: 720px) and (max-width: 1080px) {
       grid-template-columns: 35% 65%;
+      border-radius: 10px;
     }
   }
 `;
