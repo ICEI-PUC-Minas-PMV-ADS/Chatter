@@ -48,4 +48,7 @@
 
 ## Avaliação
 
-Através dos resultados demonstrados no Prompt de Comando pode-se observar êxito ao realizar os testes de integração seguindo o que foi apontado no plano de testes de software.
+Os resultados obtidos no Prompt de Comando indicam que os testes de integração foram bem-sucedidos, seguindo o plano de testes de software proposto.
+
+![avaliação](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90660755/9de7b812-eab9-4b26-8466-d157d08f4c9a)
+
