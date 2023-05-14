@@ -47,6 +47,7 @@ export default function ChatContainer({ currentChat, socket }) {
       from: data._id,
       to: currentChat._id,
       message: msg,
+      read: false,
     });
 
     const msgs = [...messages];
