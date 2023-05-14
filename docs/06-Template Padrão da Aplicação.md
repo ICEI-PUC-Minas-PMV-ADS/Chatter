@@ -13,7 +13,8 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ![login](img/login.png)
 ![criar](img/criar.png)
-![image](img/image.png)
+![chat](img/chat.png)
+![chat2](img/chat2.png)
 
 ### App
 
