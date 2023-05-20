@@ -1,37 +1,56 @@
 # Plano de Testes de Software
 
+O objetivo dos testes foi garantir que todos os componentes do frontend e do backend estão funcionando corretamente. Para realizar esses testes, a equipe utilizou a biblioteca de testes Jest, um framework de teste de JavaScript.
 
-Aqui, vamos descrever como fizemos para testar a nossa aplicação de mensageria com testes de integração usando a biblioteca de testes Jest. A aplicação de mensagens inclui testes de integração para garantir que os componentes do frontend e do backend estejam funcionando corretamente. Os testes são escritos usando o Jest, um framework de teste de JavaScript.
+É importante destacar que a aplicação de mensageria é composta por um servidor que recebe mensagens de usuários e as envia para outros usuários. Além disso, a aplicação utiliza um banco de dados para armazenar as mensagens enviadas e recebidas.
 
-Vale lembrar, que a aplicação de mensageria consiste em um servidor que recebe mensagens de usuários e as envia para outros usuários. A aplicação usa um banco de dados para armazenar as mensagens enviadas e recebidas.
+Os testes de integração permitram verificar se todos os componentes da aplicação estão funcionando em conjunto de forma adequada. Isso significa que, além de testar as funcionalidades de cada componente individualmente, foi possível testar a comunicação entre eles e avaliar a integração como um todo.
 
- 
+
 ## Ferramentas de Testes
 
-Após a análise do que já existia no mercado foram escolhidas as seguintes ferramentas/frameworks open source para proceder à automatização de testes de APIs. 
+Após a análise das opções disponíveis no mercado, a equipe responsável pela automatização de testes de APIs escolheu as seguintes ferramentas e frameworks open source para realizar os testes:
 
 <div align="center">
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/90533356/74f50361-9b31-43a8-b8f1-c369a190879a)
  
  </div>
+ 
+ A análise prévia das opções disponíveis no mercado foi fundamental para escolher as ferramentas e frameworks mais adequados para o projeto. Ao avaliar as características e funcionalidades de cada ferramenta, foi possível selecionar as que melhor atendem às necessidades da equipe e da aplicação.
+ 
+ ## Jest
+ 
+Jest é um framework de teste de JavaScript que é amplamente utilizado para testes unitários, de integração e end-to-end. Ele fornece uma ampla gama de recursos, como testes assíncronos, testes em tempo real, suporte a mock, entre outros recursos que o tornam uma ferramenta poderosa para testes em JavaScript.
 
-Para se proceder á instalação, primeiramente tem que se instalar o node.js na máquina pretendida, para isso basta fazer o download do executável.
+O Jest é especialmente popular em projetos que utilizam o React, mas pode ser utilizado em qualquer projeto JavaScript, pois é fácil de configurar e usar. Ele é executado em Node.js e é conhecido por sua velocidade e eficiência na execução de testes. Além disso, o Jest é uma ferramenta de código aberto, mantida pelo Facebook, e tem uma comunidade ativa de desenvolvedores que contribuem para o seu desenvolvimento e evolução.
+ 
+ ## Supertest
+ 
+ O Supertest é uma biblioteca de testes de integração para aplicativos Node.js que permite fazer requisições HTTP em um servidor e testar sua resposta. Ele é frequentemente utilizado em conjunto com frameworks de teste como o Mocha, Jasmine e o Jest.
 
-De seguida, através da linha de comandos aceder a uma pasta onde se queira guardar os testes e executar os seguintes comandos:
+Com o Supertest, é possível realizar testes de integração de forma simples e eficiente, enviando requisições HTTP para a API e verificando as respostas recebidas, sem a necessidade de iniciar um servidor separado para os testes.
 
-- npm init — para inicializarmos a utilização do npm e definirmos algumas informações sobre os testes/projeto, nomeadamente a parte em que definimos qual o comando que vai fazer com que corram os testes, neste caso colocou-se “test”. Após a execução deste comando vamos ter na pasta selecionada um ficheiro cujo nome é “package.json” que serve para guardar algumas definições, como scritps de execução de comandos, caminhos de diretorias onde são guardados outputs dos resultados dos testes, dependências, etc;
+Entre os recursos oferecidos pelo Supertest estão a possibilidade de enviar diferentes tipos de requisições, como GET, POST, PUT e DELETE, e a capacidade de enviar parâmetros de consulta e corpo da solicitação. Além disso, é possível verificar a resposta recebida do servidor, incluindo o status da resposta, cabeçalhos e corpo da resposta.
+ 
+ ## Instalação 
 
-- npm install jest supertest — para instalarmos os packages do jest e supertest.
+Para realizar a instalação das ferramentas necessárias para executar os testes, é necessário seguir alguns passos. Primeiramente, é preciso instalar o node.js na máquina desejada. Para isso, é possível baixar o executável a partir do site oficial do node.js.
+
+Após a instalação do node.js, é preciso abrir o terminal e acessar a pasta onde deseja guardar os testes. Em seguida, deve-se executar os seguintes comandos:
+
+- npm init: Esse comando serve para inicializar a utilização do npm e definir algumas informações sobre os testes/projeto, como o nome, a descrição, a versão e o comando que vai fazer com que os testes sejam executados. Nesse caso, o comando que vai executar os testes foi definido como "test". Ao final da execução desse comando, um arquivo chamado "package.json" será criado na pasta selecionada. Esse arquivo serve para guardar algumas definições, como os scripts de execução de comandos, os caminhos de diretórios onde são guardados os outputs dos resultados dos testes, as dependências, entre outros.
+
+- npm install jest supertest: Esse comando serve para instalar os pacotes necessários para a execução dos testes, que são o Jest e o Supertest. O Jest é um framework de teste para JavaScript e o Supertest é uma biblioteca para testar APIs.
 
 ## Executando os testes
 
-Segue pontos iportantes para execução do teste realizado:
+Para realizar a execução dos testes, é importante seguir as seguintes instruções:
 
-1. Certifique-se de que o servidor não esteja em execução.
+- Certifique-se de que o servidor não esteja em execução antes de executar os testes. Isso garantirá que os testes sejam executados corretamente, sem interferências externas.
 
-2. Na pasta raiz do projeto, execute o comando npm run test.
+- Na pasta raiz do projeto, execute o comando "npm run test" no terminal. Esse comando irá executar todos os testes presentes na pasta "tests" e exibirá os resultados no terminal.
 
-3. O Jest executará os testes e exibirá os resultados no terminal.
+- Os testes de integração foram armazenados na pasta *"tests"*. Cada arquivo de teste tem o sufixo ".test.js" para que o Jest possa reconhecê-los e executá-los corretamente.
 
-4. Os testes de integração são armazenados na pasta  "__tests__". Cada arquivo de teste deve ter o sufixo .test.js.
+Seguindo essas instruções, será possível executar os testes de forma eficiente e garantir a qualidade da aplicação.

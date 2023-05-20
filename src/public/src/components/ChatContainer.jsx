@@ -136,7 +136,7 @@ const Container = styled.div`
       }
       .username {
         h3 {
-          color: white;
+          color: #37266B;
         }
       }
     }
@@ -150,7 +150,7 @@ const Container = styled.div`
     &::-webkit-scrollbar {
       width: 0.2rem;
       &-thumb {
-        background-color: #ffffff39;
+        background-color: #FEF7FF;
         width: 0.1rem;
         border-radius: 1rem;
       }
@@ -162,9 +162,9 @@ const Container = styled.div`
         max-width: 40%;
         overflow-wrap: break-word;
         padding: 1rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         border-radius: 1rem;
-        color: #d1d1d1;
+        color: #4C4452;
         @media screen and (min-width: 720px) and (max-width: 1080px) {
           max-width: 70%;
         }
@@ -173,13 +173,13 @@ const Container = styled.div`
     .sended {
       justify-content: flex-end;
       .content {
-        background-color: #5a127783;
+        background-color: #BA93DC;
       }
     }
     .recieved {
       justify-content: flex-start;
       .content {
-        background-color: #928f92b0;
+        background-color: #A0CFD3;
       }
     }
   }
