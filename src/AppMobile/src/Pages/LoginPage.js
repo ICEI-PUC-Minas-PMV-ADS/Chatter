@@ -209,6 +209,7 @@ const styles = StyleSheet.create({
 
 LoginPage.navigationOptions = {
   title: 'LoginPage',
+  headerShown: false,
 }
 
 export default LoginPage;

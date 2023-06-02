@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
 
 SetAvatar.navigationOptions = {
   title: 'SetAvatar',
+  headerShown: false,
 }
 
 export default SetAvatar;
