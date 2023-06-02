@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Testelogin2",
-    "slug": "Testelogin2",
+    "name": "Chatter",
+    "slug": "Chatter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
