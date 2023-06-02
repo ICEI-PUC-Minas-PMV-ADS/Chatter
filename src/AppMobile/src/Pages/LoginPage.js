@@ -23,8 +23,8 @@ const LoginPage = ({ navigation }) => {
   };
 
   const handleSignUp = () => {
-    navigation.navigate('SetAvatar')
-    // Adicione aqui a lógica para criar uma nova conta
+    navigation.navigate('RegisterPage')
+    // add a main page
   };
 
   const colors = ["#00BCD4", "#7870D0", "#8468D0", "#985BCF"];
