@@ -135,7 +135,7 @@ const RegisterPage = ({ navigation }) => {
                   onChangeText={setUsername}
                 />
                 {validationErrors.includes("O nome de usuário deve ter mais de 3 caracteres.") && (
-        <Text style={{ color: "red" }}>O nome de usuário deve ter mais de 3 caracteres.</Text>
+        <Text style={{ padding: 10 ,  color: "#000", backgroundColor: "#FF976B" }}>O nome de usuário deve ter mais de 3 caracteres.</Text>
       )}
               </LinearGradient>
             </View>
@@ -159,7 +159,7 @@ const RegisterPage = ({ navigation }) => {
                   value={email}
                   onChangeText={setEmail}
                 />{validationErrors.includes("Email é obrigatório.") && (
-                  <Text style={{ color: "red" }}>Email é obrigatório.</Text>
+                  <Text style={{ padding: 10 ,  color: "#000", backgroundColor: "#FF976B"}}>Email é obrigatório.</Text>
                 )}
               </LinearGradient>
             </View>
@@ -207,11 +207,11 @@ const RegisterPage = ({ navigation }) => {
                   value={confirmPassword}
                   onChangeText={setConfirmPassword}
                 />{validationErrors.includes("A senha deve ter pelo menos 8 caracteres.") && (
-                  <Text style={{ color: "red" }}>A senha deve ter pelo menos 8 caracteres.</Text>
+                  <Text style={{ padding: 10 ,  color: "#000", backgroundColor: "#FF976B" }}>A senha deve ter pelo menos 8 caracteres.</Text>
                 )}
           
                 {validationErrors.includes("A senha e a senha de confirmação devem ser iguais.") && (
-                  <Text style={{ color: "red" }}>A senha e a senha de confirmação devem ser iguais.</Text>
+                  <Text style={{ padding: 10 ,  color: "#000", backgroundColor: "#FF976B" }}>A senha e a senha de confirmação devem ser iguais.</Text>
                 )}
               </LinearGradient>
             </View>
