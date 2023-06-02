@@ -14,20 +14,34 @@ import { LinearGradient } from "expo-linear-gradient";
 
 const { width, height } = Dimensions.get("screen");
 
-const LoginPage = ({ navigation }) => {
+const RegisterPage = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [buttonColor, setButtonColor] = useState("#f7b731");
+  const [isButtonPressed, setIsButtonPressed] = useState(false);
 
-  const handleLogin = () => {
+
+  const handleRegister = () => {
     // callApi(email, password)
   };
 
-  const handleSignUp = () => {
-    navigation.navigate('RegisterPage')
-    // add a main page
+  const handleSignIn = () => {
+    navigation.navigate('LoginPage')
   };
 
   const colors = ["#00BCD4", "#7870D0", "#8468D0", "#985BCF"];
+
+  const handleButtonPress = () => {
+    setIsButtonPressed(true);
+    setButtonColor("purple");
+
+    setTimeout(() => {
+      setIsButtonPressed(false);
+      setButtonColor("colors");
+      handleRegister();
+      navigation.navigate("SetAvatar");
+    }, 2000);
+  };
 
   return (
     <View
@@ -53,6 +67,10 @@ const LoginPage = ({ navigation }) => {
             }}
             source={require("../../assets/chatter.png")}
           />
+        </View>
+
+        <View>
+        <Text style={{ paddingBottom: 30, paddingHorizontal:70, color: "#37266B", fontSize: 18, fontWeight: "bold"}}>Crie sua conta Chatter!</Text>
         </View>
 
         <KeyboardAvoidingView style={{ width: "100%" }}>
@@ -110,8 +128,8 @@ const LoginPage = ({ navigation }) => {
                 borderRadius: 4,
                 alignItems: "center",
                 justifyContent: "center",
-              }}
-              onPress={handleLogin}
+                }}
+                onPress={handleButtonPress}
             >
               <LinearGradient
                 style={{
@@ -122,7 +140,7 @@ const LoginPage = ({ navigation }) => {
                 }}
                 colors={colors}
               >
-                <Text style={{ color: "#FFF" }}>LOGIN</Text>
+                <Text style={{ color: "#FFF" }}>CRIE SUA CONTA</Text>
               </LinearGradient>
             </TouchableOpacity>
           </View>
@@ -134,44 +152,16 @@ const LoginPage = ({ navigation }) => {
               flexDirection: "row",
             }}
           >
-            <Text style={{}}>NÃO TEM CONTA?</Text>
+            <Text style={{}}>JÁ TEM CONTA?</Text>
             <View style={{ width: 5 }} />
-            <TouchableOpacity onPress={handleSignUp}>
-              <Text style={{ color: "purple" }}>CRIAR CONTA</Text>
+            <TouchableOpacity onPress={handleSignIn}>
+              <Text style={{ color: "purple" }}>FAÇA SEU LOGIN</Text>
             </TouchableOpacity>
           </View>
         </KeyboardAvoidingView>
       </View>
     </View>
   );
-
-  // return (
-  //
-  //     <View style={styles.inputContainer}>
-  //       <TextInput
-  //         style={styles.input}
-  //         placeholder="........."
-  //         value={email}
-  //         onChangeText={setEmail}
-  //       />
-  //       <TextInput
-  //         style={styles.input}
-  //         placeholder="Senha"
-  //         secureTextEntry
-  //         value={password}
-  //         onChangeText={setPassword}
-  //       />
-  //     </View>
-
-  //     <TouchableOpacity style={styles.button} onPress={handleLogin}>
-  //       <Text style={styles.buttonText}>kkkk</Text>
-  //     </TouchableOpacity>
-
-  //     <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-  //       <Text style={styles.buttonText}>Criar Conta</Text>
-  //     </TouchableOpacity>
-  //   </LinearGradient>
-  // );
 };
 
 const styles = StyleSheet.create({
@@ -199,6 +189,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
   },
+
   buttonText: {
     color: "white",
     fontSize: 16,
@@ -207,9 +198,9 @@ const styles = StyleSheet.create({
   },
 });
 
-LoginPage.navigationOptions = {
-  title: 'LoginPage',
+RegisterPage.navigationOptions = {
+  title: 'RegisterPage',
   headerShown: false,
 }
 
-export default LoginPage;
+export default RegisterPage;
