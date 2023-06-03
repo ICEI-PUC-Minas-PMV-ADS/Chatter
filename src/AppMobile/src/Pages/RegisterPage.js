@@ -150,7 +150,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Usuário"
@@ -199,7 +199,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Senha"
@@ -222,7 +222,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Confirme sua Senha"
@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#F5F5F5",
     marginBottom: 10,
     paddingHorizontal: 10,
     borderRadius: 5,
@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
-    color: "white",
+    color: "#F5F5F5",
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",

@@ -75,7 +75,7 @@ const LoginPage = ({ navigation }) => {
               >
                 <TextInput
                   style={{
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                     padding: 10,
                   }}
@@ -98,7 +98,7 @@ const LoginPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Senha"

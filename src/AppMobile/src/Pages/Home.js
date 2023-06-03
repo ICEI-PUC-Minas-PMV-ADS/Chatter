@@ -133,7 +133,7 @@ export default function Home() {
 }
 const modal = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: "#F5F5F5S",
     width: 200,
     right: 5,
     marginTop: 10,
@@ -202,7 +202,7 @@ const chat = StyleSheet.create({
 const navbar = StyleSheet.create({
   container: {
     marginTop: 29,
-    backgroundColor: "#fff",
+    backgroundColor: "#F5F5F5",
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",
