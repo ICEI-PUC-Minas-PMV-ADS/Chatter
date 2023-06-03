@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import { Asset } from "expo-asset";
 import {
   View,
@@ -19,9 +20,13 @@ const LoginPage = ({ navigation }) => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    // callApi(email, password)
-  };
 
+    navigation.navigate('Loading');
+
+    setTimeout(() => {
+      navigation.navigate('Home');
+    }, 1000);
+  };
   const handleSignUp = () => {
     navigation.navigate('RegisterPage')
     // add a main page
