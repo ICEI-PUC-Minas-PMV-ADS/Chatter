@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Asset } from "expo-asset";
 import {
   View,
@@ -9,8 +9,9 @@ import {
   Image,
   Dimensions,
   KeyboardAvoidingView,
-  AsyncStorage,
+  ScrollView,
 } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { LinearGradient } from "expo-linear-gradient";
 import axios from "axios";
 
@@ -22,6 +23,24 @@ const RegisterPage = ({ navigation }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [validationErrors, setValidationErrors] = useState([]);
+
+  useEffect(() => {
+    const checkLoggedIn = async () => {
+      const localhostKey = "env.REACT_APP_LOCALHOST_KEY"; 
+  
+      try {
+        const isLoggedIn = await AsyncStorage.getItem(localhostKey);
+  
+        if (isLoggedIn) {
+          navigate("/");
+        }
+      } catch (error) {
+        console.error("Error checking login status:", error);
+      }
+    };
+  
+    checkLoggedIn();
+  }, []);
 
   const handleValidation = () => {
     const errorMessages = [];
@@ -80,6 +99,10 @@ const RegisterPage = ({ navigation }) => {
   const colors = ["#00BCD4", "#7870D0", "#8468D0", "#985BCF"];
 
   return (
+    <ScrollView
+      contentContainerStyle={{ flexGrow: 1, marginTop: 10 }}
+      keyboardShouldPersistTaps="handled"
+    >
     <View
       style={{
         flex: 1,
@@ -255,6 +278,7 @@ const RegisterPage = ({ navigation }) => {
         </KeyboardAvoidingView>
       </View>
     </View>
+    </ScrollView>
   );
 };
 
