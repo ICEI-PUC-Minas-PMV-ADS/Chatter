@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { Asset } from "expo-asset";
+import { Alert } from 'react-native';
 import {
   View,
   StyleSheet,
@@ -12,20 +13,39 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-
 const { width, height } = Dimensions.get("screen");
 
 const LoginPage = ({ navigation }) => {
-  const [email, setEmail] = useState("");
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
 
+    const loginData = {
+      username: user,
+      password: password,
+    };
+  
+    if (user.trim() === '' || password.trim() === '') {
+     return Alert.alert('Atenção', 'Preencha todos os campos')
+     
+    }
+     
+    axios.post('http://api/auth/login', loginData)
+  .then(response => {
     navigation.navigate('Loading');
 
     setTimeout(() => {
       navigation.navigate('Home');
     }, 1000);
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Lógica para lidar com erros de rede ou da API
+    console.error(error);
+  });
+
+
   };
   const handleSignUp = () => {
     navigation.navigate('RegisterPage')
@@ -80,8 +100,8 @@ const LoginPage = ({ navigation }) => {
                     padding: 10,
                   }}
                   placeholder="Usuário"
-                  value={email}
-                  onChangeText={setEmail}
+                  value={user}
+                  onChangeText={setUser}
                 />
               </LinearGradient>
             </View>
