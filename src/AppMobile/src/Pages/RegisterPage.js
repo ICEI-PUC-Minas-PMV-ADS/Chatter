@@ -65,7 +65,7 @@ const RegisterPage = ({ navigation }) => {
   const handleRegister = async () => {
     if (handleValidation()) {
       try {
-        const response = await axios.post(registerRoute, {
+        const response = await axios.post('http://api/auth/login', {
           username,
           email,
           password,

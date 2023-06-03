@@ -58,7 +58,7 @@ const LoginPage = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: "#F5F5F5",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#F5F5F5",
     marginBottom: 10,
     paddingHorizontal: 10,
     borderRadius: 5,
