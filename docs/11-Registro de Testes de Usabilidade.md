@@ -17,7 +17,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 - Auxiliar usuários a reconhecer, diagnosticar e recuperar erros
 - Ajudar na Documentação
 
-| CT-01              | Criar Conta |
+| CT-01            | Criar Conta |
 
 | Objetivo           |
  Avaliar a usabilidade do processo de criação de conta. |
@@ -109,7 +109,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 
 | CT 05   |  Pesquisar uma conversa    |
 
-**Objetivo do teste:** Verificar se o usuário consegue pesquisar uma conversa específica na aplicação de mensagens distribuída.
+**Objetivo do teste:** Verificar se o usuário consegue pesquisar uma conversa específica na aplicação.
 
 **Etapas do Teste:**
 1. Acessar a aplicação no dispositivo.
