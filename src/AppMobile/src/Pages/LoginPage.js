@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
 import { Alert } from 'react-native';
+import axios from 'axios';
 import {
   View,
   StyleSheet,
@@ -20,7 +20,6 @@ const LoginPage = ({ navigation }) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
-
   const handleLogin = async () => {
 
       const loginData = {
@@ -30,38 +29,22 @@ const LoginPage = ({ navigation }) => {
     if (user.trim() === '' || password.trim() === '') {
      return Alert.alert('Atenção', 'Preencha todos os campos')
 
-    }
-      try {
-          // axios.get(`${apiUrl}/users`)
-          //     .then(response => {
-          //         // Tratar os dados da resposta
-          //         console.log(response.data);
-          //     })
-          //     .catch(error => {
-          //         // Tratar erros
-          //         console.error(error);
-          //     });
+    } 
+  
 
-          axios.post(`${apiUrl}/api/auth/login`, { username: 'kaiquerocc', password: '98328152' })
-              .then(response => {
-                  // Tratar os dados da resposta
-                  console.log(response.data);
-              })
-              .catch(error => {
-                  // Tratar erros
-                  console.error(error);
-              });
-          // fetch('mongodb+srv://chatterapp:123456Chatter@chatter.zkkyu54.mongodb.net/test')
-          //     .then(response => response.json())
-          //     .then(data => {
-          //         // Lógica para lidar com os dados recebidos
-          //         console.log(data);
-          //     })
-          //     .catch(error => {
-          //         // Lógica para lidar com erros de rede ou da requisição
-          //         console.error(error);
-          //     });
-
+        try {
+          const response = await axios.post(apiUrl, '/auth/login', {
+            username: user,
+            password:password,
+          });
+          console.log(response.data);
+          // Faça algo com a resposta recebida
+        } catch (error) {
+          console.error(error);
+          // Trate o erro, se necessário
+        }
+   
+         
 
           // if (response.data) {
           //     // Usuário autenticado com sucesso
@@ -73,10 +56,7 @@ const LoginPage = ({ navigation }) => {
           //     // Usuário inválido ou senha incorreta
           //     Alert.alert('Erro', 'Usuário ou senha incorretos');
           // }
-      } catch (error) {
-          // Lógica para lidar com erros de rede ou da API
-          console.error(error);
-      }
+    
   };
   const handleSignUp = () => {
     navigation.navigate('RegisterPage')
