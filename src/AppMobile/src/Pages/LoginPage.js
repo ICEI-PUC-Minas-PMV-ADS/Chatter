@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import { Asset } from "expo-asset";
 import {
   View,
@@ -19,12 +20,16 @@ const LoginPage = ({ navigation }) => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    // callApi(email, password)
-  };
 
+    navigation.navigate('Loading');
+
+    setTimeout(() => {
+      navigation.navigate('Home');
+    }, 1000);
+  };
   const handleSignUp = () => {
-    navigation.navigate('SetAvatar')
-    // Adicione aqui a lógica para criar uma nova conta
+    navigation.navigate('RegisterPage')
+    // add a main page
   };
 
   const colors = ["#00BCD4", "#7870D0", "#8468D0", "#985BCF"];
