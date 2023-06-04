@@ -17,7 +17,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 - Auxiliar usuários a reconhecer, diagnosticar e recuperar erros
 - Ajudar na Documentação
 
-| CT-01              | Criar Conta |
+| CT-01              | Criação de Conta |
 |--------------------|-------------|
 | Objetivo           | Avaliar a usabilidade do processo de criação de conta. |
 
@@ -44,7 +44,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 | 4/5   |
 
 
-| CT-02              | Realizar Login |
+| CT-02              | Realização de Login |
 |--------------------|-------------|
 | Objetivo           | Avaliar a usabilidade do processo de login |
 
@@ -70,7 +70,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 
 
 
-| CT-03              | Encerrar sessão |
+| CT-03              | Encerramento de sessão |
 |--------------------|-----------------|
 | Objetivo           | Verificar se o usuário consegue se desconectar da conta a qual fez o processo de login. |
 
@@ -92,7 +92,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 | 4/5   |
 
 
-| CT-04               | Enviar e Receber Mensagens |
+| CT-04               | Envio e Recebimento de Mensagens |
 |---------------------|----------------------------|
 | Objetivo            | Verificar se a aplicação permite aos usuários enviar e receber mensagens de forma correta e eficiente. |
 
@@ -122,7 +122,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 | 3/5   |
 
 
-| CT-05               | Pesquisar uma conversa |
+| CT-05               | Pesquisa de conversa |
 |---------------------|------------------------|
 | Objetivo            | Verificar se o usuário consegue pesquisar uma conversa específica na aplicação. |
 
@@ -147,7 +147,7 @@ Foi considerada a inclusividade na paleta de cores, de modo que pessoas com dalt
 | 4/5   |
 
 
-| CT-06               | Uso de Emojis         |
+| CT-06               | Utilização de Emojis |
 |---------------------|-----------------------|
 | Objetivo            | Verificar se a aplicação permite aos usuários enviar e visualizar emojis nas mensagens. |
 
