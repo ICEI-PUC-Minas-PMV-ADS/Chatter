@@ -1,5 +1,5 @@
-require("dotenv").config();
 
+require("dotenv").config();
 require("./db.js");
 
 const app = require("./app.js");

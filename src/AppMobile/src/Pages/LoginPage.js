@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Alert } from 'react-native';
 import axios from 'axios';
-import { Asset } from "expo-asset";
 import {
   View,
   StyleSheet,
@@ -12,20 +12,52 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-
 const { width, height } = Dimensions.get("screen");
 
+const apiUrl = 'http://192.168.0.6:5000'; // Substitua pela URL correta da sua API
+
 const LoginPage = ({ navigation }) => {
-  const [email, setEmail] = useState("");
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
 
-    navigation.navigate('Loading');
+      const loginData = {
+          username: user,
+          password: password,
+      };
+    if (user.trim() === '' || password.trim() === '') {
+     return Alert.alert('Atenção', 'Preencha todos os campos')
 
-    setTimeout(() => {
-      navigation.navigate('Home');
-    }, 1000);
+    } 
+  
+
+        try {
+          const response = await axios.post(apiUrl+'/api/auth/login', {
+            username: user,
+            password:password,
+          });
+          console.log(response.data);
+          // Faça algo com a resposta recebida
+          if (response.data) {
+              // Usuário autenticado com sucesso
+              navigation.navigate('Loading');
+              setTimeout(() => {
+                  navigation.navigate('Home');
+              }, 1000);
+          } else {
+              // Usuário inválido ou senha incorreta
+              Alert.alert('Erro', 'Usuário ou senha incorretos');
+          }
+        } catch (error) {
+          console.error(error);
+          // Trate o erro, se necessário
+        }
+   
+         
+
+          
+    
   };
   const handleSignUp = () => {
     navigation.navigate('RegisterPage')
@@ -80,8 +112,8 @@ const LoginPage = ({ navigation }) => {
                     padding: 10,
                   }}
                   placeholder="Usuário"
-                  value={email}
-                  onChangeText={setEmail}
+                  value={user}
+                  onChangeText={setUser}
                 />
               </LinearGradient>
             </View>
