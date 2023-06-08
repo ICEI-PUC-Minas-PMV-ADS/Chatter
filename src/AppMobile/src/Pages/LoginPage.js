@@ -14,7 +14,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = 'http://192.168.0.6:5000'; // Substitua pela URL correta da sua API
+const apiUrl = 'http://192.168.2.2:19000'; // Substitua pela URL correta da sua API
 
 const LoginPage = ({ navigation }) => {
   const [user, setUser] = useState("");
@@ -26,18 +26,19 @@ const LoginPage = ({ navigation }) => {
           username: user,
           password: password,
       };
-    if (user.trim() === '' || password.trim() === '') {
+    if (user.trim() === '' && password.trim() === '') {
      return Alert.alert('Atenção', 'Preencha todos os campos')
-
-    } 
+    }  else if (user.trim() === "") {
+      return Alert.alert('Atenção',"Usuario é obrigatorio.");
+      
+    } else if (password === "") {
+      return Alert.alert('Atenção',"Senha é obrigatorio.");
   
-
+    }
         try {
-          const response = await axios.post(apiUrl+'/api/auth/login', {
-            username: user,
-            password:password,
+          const response = await axios.post(apiUrl,'/api/auth/login', {
+            loginData,
           });
-          console.log(response.data);
           // Faça algo com a resposta recebida
           if (response.data) {
               // Usuário autenticado com sucesso
