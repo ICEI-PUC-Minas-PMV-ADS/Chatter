@@ -14,7 +14,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = 'http://192.168.2.2:19000'; // Substitua pela URL correta da sua API
+const apiUrl = 'http://192.168.0.219:5000'; // Substitua pela URL correta da sua API
 
 const LoginPage = ({ navigation }) => {
   const [user, setUser] = useState("");
@@ -36,7 +36,7 @@ const LoginPage = ({ navigation }) => {
   
     }
         try {
-          const response = await axios.post(apiUrl,'/api/auth/login', {
+          const response = await axios.post(`${apiUrl}/api/auth/login`, {
             loginData,
           });
           // Faça algo com a resposta recebida
@@ -51,7 +51,7 @@ const LoginPage = ({ navigation }) => {
               Alert.alert('Erro', 'Usuário ou senha incorretos');
           }
         } catch (error) {
-          console.error(error);
+          console.error(JSON.stringify(error));
           // Trate o erro, se necessário
         }
    
