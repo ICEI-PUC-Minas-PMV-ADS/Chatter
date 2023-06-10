@@ -1,5 +1,7 @@
 const User = require("../models/userModel");
+const Messages = require("../models/messageModel");
 const bcrypt = require("bcrypt");
+const mongoose = require('mongoose');
 
 module.exports.login = async (req, res, next) => {
   try {
@@ -47,6 +49,19 @@ module.exports.getAllUsers = async (req, res, next) => {
       "avatarImage",
       "_id",
     ]);
+
+    for (const user of users) {
+      try {
+        const lastMessage = await Messages.findOne({
+          users: {
+            $all: [user._id.toString(), req.params.id],
+          },
+        }).sort({ updatedAt: 1 });
+        user.lastMessage = lastMessage;
+      } catch (error) {
+        console.error("Error retrieving last message:", error);
+      }
+    }
     return res.json(users);
   } catch (ex) {
     next(ex);
