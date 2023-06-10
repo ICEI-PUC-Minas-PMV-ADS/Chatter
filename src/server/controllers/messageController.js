@@ -3,13 +3,11 @@ const Messages = require("../models/messageModel");
 module.exports.getMessages = async (req, res, next) => {
   try {
     const { from, to } = req.body;
-    console.log("userId/paramId", { userId: from, paramId: to });
     const messages = await Messages.find({
       users: {
         $all: [from, to],
       },
     }).sort({ updatedAt: 1 });
-    console.log(messages)
 
     const projectedMessages = messages.map((msg) => {
       return {

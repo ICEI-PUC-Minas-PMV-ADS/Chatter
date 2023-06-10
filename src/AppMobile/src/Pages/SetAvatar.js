@@ -31,7 +31,6 @@ const SetAvatar = () => {
       const buffer = Buffer(image.data);
       const base64 = buffer.toString("base64");
       const DATA_IMAGE = decode(base64);
-      console.log("DATA_IMAGE", DATA_IMAGE);
       setAvatar(DATA_IMAGE);
     }
     getAvatar();
