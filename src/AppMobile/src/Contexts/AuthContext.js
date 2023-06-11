@@ -40,9 +40,31 @@ const AuthProvider = ({ children }) => {
     }
   };
 
+  const handleSetAvatar = async (image) => {
+    try {
+      const result = await axios.post(
+        `${apiUrl}/api/auth/setavatar/${userAuthenticated._id}`,
+        {
+          image: image,
+        }
+      );
+      if (result?.data?.isSet) return true;
+      else throw new Error("Imagem não definida.");
+    } catch (error) {
+      console.error(JSON.stringify(error));
+      Alert.alert("Ocorreu um erro ao definir seu avatar.");
+      return false;
+    }
+  };
+
   return (
     <AuthContext.Provider
-      value={{ userAuthenticated, setAuthenticatedUser, handleLogin }}
+      value={{
+        userAuthenticated,
+        setAuthenticatedUser,
+        handleLogin,
+        handleSetAvatar,
+      }}
     >
       {children}
     </AuthContext.Provider>
