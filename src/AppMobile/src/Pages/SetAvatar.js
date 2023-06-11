@@ -1,5 +1,6 @@
 import axios from "axios";
 import { decode } from "base-64";
+import { useNavigation } from '@react-navigation/native';
 import { Buffer } from "buffer";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
@@ -11,6 +12,7 @@ import {
   View,
 } from "react-native";
 import { SvgXml } from "react-native-svg";
+import { BackHandler } from 'react-native';
 
 const ConfirmButton = ({ onPress, title }) => (
   <TouchableOpacity onPress={onPress} style={styles.buttonContainer}>
@@ -20,6 +22,7 @@ const ConfirmButton = ({ onPress, title }) => (
 
 const SetAvatar = () => {
   const [avatar, setAvatar] = useState();
+  const navigation = useNavigation();
 
   const api = "https://api.multiavatar.com";
 
@@ -34,6 +37,20 @@ const SetAvatar = () => {
       setAvatar(DATA_IMAGE);
     }
     getAvatar();
+  }, []);
+
+  useEffect(() => {
+    //voltar para a tela de login ao invés de loading (daí apertar voltar dnv)
+    const onBackPress = () => {
+      navigation.navigate('LoginPage');//navegando pra login
+      return true;
+    };
+    //Adicionando um listener pro botâo de back quando o componente for montado
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', onBackPress);
+    return () => {
+      //Removendo o listener quando o componente for demontado
+      backHandler.remove();
+    };
   }, []);
 
   //TODO: No lugar do alert o button deverá direcionar para a próxima página
@@ -92,6 +109,7 @@ const styles = StyleSheet.create({
 SetAvatar.navigationOptions = {
   title: 'SetAvatar',
   headerShown: false,
+  headerBackTitle: 'LoginPage',
 }
 
 export default SetAvatar;

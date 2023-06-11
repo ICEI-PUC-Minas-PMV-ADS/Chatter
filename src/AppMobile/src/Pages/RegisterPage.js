@@ -321,6 +321,7 @@ const styles = StyleSheet.create({
 RegisterPage.navigationOptions = {
   title: 'RegisterPage',
   headerShown: false,
+  headerBackTitle: 'LoginPage',
 }
 
 export default RegisterPage;

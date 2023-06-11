@@ -1,6 +1,8 @@
 import { ChatContext } from "../Contexts/ChatContext";
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
-import { useState, useContext } from "react";
+import { BackHandler } from 'react-native';
+import { useState, useContext, useEffect } from "react";
 import {
   Alert,
   Dimensions,
@@ -59,6 +61,21 @@ export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
   const { chatsFromUser } = useContext(ChatContext);
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    //voltar para a tela de login ao invés de loading (daí apertar voltar dnv)
+    const onBackPress = () => {
+      navigation.navigate('LoginPage');//navegando pra login
+      return true;
+    };
+    //Adicionando um listener pro botâo de back quando o componente for montado
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', onBackPress);
+    return () => {
+      //Removendo o listener quando o componente for demontado
+      backHandler.remove();
+    };
+  }, []);
 
   return (
     <>
@@ -137,6 +154,7 @@ export default function Home() {
     </>
   );
 }
+
 const modal = StyleSheet.create({
   container: {
     backgroundColor: "white",
