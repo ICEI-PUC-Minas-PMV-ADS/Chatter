@@ -1,6 +1,8 @@
+import { AuthContext } from "../Contexts/AuthContext";
 import { StatusBar } from "expo-status-bar";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
+  Alert,
   Dimensions,
   FlatList,
   Image,
@@ -11,8 +13,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-
-import chats from "../Pages/Components/chats.moks";
+import { SvgXml } from "react-native-svg";
 
 function ConfigItem({ value }) {
   return (
@@ -28,24 +29,26 @@ function Chat({ item }) {
   return (
     <TouchableOpacity>
       <View style={chat.container}>
-        <Image
-          source={
-            item.headshot
-              ? { uri: item.headshot }
-              : require("../../assets/user.jpg")
-          }
-          style={{ width: 50, height: 50, borderRadius: 100 }}
-        />
+        {item.avatarImage && (
+          <SvgXml
+            xml={item.avatarImage}
+            style={chat.avatar}
+          />
+        )}
         <View style={chat.data}>
           <View style={chat.header}>
             <Text style={chat.name} numberOfLines={1}>
-              {item.title}
+              {item.username}
             </Text>
-            <Text style={chat.date}>{item.date}</Text>
+            {item.lastMessage && (
+              <Text style={chat.date}>{item.lastMessage.createdAt}</Text>
+            )}
           </View>
-          <Text numberOfLines={1} style={chat.message}>
-            {item.lastMessage}
-          </Text>
+          {item.lastMessage && (
+            <Text numberOfLines={1} style={chat.message}>
+              {item.lastMessage.message.text}
+            </Text>
+          )}
         </View>
       </View>
     </TouchableOpacity>
@@ -55,6 +58,7 @@ function Chat({ item }) {
 export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
+  const { chatsFromUser } = useContext(AuthContext);
 
   return (
     <>
@@ -122,12 +126,14 @@ export default function Home() {
       </View>
 
       {/* Chats */}
-      <View style={chat.wrapper}>
-        <FlatList
-          data={chats}
-          renderItem={({ item }) => <Chat item={item} />}
-        />
-      </View>
+      {chatsFromUser && (
+        <View style={chat.wrapper}>
+          <FlatList
+            data={chatsFromUser}
+            renderItem={({ item }) => <Chat item={item} />}
+          />
+        </View>
+      )}
     </>
   );
 }
@@ -160,6 +166,10 @@ const modal = StyleSheet.create({
 const chat = StyleSheet.create({
   wrapper: {
     flex: 1,
+  },
+  avatar: {
+    width: 50,
+    height: 50,
   },
   container: {
     flexDirection: "row",
