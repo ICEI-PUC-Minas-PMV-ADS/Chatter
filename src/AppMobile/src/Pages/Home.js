@@ -1,4 +1,4 @@
-import { AuthContext } from "../Contexts/AuthContext";
+import { ChatContext } from "../Contexts/ChatContext";
 import { StatusBar } from "expo-status-bar";
 import { useState, useContext } from "react";
 import {
@@ -58,7 +58,7 @@ function Chat({ item }) {
 export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
-  const { chatsFromUser } = useContext(AuthContext);
+  const { chatsFromUser } = useContext(ChatContext);
 
   return (
     <>

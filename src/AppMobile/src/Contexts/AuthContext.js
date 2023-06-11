@@ -1,21 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import axios from "axios";
+import { Alert } from "react-native";
 
 const AuthContext = React.createContext();
 
 const AuthProvider = ({ children }) => {
   const [userAuthenticated, setUser] = useState({});
-  const [chatsFromUser, setChats ] = useState([]);
+  const apiUrl = "http://192.168.0.219:5000"; // Substitua pela URL correta da sua API
 
-  const setAuthenticatedUser = (id) => {
-    setUser(id);
+  const setAuthenticatedUser = (user) => {
+    setUser(user);
   };
 
-  const setChatsFromUser = (data) => {
-    setChats(data);
+  const handleLogin = async (user, password) => {
+    const body = {
+      username: user,
+      password: password,
+    };
+    if (user.trim() === "" && password.trim() === "") {
+      return Alert.alert("Atenção", "Preencha todos os campos");
+    } else if (user.trim() === "") {
+      return Alert.alert("Atenção", "Usuario é obrigatorio.");
+    } else if (password === "") {
+      return Alert.alert("Atenção", "Senha é obrigatorio.");
+    }
+    try {
+      const responseLogin = await axios.post(`${apiUrl}/api/auth/login`, body);
+      // Faça algo com a resposta recebida
+      if (responseLogin.data && responseLogin.data.status === true) {
+        // Usuário autenticado com sucesso
+        setAuthenticatedUser(responseLogin.data.user);
+      } else {
+        // Usuário inválido ou senha incorreta
+        Alert.alert("Erro", "Usuário ou senha incorretos");
+      }
+    } catch (error) {
+      console.error(JSON.stringify(error));
+      // Trate o erro, se necessário
+    }
   };
 
   return (
-    <AuthContext.Provider value={{ userAuthenticated, chatsFromUser, setAuthenticatedUser, setChatsFromUser }}>
+    <AuthContext.Provider
+      value={{ userAuthenticated, setAuthenticatedUser, handleLogin }}
+    >
       {children}
     </AuthContext.Provider>
   );
