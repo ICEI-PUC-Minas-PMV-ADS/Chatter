@@ -105,7 +105,7 @@ const LoginPage = ({ navigation }) => {
 
         setTimeout(() => {
           navigation.navigate("Home");
-        }, 1000);
+        }, 100);
       } catch (error) {
         console.error(JSON.stringify(error));
         Alert.alert("Ocorreu um erro ao carregar sua lista de contatos.");
