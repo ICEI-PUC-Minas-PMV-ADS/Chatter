@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Alert } from 'react-native';
 import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   View,
   StyleSheet,
@@ -22,22 +23,30 @@ const LoginPage = ({ navigation }) => {
 
   const handleLogin = async () => {
 
-      const loginData = {
+      /*const loginData = {
           username: user,
           password: password,
-      };
-    if (user.trim() === '' || password.trim() === '') {
-     return Alert.alert('Atenção', 'Preencha todos os campos')
+      };*/
 
-    } 
+      const loginData = {
+        username: "Sah",
+        password: "12345678",
+    };
+
+    //AsyncStorage.setItem('userLogged', loginData.username);
+
+    //if (user.trim() === '' || password.trim() === '') {
+    // return Alert.alert('Atenção', 'Preencha todos os campos')
+
+    //} 
   
 
         try {
-          const response = await axios.post(apiUrl+'/api/auth/login', {
-            username: user,
-            password:password,
-          });
-          console.log(response.data);
+          const response = await axios.post(apiUrl+'/api/auth/login', loginData);
+
+          console.log("USER_INFO:: " + JSON.stringify(response.data));
+          console.log("USER_ID::  " + JSON.stringify(response.data.user._id));
+          AsyncStorage.setItem('user_id', response.data.user._id);
           // Faça algo com a resposta recebida
           if (response.data) {
               // Usuário autenticado com sucesso
@@ -59,6 +68,9 @@ const LoginPage = ({ navigation }) => {
           
     
   };
+
+  handleLogin();
+
   const handleSignUp = () => {
     navigation.navigate('RegisterPage')
     // add a main page
