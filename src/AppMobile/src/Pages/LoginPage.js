@@ -14,7 +14,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = 'http://192.168.0.6:5000'; // Substitua pela URL correta da sua API
+const apiUrl = 'http://177.182.179.117:5000'; // Substitua pela URL correta da sua API
 
 const LoginPage = ({ navigation }) => {
   const [user, setUser] = useState("");

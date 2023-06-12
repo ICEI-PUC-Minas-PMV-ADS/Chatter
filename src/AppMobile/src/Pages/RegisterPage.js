@@ -17,6 +17,8 @@ import axios from "axios";
 
 const { width, height } = Dimensions.get("screen");
 
+const apiUrl = 'http://177.182.179.117:5000'; //coloque seu endereço aqui
+
 const RegisterPage = ({ navigation }) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -65,7 +67,7 @@ const RegisterPage = ({ navigation }) => {
   const handleRegister = async () => {
     if (handleValidation()) {
       try {
-        const response = await axios.post('http://api/auth/login', {
+        const response = await axios.post(apiURL + '/api/auth/login', {
           username,
           email,
           password,
