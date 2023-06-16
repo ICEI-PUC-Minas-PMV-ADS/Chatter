@@ -6,24 +6,30 @@ import RegisterPage from "./src/Pages/RegisterPage";
 import SetAvatar from "./src/Pages/SetAvatar";
 import Loading from "./src/Pages/Loading";
 import Home from "./src/Pages/Home";
+import { AuthProvider } from "./src/Contexts/AuthContext";
+import { ChatProvider } from "./src/Contexts/ChatContext";
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{ headerShown: false }}
-        initialRouteName="Welcome"
-      >
-         <Stack.Screen name="Welcome" component={Welcome} />
-        <Stack.Screen name="LoginPage" component={LoginPage} />
-        <Stack.Screen name="RegisterPage" component={RegisterPage} />
-        <Stack.Screen name="SetAvatar" component={SetAvatar} />
-        <Stack.Screen name="Loading" component={Loading} />
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <AuthProvider>
+      <ChatProvider>
+        <NavigationContainer>
+          <Stack.Navigator
+            screenOptions={{ headerShown: false }}
+            initialRouteName="Welcome"
+          >
+            <Stack.Screen name="Welcome" component={Welcome} />
+            <Stack.Screen name="LoginPage" component={LoginPage} />
+            <Stack.Screen name="RegisterPage" component={RegisterPage} />
+            <Stack.Screen name="SetAvatar" component={SetAvatar} />
+            <Stack.Screen name="Loading" component={Loading} />
+            <Stack.Screen name="Home" component={Home} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </ChatProvider>
+    </AuthProvider>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Asset } from "expo-asset";
 import {
   View,
@@ -14,8 +14,10 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { LinearGradient } from "expo-linear-gradient";
 import axios from "axios";
+import { AuthContext } from "../Contexts/AuthContext";
 
 const { width, height } = Dimensions.get("screen");
+const apiUrl = "http://192.168.0.219:5000"; // Substitua pela URL correta da sua API
 
 const RegisterPage = ({ navigation }) => {
   const [username, setUsername] = useState("");
@@ -65,7 +67,7 @@ const RegisterPage = ({ navigation }) => {
   const handleRegister = async () => {
     if (handleValidation()) {
       try {
-        const response = await axios.post(registerRoute, {
+        const response = await axios.post(`${apiUrl}/api/auth/register`, {
           username,
           email,
           password,
@@ -319,6 +321,7 @@ const styles = StyleSheet.create({
 RegisterPage.navigationOptions = {
   title: 'RegisterPage',
   headerShown: false,
+  headerBackTitle: 'LoginPage',
 }
 
 export default RegisterPage;

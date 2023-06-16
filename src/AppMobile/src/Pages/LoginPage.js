@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Alert } from 'react-native';
-import axios from 'axios';
+import React, { useState, useContext, useEffect } from "react";
+import { AuthContext } from "../Contexts/AuthContext";
+import { Alert } from "react-native";
+import axios from "axios";
 import {
   View,
   StyleSheet,
@@ -12,56 +13,37 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { ChatContext } from "../Contexts/ChatContext";
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = 'http://192.168.0.219:5000'; // Substitua pela URL correta da sua API
+const apiUrl = "http://192.168.0.219:5000"; // Substitua pela URL correta da sua API
+
 
 const LoginPage = ({ navigation }) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const { userAuthenticated, handleLogin } =
+    useContext(AuthContext);
+    const { fetchChat } =
+      useContext(ChatContext);
 
-  const handleLogin = async () => {
-
-      const loginData = {
-          username: user,
-          password: password,
-      };
-    if (user.trim() === '' && password.trim() === '') {
-     return Alert.alert('Atenção', 'Preencha todos os campos')
-    }  else if (user.trim() === "") {
-      return Alert.alert('Atenção',"Usuario é obrigatorio.");
-      
-    } else if (password === "") {
-      return Alert.alert('Atenção',"Senha é obrigatorio.");
-  
+  useEffect(() => {
+    async function getChat() {
+      navigation.navigate("Loading");
+      if (userAuthenticated.isAvatarImageSet === false)  {
+        navigation.navigate("SetAvatar");
+      }
+      else {
+        await fetchChat(userAuthenticated._id);
+        navigation.navigate("Home");
+      }
     }
-        try {
-          const response = await axios.post(`${apiUrl}/api/auth/login`, {
-            loginData,
-          });
-          // Faça algo com a resposta recebida
-          if (response.data) {
-              // Usuário autenticado com sucesso
-              navigation.navigate('Loading');
-              setTimeout(() => {
-                  navigation.navigate('Home');
-              }, 1000);
-          } else {
-              // Usuário inválido ou senha incorreta
-              Alert.alert('Erro', 'Usuário ou senha incorretos');
-          }
-        } catch (error) {
-          console.error(JSON.stringify(error));
-          // Trate o erro, se necessário
-        }
-   
-         
 
-          
-    
-  };
+    if (userAuthenticated._id) getChat();
+  }, [userAuthenticated]);
+
   const handleSignUp = () => {
-    navigation.navigate('RegisterPage')
+    navigation.navigate("RegisterPage");
     // add a main page
   };
 
@@ -149,7 +131,7 @@ const LoginPage = ({ navigation }) => {
                 alignItems: "center",
                 justifyContent: "center",
               }}
-              onPress={handleLogin}
+              onPress={() => handleLogin(user, password)}
             >
               <LinearGradient
                 style={{
@@ -246,8 +228,8 @@ const styles = StyleSheet.create({
 });
 
 LoginPage.navigationOptions = {
-  title: 'LoginPage',
+  title: "LoginPage",
   headerShown: false,
-}
+};
 
 export default LoginPage;
