@@ -1,27 +1,49 @@
+// App.js
 import { ChatContext } from "../Contexts/ChatContext";
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
-import { BackHandler } from 'react-native';
 import { useState, useContext, useEffect } from "react";
 import {
   Alert,
+  Appearance,
+  BackHandler,
   Dimensions,
   FlatList,
   Image,
   Modal,
   StyleSheet,
+  Switch,
   Text,
   TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
 import { SvgXml } from "react-native-svg";
+import { useTheme } from "./NightMode/themes";
 
 function ConfigItem({ value }) {
   return (
     <TouchableOpacity>
       <View style={modal.item}>
         <Text>{value}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+}
+
+function ConfigItemWithSwitch({ value }) {
+  const { dark, toggleTheme, colors } = useTheme();
+
+  return (
+    <TouchableOpacity onPress={toggleTheme}>
+      <View style={modal.item}>
+        <Text>{value}</Text>
+        <Switch
+          trackColor={{ false: "#008C79", true: "#6F35A5" }}
+          thumbColor={dark ? "#6F35A5" : "#f4f3f4"}
+          value={dark}
+          onValueChange={toggleTheme}
+        />
       </View>
     </TouchableOpacity>
   );
@@ -63,16 +85,16 @@ export default function Home() {
   const { chatsFromUser } = useContext(ChatContext);
   const navigation = useNavigation();
 
+  const { dark, colors } = useTheme();
+
   useEffect(() => {
-    //voltar para a tela de login ao invés de loading (daí apertar voltar dnv)
     const onBackPress = () => {
-      navigation.navigate('LoginPage');//navegando pra login
+      navigation.navigate('LoginPage');
       return true;
     };
-    //Adicionando um listener pro botâo de back quando o componente for montado
+
     const backHandler = BackHandler.addEventListener('hardwareBackPress', onBackPress);
     return () => {
-      //Removendo o listener quando o componente for demontado
       backHandler.remove();
     };
   }, []);
@@ -81,7 +103,6 @@ export default function Home() {
     <>
       <StatusBar style="auto" />
 
-      {/* Config modal */}
       <Modal
         animationType="fade"
         visible={showConfig}
@@ -98,15 +119,14 @@ export default function Home() {
             setShowConfig(false);
           }}
         >
-          <View style={modal.container}>
-            <ConfigItem value={"Item 1"} />
+          <View  style={[modal.container, { backgroundColor: colors.bubblechatter }]}>
+            <ConfigItemWithSwitch value={"Night Mode"} /> 
             <ConfigItem value={"Item 2"} />
             <ConfigItem value={"Item 3"} />
           </View>
         </TouchableOpacity>
       </Modal>
 
-      {/* Navbar */}
       <View style={navbar.container}>
         {showSearch ? (
           <TextInput
@@ -142,7 +162,6 @@ export default function Home() {
         </View>
       </View>
 
-      {/* Chats */}
       {chatsFromUser && (
         <View style={chat.wrapper}>
           <FlatList
@@ -157,7 +176,6 @@ export default function Home() {
 
 const modal = StyleSheet.create({
   container: {
-    backgroundColor: "#F5F5F5S",
     width: 200,
     right: 5,
     marginTop: 10,
