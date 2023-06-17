@@ -1,13 +1,16 @@
 import axios from "axios";
-import { decode, encode } from "base-64";
-import { useNavigation } from "@react-navigation/native";
+import { decode } from "base-64";
 import { Buffer } from "buffer";
 import { StatusBar } from "expo-status-bar";
-import { useContext, useEffect, useState } from "react";
-import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { useEffect, useState } from "react";
+import {
+  Alert,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SvgXml } from "react-native-svg";
-import { BackHandler } from "react-native";
-import { AuthContext } from "../Contexts/AuthContext";
 
 const ConfirmButton = ({ onPress, title }) => (
   <TouchableOpacity onPress={onPress} style={styles.buttonContainer}>
@@ -17,8 +20,6 @@ const ConfirmButton = ({ onPress, title }) => (
 
 const SetAvatar = () => {
   const [avatar, setAvatar] = useState();
-  const navigation = useNavigation();
-  const {handleSetAvatar, userAuthenticated, setAuthenticatedUser} = useContext(AuthContext);
 
   const api = "https://api.multiavatar.com";
 
@@ -30,48 +31,24 @@ const SetAvatar = () => {
       const buffer = Buffer(image.data);
       const base64 = buffer.toString("base64");
       const DATA_IMAGE = decode(base64);
+      console.log("DATA_IMAGE", DATA_IMAGE);
       setAvatar(DATA_IMAGE);
     }
     getAvatar();
   }, []);
 
-  useEffect(() => {
-    //voltar para a tela de login ao invés de loading (daí apertar voltar dnv)
-    const onBackPress = () => {
-      navigation.navigate("LoginPage"); //navegando pra login
-      return true;
-    };
-    //Adicionando um listener pro botâo de back quando o componente for montado
-    const backHandler = BackHandler.addEventListener(
-      "hardwareBackPress",
-      onBackPress
-    );
-
-    return () => {
-      //Removendo o listener quando o componente for demontado
-      backHandler.remove();
-    };
-  }, []);
-
   //TODO: No lugar do alert o button deverá direcionar para a próxima página
-  const handleSetAvatarButton = async () => {
-    const avatarImageBase64 = encode(avatar)
-    if (await handleSetAvatar(avatarImageBase64)) {
-      setAuthenticatedUser({...userAuthenticated, avatarImage: avatarImageBase64, isAvatarImageSet: true });
-      navigation.navigate("Home");
-    }
-  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.text1}>Estamos quase lá!</Text>
       <Text style={styles.text2}>Esse é o seu avatar Chatter:</Text>
       {avatar && <SvgXml xml={avatar} style={styles.imagem} />}
-      <ConfirmButton title="Confirmar" onPress={() =>handleSetAvatarButton()} />
+      <ConfirmButton title="Confirmar" onPress={() => Alert.alert("Ok")} />
       <StatusBar style="auto" />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -114,9 +91,8 @@ const styles = StyleSheet.create({
 });
 
 SetAvatar.navigationOptions = {
-  title: "SetAvatar",
+  title: 'SetAvatar',
   headerShown: false,
-  headerBackTitle: "LoginPage",
-};
+}
 
 export default SetAvatar;

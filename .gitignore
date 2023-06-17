@@ -1,9 +1,1 @@
-src/server/node_modules/*
-src/server/package-lock.json
-src/server/yarn.lock
-src/AppMobile/node_modules/*
-src/AppMobile/package-lock.json
-src/AppMobile/yarn.lock
-src/public/node_modules/*
-src/public/package-lock.json
-src/public/yarn.lock
+src/server/node_modules/@aws-sdk/abort-controller/package.json
