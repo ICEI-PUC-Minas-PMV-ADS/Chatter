@@ -8,7 +8,11 @@ import Loading from "./src/Pages/Loading";
 import Home from "./src/Pages/Home";
 import { AuthProvider } from "./src/Contexts/AuthContext";
 import { ChatProvider } from "./src/Contexts/ChatContext";
+
 import { ThemeProvider } from "./src/Pages/NightMode/themes";
+
+import ChatScreen from "./src/Pages/ChatScreen";
+
 
 const Stack = createStackNavigator();
 
@@ -28,6 +32,7 @@ const App = () => {
             <Stack.Screen name="SetAvatar" component={SetAvatar} />
             <Stack.Screen name="Loading" component={Loading} />
             <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="ChatScreen" component={ChatScreen} />
           </Stack.Navigator>
         </NavigationContainer>
         </ThemeProvider>
