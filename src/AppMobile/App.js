@@ -1,4 +1,4 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer} from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Welcome from "./src/Pages/Welcome";
 import LoginPage from "./src/Pages/LoginPage";
@@ -8,6 +8,7 @@ import Loading from "./src/Pages/Loading";
 import Home from "./src/Pages/Home";
 import { AuthProvider } from "./src/Contexts/AuthContext";
 import { ChatProvider } from "./src/Contexts/ChatContext";
+import { ThemeProvider } from "./src/Pages/NightMode/themes";
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <AuthProvider>
       <ChatProvider>
+        <ThemeProvider>
         <NavigationContainer>
           <Stack.Navigator
             screenOptions={{ headerShown: false }}
@@ -28,6 +30,7 @@ const App = () => {
             <Stack.Screen name="Home" component={Home} />
           </Stack.Navigator>
         </NavigationContainer>
+        </ThemeProvider>
       </ChatProvider>
     </AuthProvider>
   );

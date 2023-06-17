@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { Asset } from "expo-asset";
 import {
   View,
@@ -14,10 +14,10 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { LinearGradient } from "expo-linear-gradient";
 import axios from "axios";
-import { AuthContext } from "../Contexts/AuthContext";
 
 const { width, height } = Dimensions.get("screen");
-const apiUrl = "http://192.168.0.219:5000"; // Substitua pela URL correta da sua API
+
+const apiUrl = 'http://192.168.0.29:5000'; //coloque seu endereço aqui
 
 const RegisterPage = ({ navigation }) => {
   const [username, setUsername] = useState("");
@@ -67,7 +67,7 @@ const RegisterPage = ({ navigation }) => {
   const handleRegister = async () => {
     if (handleValidation()) {
       try {
-        const response = await axios.post(`${apiUrl}/api/auth/register`, {
+        const response = await axios.post(apiUrl + '/api/auth/login', {
           username,
           email,
           password,
@@ -152,7 +152,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Usuário"
@@ -201,7 +201,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Senha"
@@ -224,7 +224,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Confirme sua Senha"
@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#F5F5F5",
     marginBottom: 10,
     paddingHorizontal: 10,
     borderRadius: 5,
@@ -311,7 +311,7 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
-    color: "white",
+    color: "#F5F5F5",
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
@@ -321,7 +321,6 @@ const styles = StyleSheet.create({
 RegisterPage.navigationOptions = {
   title: 'RegisterPage',
   headerShown: false,
-  headerBackTitle: 'LoginPage',
 }
 
 export default RegisterPage;

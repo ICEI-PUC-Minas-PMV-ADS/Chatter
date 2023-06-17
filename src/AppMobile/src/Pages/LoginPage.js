@@ -16,8 +16,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { ChatContext } from "../Contexts/ChatContext";
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = "http://192.168.0.219:5000"; // Substitua pela URL correta da sua API
-
+const apiUrl = 'http://192.168.0.29:5000'; // Substitua pela URL correta da sua API
 
 const LoginPage = ({ navigation }) => {
   const [user, setUser] = useState("");
@@ -53,7 +52,7 @@ const LoginPage = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: "#F5F5F5",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -90,7 +89,7 @@ const LoginPage = ({ navigation }) => {
               >
                 <TextInput
                   style={{
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                     padding: 10,
                   }}
@@ -113,7 +112,7 @@ const LoginPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Senha"
@@ -207,7 +206,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#F5F5F5",
     marginBottom: 10,
     paddingHorizontal: 10,
     borderRadius: 5,

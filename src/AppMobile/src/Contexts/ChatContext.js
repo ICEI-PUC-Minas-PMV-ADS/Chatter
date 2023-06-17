@@ -8,7 +8,7 @@ const ChatContext = React.createContext();
 
 const ChatProvider = ({ children }) => {
   const [chatsFromUser, setChats ] = useState([]);
-  const apiUrl = "http://192.168.0.219:5000"; // Substitua pela URL correta da sua API
+  const apiUrl = "http://192.168.0.29:5000"; // Substitua pela URL correta da sua API
 
 
   function fetchChatLastDateTime(lastMessage) {

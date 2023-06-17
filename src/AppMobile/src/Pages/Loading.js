@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   loadingContainer: {
     position: 'absolute',
     bottom: 50,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F5F5F5',
     padding: 5,
     borderRadius: 20, // Ajuste o valor para tornar os cantos mais arredondados
   },
