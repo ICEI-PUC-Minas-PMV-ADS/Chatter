@@ -17,6 +17,8 @@ import axios from "axios";
 
 const { width, height } = Dimensions.get("screen");
 
+const apiUrl = 'http://192.168.0.29:5000'; //coloque seu endereço aqui
+
 const RegisterPage = ({ navigation }) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -65,7 +67,7 @@ const RegisterPage = ({ navigation }) => {
   const handleRegister = async () => {
     if (handleValidation()) {
       try {
-        const response = await axios.post(registerRoute, {
+        const response = await axios.post(apiUrl + '/api/auth/login', {
           username,
           email,
           password,
@@ -106,7 +108,7 @@ const RegisterPage = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: "#F5F5F5",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -129,7 +131,7 @@ const RegisterPage = ({ navigation }) => {
         </View>
 
         <View>
-        <Text style={{ paddingBottom: 30, paddingHorizontal:70, color: "#37266B", fontSize: 18, fontWeight: "bold"}}>Crie sua conta Chatter!</Text>
+        <Text style={{ paddingBottom: 30, textAlign: "center", color: "#37266B", fontSize: 18, fontWeight: "bold"}}>Crie sua conta Chatter!</Text>
         </View>
 
         <KeyboardAvoidingView style={{ width: "100%" }}>
@@ -150,7 +152,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Usuário"
@@ -199,7 +201,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Senha"
@@ -222,7 +224,7 @@ const RegisterPage = ({ navigation }) => {
                     padding: 10,
                     borderRadius: 4,
                     borderWidth: 1,
-                    backgroundColor: "#FFF",
+                    backgroundColor: "#F5F5F5",
                     width: "100%",
                   }}
                   placeholder="Confirme sua Senha"
@@ -260,13 +262,13 @@ const RegisterPage = ({ navigation }) => {
                 <Text style={{ color: "#FFF" }}>CRIE SUA CONTA</Text>
               </LinearGradient>
             </TouchableOpacity>
-          </View>
-          <View
+            <View
             style={{
               alignItems: "center",
               justifyContent: "center",
               paddingTop: 30,
               flexDirection: "row",
+              paddingBottom: 35,
             }}
           >
             <Text style={{}}>JÁ TEM CONTA?</Text>
@@ -274,6 +276,7 @@ const RegisterPage = ({ navigation }) => {
             <TouchableOpacity onPress={handleSignIn}>
               <Text style={{ color: "purple" }}>FAÇA SEU LOGIN</Text>
             </TouchableOpacity>
+          </View>
           </View>
         </KeyboardAvoidingView>
       </View>
@@ -295,7 +298,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#F5F5F5",
     marginBottom: 10,
     paddingHorizontal: 10,
     borderRadius: 5,
@@ -309,7 +312,7 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
-    color: "white",
+    color: "#F5F5F5",
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
