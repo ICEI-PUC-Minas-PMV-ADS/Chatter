@@ -56,12 +56,19 @@ module.exports.getAllUsers = async (req, res, next) => {
           users: {
             $all: [user._id.toString(), req.params.id],
           },
-        }).sort({ updatedAt: 1 });
+        }).sort({ updatedAt: -1 });
         user.lastMessage = lastMessage;
       } catch (error) {
         console.error("Error retrieving last message:", error);
       }
     }
+
+    users.sort((a, b) => {
+      const aDate = a.lastMessage ? a.lastMessage.updatedAt : new Date(0);
+      const bDate = b.lastMessage ? b.lastMessage.updatedAt : new Date(0);
+      return bDate - aDate;
+    });
+    
     return res.json(users);
   } catch (ex) {
     next(ex);
