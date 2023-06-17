@@ -1,25 +1,18 @@
-// App.js
-import { ChatContext } from "../Contexts/ChatContext";
-import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
-import { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import {
-  Alert,
-  Appearance,
-  BackHandler,
   Dimensions,
   FlatList,
   Image,
   Modal,
   StyleSheet,
-  Switch,
   Text,
   TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
-import { SvgXml } from "react-native-svg";
-import { useTheme } from "./NightMode/themes";
+
+import chats from "../Pages/Components/chats.moks";
 
 function ConfigItem({ value }) {
   return (
@@ -31,48 +24,28 @@ function ConfigItem({ value }) {
   );
 }
 
-function ConfigItemWithSwitch({ value }) {
-  const { dark, toggleTheme, colors } = useTheme();
-
-  return (
-    <TouchableOpacity onPress={toggleTheme}>
-      <View style={modal.item}>
-        <Text>{value}</Text>
-        <Switch
-          trackColor={{ false: "#008C79", true: "#6F35A5" }}
-          thumbColor={dark ? "#6F35A5" : "#f4f3f4"}
-          value={dark}
-          onValueChange={toggleTheme}
-        />
-      </View>
-    </TouchableOpacity>
-  );
-}
-
-function Chat({ item, colors }) {
+function Chat({ item }) {
   return (
     <TouchableOpacity>
       <View style={chat.container}>
-        {item.avatarImage && (
-          <SvgXml
-            xml={item.avatarImage}
-            style={chat.avatar}
-          />
-        )}
+        <Image
+          source={
+            item.headshot
+              ? { uri: item.headshot }
+              : require("../../assets/user.jpg")
+          }
+          style={{ width: 50, height: 50, borderRadius: 100 }}
+        />
         <View style={chat.data}>
           <View style={chat.header}>
-            <Text style={[chat.name, {color:colors.texttittle}]} numberOfLines={1}>
-              {item.username}
+            <Text style={chat.name} numberOfLines={1}>
+              {item.title}
             </Text>
-            {item.lastMessage && (
-              <Text style={[chat.date, {color:colors.text}]}>{item.lastMessage.createdAt}</Text>
-            )}
+            <Text style={chat.date}>{item.date}</Text>
           </View>
-          {item.lastMessage && (
-            <Text numberOfLines={1} style={[chat.message, {color:colors.text}]}>
-              {item.lastMessage.message.text}
-            </Text>
-          )}
+          <Text numberOfLines={1} style={chat.message}>
+            {item.lastMessage}
+          </Text>
         </View>
       </View>
     </TouchableOpacity>
@@ -82,27 +55,12 @@ function Chat({ item, colors }) {
 export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
-  const { chatsFromUser } = useContext(ChatContext);
-  const navigation = useNavigation();
-
-  const { dark, colors } = useTheme();
-
-  useEffect(() => {
-    const onBackPress = () => {
-      navigation.navigate('LoginPage');
-      return true;
-    };
-
-    const backHandler = BackHandler.addEventListener('hardwareBackPress', onBackPress);
-    return () => {
-      backHandler.remove();
-    };
-  }, []);
 
   return (
     <>
       <StatusBar style="auto" />
 
+      {/* Config modal */}
       <Modal
         animationType="fade"
         visible={showConfig}
@@ -119,23 +77,24 @@ export default function Home() {
             setShowConfig(false);
           }}
         >
-          <View  style={[modal.container, { backgroundColor: colors.bubblechatter}]}>
-            <ConfigItemWithSwitch value={"Night Mode"} style={[{color: colors.text}]}/> 
+          <View style={modal.container}>
+            <ConfigItem value={"Item 1"} />
             <ConfigItem value={"Item 2"} />
             <ConfigItem value={"Item 3"} />
           </View>
         </TouchableOpacity>
       </Modal>
 
-      <View style={[navbar.container, {backgroundColor: colors.backgroundcolor}]}>
+      {/* Navbar */}
+      <View style={navbar.container}>
         {showSearch ? (
           <TextInput
             autoFocus
-            style={[navbar.input, {color: colors.text}]}
+            style={navbar.input}
             placeholder="Pesquisar..."
           />
         ) : (
-          <Text style={[navbar.title, {color: colors.texttittle}]}>CHATTER</Text>
+          <Text style={navbar.title}>CHATTER</Text>
         )}
 
         <View style={navbar.iconsWrapper}>
@@ -145,7 +104,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={[navbar.search, {color: colors.text}]}
+              style={navbar.search}
               source={require("../../assets/search.png")}
             ></Image>
           </TouchableOpacity>
@@ -155,27 +114,26 @@ export default function Home() {
             }}
           >
             <Image
-              style={[navbar.menu, {color:colors.text}]}
+              style={navbar.menu}
               source={require("../../assets/menu.png")}
             ></Image>
           </TouchableOpacity>
         </View>
       </View>
 
-      {chatsFromUser && (
-        <View style={[chat.wrapper, {backgroundColor:colors.backgroundcolor}]}>
-          <FlatList
-            data={chatsFromUser}
-            renderItem={({ item }) => <Chat item={item} colors={colors} />}
-          />
-        </View>
-      )}
+      {/* Chats */}
+      <View style={chat.wrapper}>
+        <FlatList
+          data={chats}
+          renderItem={({ item }) => <Chat item={item} />}
+        />
+      </View>
     </>
   );
 }
-
 const modal = StyleSheet.create({
   container: {
+    backgroundColor: "white",
     width: 200,
     right: 5,
     marginTop: 10,
@@ -187,7 +145,6 @@ const modal = StyleSheet.create({
     shadowOpacity: 0.37,
     shadowRadius: 7.49,
     elevation: 12,
-    borderRadius:10
   },
   wrapper: {
     flex: 1,
@@ -197,19 +154,12 @@ const modal = StyleSheet.create({
   },
   item: {
     padding: 10,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
   },
 });
 
 const chat = StyleSheet.create({
   wrapper: {
     flex: 1,
-  },
-  avatar: {
-    width: 50,
-    height: 50,
   },
   container: {
     flexDirection: "row",
@@ -242,14 +192,17 @@ const chat = StyleSheet.create({
   },
   date: {
     fontSize: 13,
+    color: "#393939",
   },
   message: {
+    color: "#393939",
   },
 });
 
 const navbar = StyleSheet.create({
   container: {
     marginTop: 29,
+    backgroundColor: "#fff",
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",

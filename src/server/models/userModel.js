@@ -27,11 +27,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  lastMessage: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Messages",
-    default: null,
-  }
 });
 
 module.exports = mongoose.model("Users", userSchema);
