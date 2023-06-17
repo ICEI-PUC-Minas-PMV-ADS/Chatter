@@ -108,7 +108,7 @@ const RegisterPage = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: "#F5F5F5",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -131,7 +131,7 @@ const RegisterPage = ({ navigation }) => {
         </View>
 
         <View>
-        <Text style={{ paddingBottom: 30, paddingHorizontal:70, color: "#37266B", fontSize: 18, fontWeight: "bold"}}>Crie sua conta Chatter!</Text>
+        <Text style={{ paddingBottom: 30, textAlign: "center", color: "#37266B", fontSize: 18, fontWeight: "bold"}}>Crie sua conta Chatter!</Text>
         </View>
 
         <KeyboardAvoidingView style={{ width: "100%" }}>
@@ -262,13 +262,13 @@ const RegisterPage = ({ navigation }) => {
                 <Text style={{ color: "#FFF" }}>CRIE SUA CONTA</Text>
               </LinearGradient>
             </TouchableOpacity>
-          </View>
-          <View
+            <View
             style={{
               alignItems: "center",
               justifyContent: "center",
               paddingTop: 30,
               flexDirection: "row",
+              paddingBottom: 35,
             }}
           >
             <Text style={{}}>JÁ TEM CONTA?</Text>
@@ -276,6 +276,7 @@ const RegisterPage = ({ navigation }) => {
             <TouchableOpacity onPress={handleSignIn}>
               <Text style={{ color: "purple" }}>FAÇA SEU LOGIN</Text>
             </TouchableOpacity>
+          </View>
           </View>
         </KeyboardAvoidingView>
       </View>
