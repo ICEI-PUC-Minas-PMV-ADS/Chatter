@@ -49,7 +49,7 @@ function ConfigItemWithSwitch({ value }) {
   );
 }
 
-function Chat({ item }) {
+function Chat({ item, colors }) {
   return (
     <TouchableOpacity>
       <View style={chat.container}>
@@ -61,15 +61,15 @@ function Chat({ item }) {
         )}
         <View style={chat.data}>
           <View style={chat.header}>
-            <Text style={chat.name} numberOfLines={1}>
+            <Text style={[chat.name, {color:colors.texttittle}]} numberOfLines={1}>
               {item.username}
             </Text>
             {item.lastMessage && (
-              <Text style={chat.date}>{item.lastMessage.createdAt}</Text>
+              <Text style={[chat.date, {color:colors.text}]}>{item.lastMessage.createdAt}</Text>
             )}
           </View>
           {item.lastMessage && (
-            <Text numberOfLines={1} style={chat.message}>
+            <Text numberOfLines={1} style={[chat.message, {color:colors.text}]}>
               {item.lastMessage.message.text}
             </Text>
           )}
@@ -119,23 +119,23 @@ export default function Home() {
             setShowConfig(false);
           }}
         >
-          <View  style={[modal.container, { backgroundColor: colors.bubblechatter }]}>
-            <ConfigItemWithSwitch value={"Night Mode"} /> 
+          <View  style={[modal.container, { backgroundColor: colors.bubblechatter}]}>
+            <ConfigItemWithSwitch value={"Night Mode"} style={[{color: colors.text}]}/> 
             <ConfigItem value={"Item 2"} />
             <ConfigItem value={"Item 3"} />
           </View>
         </TouchableOpacity>
       </Modal>
 
-      <View style={navbar.container}>
+      <View style={[navbar.container, {backgroundColor: colors.backgroundcolor}]}>
         {showSearch ? (
           <TextInput
             autoFocus
-            style={navbar.input}
+            style={[navbar.input, {color: colors.text}]}
             placeholder="Pesquisar..."
           />
         ) : (
-          <Text style={navbar.title}>CHATTER</Text>
+          <Text style={[navbar.title, {color: colors.texttittle}]}>CHATTER</Text>
         )}
 
         <View style={navbar.iconsWrapper}>
@@ -145,7 +145,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={navbar.search}
+              style={[navbar.search, {color: colors.text}]}
               source={require("../../assets/search.png")}
             ></Image>
           </TouchableOpacity>
@@ -155,7 +155,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={navbar.menu}
+              style={[navbar.menu, {color:colors.text}]}
               source={require("../../assets/menu.png")}
             ></Image>
           </TouchableOpacity>
@@ -163,10 +163,10 @@ export default function Home() {
       </View>
 
       {chatsFromUser && (
-        <View style={chat.wrapper}>
+        <View style={[chat.wrapper, {backgroundColor:colors.backgroundcolor}]}>
           <FlatList
             data={chatsFromUser}
-            renderItem={({ item }) => <Chat item={item} />}
+            renderItem={({ item }) => <Chat item={item} colors={colors} />}
           />
         </View>
       )}
@@ -187,6 +187,7 @@ const modal = StyleSheet.create({
     shadowOpacity: 0.37,
     shadowRadius: 7.49,
     elevation: 12,
+    borderRadius:10
   },
   wrapper: {
     flex: 1,
@@ -196,6 +197,9 @@ const modal = StyleSheet.create({
   },
   item: {
     padding: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
 });
 
@@ -238,17 +242,14 @@ const chat = StyleSheet.create({
   },
   date: {
     fontSize: 13,
-    color: "#393939",
   },
   message: {
-    color: "#393939",
   },
 });
 
 const navbar = StyleSheet.create({
   container: {
     marginTop: 29,
-    backgroundColor: "#F5F5F5",
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",
