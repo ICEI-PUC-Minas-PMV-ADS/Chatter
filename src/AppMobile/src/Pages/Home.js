@@ -24,7 +24,21 @@ function ConfigItem({ value }) {
   );
 }
 
-function Chat({ item }) {
+
+
+
+function Chat({ nav, item }) {
+
+  
+
+  const onPressItem = (item) => {
+   
+    nav.navigate('ChatScreen', {"itemSelecionado":item});//navegando pra ChatScreen
+    return true;
+  };
+
+
+
   return (
     <TouchableOpacity>
       <View style={chat.container}>

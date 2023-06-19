@@ -7,6 +7,12 @@ import SetAvatar from "./src/Pages/SetAvatar";
 import Loading from "./src/Pages/Loading";
 import Home from "./src/Pages/Home";
 
+import { AuthProvider } from "./src/Contexts/AuthContext";
+import { ChatProvider } from "./src/Contexts/ChatContext";
+import { MessageProvider } from "./src/Contexts/MessageContext";
+import ChatScreen from "./src/Pages/ChatScreen";
+
+
 const Stack = createStackNavigator();
 
 const App = () => {
