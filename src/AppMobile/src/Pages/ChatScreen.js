@@ -1,4 +1,6 @@
-import { Alert, View, Text, ImageBackground, StyleSheet, FlatList, KeyboardAvoidingView } from "react-native";
+import { Alert, BackHandler, View, Text, ImageBackground, StyleSheet, FlatList, KeyboardAvoidingView } from "react-native";
+import { useNavigation } from '@react-navigation/native';
+import { useState, useContext, useEffect } from "react";
 import Message from "./Message";
 import InputBox from "./inputBox";
 
@@ -10,7 +12,21 @@ import messages from '../../assets/data/messages.json';
 
 const ChatScreen =({ route  }) => {
   const { itemSelecionado } = route.params;
+  const navigation = useNavigation();
+  //const listaMensagens = useContext();
   Alert.alert("Param: " + itemSelecionado);
+
+  useEffect(() => {
+    const onBackPress = () => {
+      navigation.navigate('Home');
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', onBackPress);
+    return () => {
+      backHandler.remove();
+    };
+  }, []);
 
 
   return (
@@ -40,10 +56,7 @@ const ChatScreen =({ route  }) => {
 };
 
 
-const onBackPress = () => {
-  navigation.navigate("Home");
-  return true;
-};
+
 
 
 
