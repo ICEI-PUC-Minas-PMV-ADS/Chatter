@@ -14,7 +14,7 @@ const ChatScreen =({ route  }) => {
   const { itemSelecionado } = route.params;
   const navigation = useNavigation();
   //const listaMensagens = useContext();
-  Alert.alert("Param: " + itemSelecionado);
+  // Alert.alert("Param: " + itemSelecionado);
 
   useEffect(() => {
     const onBackPress = () => {
@@ -48,8 +48,9 @@ const ChatScreen =({ route  }) => {
 
     
       
-      {/* <Text>{itemSelecionado.username}</Text>
-      <Text>{itemSelecionado.lastMessage.message.text}</Text> */}
+      {/* <Text>{itemSelecionado.username}</Text> */}
+      {/* <Text>{JSON.stringify(itemSelecionado)}</Text> */}
+      {/* <Text>{itemSelecionado.lastMessage.message.text}</Text> */}
     </ImageBackground>
     </KeyboardAvoidingView>
   );

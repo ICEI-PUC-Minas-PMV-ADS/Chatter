@@ -1,13 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import axios from "axios";
 import { Alert } from "react-native";
+
+import io from "socket.io-client";
+const socketEndpoint = "http://192.168.15.102:5000";
 
 const AuthContext = React.createContext();
 
 const AuthProvider = ({ children }) => {
   const [userAuthenticated, setUser] = useState({});
+  const apiUrl = "http://192.168.15.102:5000"; // Substitua pela URL correta da sua API
 
-  const apiUrl = "http://192.168.0.6:5000"; // Substitua pela URL correta da sua API
+  const [hasConnection, setConnection] = useState(false);
+  const [time, setTime] = useState(null);
+  const socket = useRef(null)
+
+  useEffect(() => {
+    socket.current = io(socketEndpoint);
+
+    socket.current.io.on("open", () => {
+      socket.current.emit("add-user", userAuthenticated._id);
+      setConnection(true)
+    });
+    socket.current.io.on("close", () => setConnection(false));
+
+    socket.current.on("msg-recieve", (msg) => {
+      // On message received do somenthing
+      Alert.alert('Você recebeu uma nova mensagem')
+    });
+
+    return () => {
+      socket.current.disconnect();
+      socket.current.removeAllListeners();
+    };
+  }, [userAuthenticated]);
+
+  const sendMessage = (message, currentChat) => {
+    socket.current.emit("send-msg", {
+      to: "647a9482824032d97116528f",
+      from: userAuthenticated._id,
+      msg: message,
+    });
+  }
 
 
   const setAuthenticatedUser = (user) => {
@@ -66,11 +100,19 @@ const AuthProvider = ({ children }) => {
         setAuthenticatedUser,
         handleLogin,
         handleSetAvatar,
+        socket,
+        sendMessage
       }}
     >
       {children}
     </AuthContext.Provider>
   );
 };
+
+export function useAuth() {
+  const context = useContext(AuthContext);
+
+  return context;
+}
 
 export { AuthContext, AuthProvider };

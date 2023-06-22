@@ -8,7 +8,7 @@ const ChatContext = React.createContext();
 
 const ChatProvider = ({ children }) => {
   const [chatsFromUser, setChats ] = useState([]);
-  const apiUrl = "http://192.168.0.6:5000"; // Substitua pela URL correta da sua API
+  const apiUrl = "http://192.168.15.102:5000"; // Substitua pela URL correta da sua API
 
 
 

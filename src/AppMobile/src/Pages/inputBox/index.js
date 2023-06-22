@@ -3,16 +3,18 @@ import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { TextInput } from 'react-native-gesture-handler';
 import { useState } from 'react';
+import { useAuth } from '../../Contexts/AuthContext';
 
 
 
 const InputBox = () => {
+    const { sendMessage } = useAuth();
+
+
     const [newMessage, setNewMessage] = useState('');
 
     const onSend = () => {
-        console.warn('Enviando uma nova mensagem', newMessage);
-
-        setNewMessage('');
+        sendMessage("hello")
 
 
     };

@@ -16,7 +16,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { ChatContext } from "../Contexts/ChatContext";
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = "http://192.168.0.6:5000"; // Substitua pela URL correta da sua API
+const apiUrl = "http://192.168.15.102:5000"; // Substitua pela URL correta da sua API
 
 
 
