@@ -180,7 +180,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={[navbar.search, {color: colors.text}]}
+              style={navbar.search}
               source={require("../../assets/search.png")}
             ></Image>
           </TouchableOpacity>
@@ -190,7 +190,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={[navbar.menu, {color:colors.text}]}
+              style={navbar.menu}
               source={require("../../assets/menu.png")}
             ></Image>
           </TouchableOpacity>
