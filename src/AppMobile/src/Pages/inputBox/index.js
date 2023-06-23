@@ -2,22 +2,42 @@ import { View, Text, StyleSheet } from 'react-native';
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { TextInput } from 'react-native-gesture-handler';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { AuthContext } from "../../Contexts/AuthContext";
+import { MessageContext } from "../../Contexts/MessageContext";
+import { useNavigation } from '@react-navigation/native';
 
 
 
-const InputBox = () => {
+const InputBox = ( userTo ) => {
+    const { userAuthenticated } = useContext(AuthContext);
+    const { fetchMessage, setMessagesFromUser } = useContext(MessageContext);
+    const navigation = useNavigation();
+
     const [newMessage, setNewMessage] = useState('');
 
     const onSend = () => {
-        console.warn('Enviando uma nova mensagem', newMessage);
-
-        setNewMessage('');
-
-
+        enviar(newMessage);
+        getMessages(userTo.userTo);
+        navigateBack(userTo.userTo);
+            
+            
     };
 
+    function navigateBack(usr){
+        setNewMessage("");
+        navigation.navigate('ChatScreen', {"itemSelecionado":usr})//navegando pra ChatScreen
+    }
 
+    async function enviar(newMessage) {
+        await setMessagesFromUser({"from": userAuthenticated._id, "to":  userTo.userTo._id, "message": newMessage});
+        
+      }
+
+    async function getMessages(item) {
+        await fetchMessage(userAuthenticated, item);
+        
+      }
 
 
   return (

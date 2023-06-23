@@ -1,5 +1,7 @@
 // App.js
+import { AuthContext } from "../Contexts/AuthContext";
 import { ChatContext } from "../Contexts/ChatContext";
+import { MessageContext } from "../Contexts/MessageContext";
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
 import { useState, useContext, useEffect } from "react";
@@ -54,14 +56,23 @@ function ConfigItemWithSwitch({ value }) {
 
 
 function Chat({ nav, item, colors }) {
+  const { chatsFromUser } = useContext(ChatContext);
+  const { userAuthenticated } = useContext(AuthContext);
+
+  const { fetchMessage } = useContext(MessageContext);
 
   const onPressItem = (item) => {
-    // Alert.alert("testte", item.username)
-    nav.navigate('ChatScreen', {"itemSelecionado":item});//navegando pra ChatScreen
+    
+    getMessages(item);
     return true;
   };
 
 
+  async function getMessages(item) {
+    await fetchMessage(userAuthenticated, item);
+   
+    nav.navigate('ChatScreen', {"itemSelecionado":item});//navegando pra ChatScreen
+  }
 
 
   return (
@@ -114,7 +125,9 @@ export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
   const { chatsFromUser } = useContext(ChatContext);
+  
   const navigation = useNavigation();
+  
 
   const { dark, colors } = useTheme();
 

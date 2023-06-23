@@ -1,12 +1,17 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
+import { useState, useContext, useEffect } from "react";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import { AuthContext } from "../../Contexts/AuthContext";
 dayjs.extend(relativeTime);
 
+
+
 const Message = ({ message }) => {
+  const { userAuthenticated } = useContext(AuthContext);
   const isMyMessage = () => {
-    return message.user.id === 'u1';
+    return message.user.id === userAuthenticated._id;
 
 
   };

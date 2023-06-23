@@ -8,13 +8,20 @@ import bg from '../../assets/bg.png';
 import messages from '../../assets/data/messages.json';
 
 
+import { ChatContext } from "../Contexts/ChatContext";
+import { MessageContext } from "../Contexts/MessageContext";
+
 
 
 const ChatScreen =({ route  }) => {
   const { itemSelecionado } = route.params;
+  const { chatsFromUser } = useContext(ChatContext);
+  const { messagesFromUser } = useContext(MessageContext);
   const navigation = useNavigation();
   //const listaMensagens = useContext();
-  Alert.alert("Param: " + itemSelecionado);
+  // Alert.alert("Param: " + itemSelecionado);
+  // Alert.alert("Chats: " + chatsFromUser.length);
+  // Alert.alert("Messages: " + messagesFromUser.length);
 
   useEffect(() => {
     const onBackPress = () => {
@@ -39,12 +46,14 @@ const ChatScreen =({ route  }) => {
 
     <ImageBackground source={bg} style={styles.bg} >
 
-      <FlatList data={messages} renderItem={({item}) => <Message message={item} />}
+    {messagesFromUser  && 
+      <FlatList data={messagesFromUser} renderItem={({item}) => <Message message={item} />}
       style={styles.list}
       inverted
       />
+    }
 
-      <InputBox />
+      <InputBox userTo={itemSelecionado} />
 
     
       

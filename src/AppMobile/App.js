@@ -8,6 +8,7 @@ import Loading from "./src/Pages/Loading";
 import Home from "./src/Pages/Home";
 import { AuthProvider } from "./src/Contexts/AuthContext";
 import { ChatProvider } from "./src/Contexts/ChatContext";
+import { MessageProvider } from "./src/Contexts/MessageContext";
 
 import { ThemeProvider } from "./src/Pages/NightMode/themes";
 
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <AuthProvider>
       <ChatProvider>
+        <MessageProvider>
         <ThemeProvider>
         <NavigationContainer>
           <Stack.Navigator
@@ -36,6 +38,7 @@ const App = () => {
           </Stack.Navigator>
         </NavigationContainer>
         </ThemeProvider>
+        </MessageProvider>
       </ChatProvider>
     </AuthProvider>
   );
