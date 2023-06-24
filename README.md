@@ -25,15 +25,13 @@ _Este projeto tem como intuito criar uma aplicação de mensagens distribuída q
 
 💬<a href="https://github.com/kaiqueRoc"> **Kaique  Rocha** </a>
 
-💬<a href="https://github.com/leofilter"> **Leonardo Filter** </a>
-
 💬<a href="https://github.com/Mariane03"> **Mariane Serapião** </a>
 
 💬<a href="https://github.com/sabrinagomessilva"> **Sabrina Gomes** </a>
 
 ## Orientador 
 
-* <a href="https://https://github.com/lvcardoso"> **Leonardo Vilela Cardoso** </a>
+* <a href="https://github.com/lvcardoso"> **Leonardo Vilela Cardoso** </a>
 
 ## Instruções de utilização
 
