@@ -41,8 +41,7 @@ Para copiar o projeto, utilize os comandos:
 
 ```bash
   # Clonar o repositório
-  ❯ git clone https://github.com/sabrinagomessilva/chatterBatePapo.git
-
+  ❯ git clone https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter.git
 ```
 Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn ou npm:
 
