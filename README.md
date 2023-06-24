@@ -1,20 +1,22 @@
-![ Chatter 💬](https://media1.giphy.com/media/PkTlPB1rYz5QVhVkE8/200w.webp?cid=ecf05e47jxlgd88dzwg21p9drb23k7hvnu4jsnqtkknx5dxt&rid=200w.webp&ct=s)![33 -removebg-preview (1)](https://user-images.githubusercontent.com/78277341/224851627-36e6ee01-9678-4f20-802c-2c06426d6c59.png)
+<div align="center" dir="auto"> 
+
+![Chatter](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/00aad896-6202-4472-804f-191cf8fa3319)
 
 
-
-
-
-
-
-
+ </div>
 
 `PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
 `DESENVOLVIMENTO DE UMA APLICAÇÃO DISTRIBUÍDA`
 
 `EIXO 4`
+<div align="center" dir="auto"> 
 
-_Este projeto tem como intuito criar uma aplicação de mensagens distribuída que possa ser usada para comunicação em grupo. O sistema deve ser escalável e tolerante a falhas, permitindo que vários usuários possam se conectar ao mesmo tempo e enviar mensagens._
+<img src="https://lh3.googleusercontent.com/blogger_img_proxy/AByxGDSyn8CafajBPlsYQAz2b5ghEAwycXv8LmSEJA9zvu8-nzcdlh5nTHx_v6xJ5qHuyYLlSBTrP1GiCmbU5BJa88eIIDTfqO6NpQUXRgrvB37bMIrbKEkS0ho=s0-d"> _Este projeto tem como intuito criar uma aplicação de mensagens distribuída que possa ser usada para comunicação em grupo. O sistema deve ser escalável e tolerante a falhas, permitindo que vários usuários possam se conectar ao mesmo tempo e enviar mensagens._
+
+ </div>
+
+
 
 
 ## Integrantes
@@ -35,13 +37,57 @@ _Este projeto tem como intuito criar uma aplicação de mensagens distribuída q
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para copiar o projeto, utilize os comandos:
 
-## Planejamento de Tarefas
+```bash
+  # Clonar o repositório
+  ❯ git clone https://github.com/sabrinagomessilva/chatterBatePapo.git
 
-✨ <a href="https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM"> **Confira aqui nosso Backlog e Planos de Sprints.**</a>
+```
+Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn ou npm:
 
-✨ <a href="https://www.notion.so/sabrinagomes/GRUPO-3-Eixo-4-Turma-2-150f5d61c0c64d3b9d4a6d4fd995fcd2"> **Notion - Nossas Anotações, Agenda e Planejamentos.**</a>
+
+<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/setinhu.gif" alt=""> **Utilizando npm**
+
+1. Abra a Pasta Server e utilize os seguintes comandos:
+
+ ```bash
+  # Atualizar as dependências
+  ❯ npm install
+
+    # Iniciar o projeto
+  ❯ npm start
+```
+ 
+2. Agora, na Pasta Public execute:  
+   
+```bash
+  # Atualizar as dependências
+  ❯ npm install
+
+  # Apicação Web
+  ❯ npm i express mongoose nodemon socket.io bcrypt cors dotenv
+
+  # Iniciar o projeto
+  ❯ npm start
+```
+<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/setinhu.gif" alt=""> **Utilizando yarn**
+
+```bash
+  # verificar as dependências
+  ❯ yarn install
+  
+  # Iniciar o projeto
+  ❯ yarn start
+```
+---
+
+
+
+## ✨ Planejamento de Tarefas
+<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/setinhu.gif" alt=""> <a href="https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=b2f50c33-795c-4898-b98d-8e101e9a50dc&planId=_aRpoM24dk6R1JSYpdDmnWQACBdM"> **Confira aqui nosso Backlog e Planos de Sprints.**</a>
+
+<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/setinhu.gif" alt=""><a href="https://www.notion.so/sabrinagomes/GRUPO-3-Eixo-4-Turma-2-150f5d61c0c64d3b9d4a6d4fd995fcd2"> **Notion - Nossas Anotações, Agenda e Planejamentos.**</a>
 
 # Documentação
 
@@ -65,8 +111,27 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 <li><a href="src/README.md"> Código Fonte</a></li>
 
+
 # Apresentação
 
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/setinhu.gif" alt=""><a href="presentation/README.md"> Apresentação da solução AppMobile</a>
+
+
+<div align="center" dir="auto"> 
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/53b5f1f3-bc3a-4dd0-b781-8b2e5112dc24
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
 
