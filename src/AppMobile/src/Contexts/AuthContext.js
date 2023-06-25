@@ -6,7 +6,9 @@ const AuthContext = React.createContext();
 
 const AuthProvider = ({ children }) => {
   const [userAuthenticated, setUser] = useState({});
-  const apiUrl = "http://192.168.0.29:5000"; // Substitua pela URL correta da sua API
+
+  const apiUrl = "http://192.168.0.6:5000"; // Substitua pela URL correta da sua API
+
 
   const setAuthenticatedUser = (user) => {
     setUser(user);

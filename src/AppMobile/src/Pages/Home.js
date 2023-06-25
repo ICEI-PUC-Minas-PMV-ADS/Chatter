@@ -1,5 +1,7 @@
 // App.js
+import { AuthContext } from "../Contexts/AuthContext";
 import { ChatContext } from "../Contexts/ChatContext";
+import { MessageContext } from "../Contexts/MessageContext";
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
 import { useState, useContext, useEffect } from "react";
@@ -21,6 +23,8 @@ import {
 import { SvgXml } from "react-native-svg";
 import { useTheme } from "./NightMode/themes";
 
+
+
 function ConfigItem({ value }) {
   return (
     <TouchableOpacity>
@@ -30,6 +34,7 @@ function ConfigItem({ value }) {
     </TouchableOpacity>
   );
 }
+
 
 function ConfigItemWithSwitch({ value }) {
   const { dark, toggleTheme, colors } = useTheme();
@@ -49,9 +54,37 @@ function ConfigItemWithSwitch({ value }) {
   );
 }
 
-function Chat({ item, colors }) {
+
+function Chat({ nav, item, colors }) {
+  const { chatsFromUser } = useContext(ChatContext);
+  const { userAuthenticated } = useContext(AuthContext);
+
+  const { fetchMessage } = useContext(MessageContext);
+
+  const onPressItem = (item) => {
+    
+    getMessages(item);
+    return true;
+  };
+
+
+  async function getMessages(item) {
+    await fetchMessage(userAuthenticated, item);
+   
+    nav.navigate('ChatScreen', {"itemSelecionado":item});//navegando pra ChatScreen
+  }
+
+
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=> {onPressItem(item);}}  >
+
+
+
+
+
+
+
+
       <View style={chat.container}>
         {item.avatarImage && (
           <SvgXml
@@ -75,6 +108,15 @@ function Chat({ item, colors }) {
           )}
         </View>
       </View>
+
+
+
+
+
+
+
+
+      
     </TouchableOpacity>
   );
 }
@@ -83,7 +125,9 @@ export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
   const { chatsFromUser } = useContext(ChatContext);
+  
   const navigation = useNavigation();
+  
 
   const { dark, colors } = useTheme();
 
@@ -98,6 +142,9 @@ export default function Home() {
       backHandler.remove();
     };
   }, []);
+
+
+    
 
   return (
     <>
@@ -118,6 +165,7 @@ export default function Home() {
           onPressOut={() => {
             setShowConfig(false);
           }}
+          
         >
           <View  style={[modal.container, { backgroundColor: colors.bubblechatter}]}>
             <ConfigItemWithSwitch value={"Night Mode"} style={[{color: colors.text}]}/> 
@@ -145,7 +193,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={[navbar.search, {color: colors.text}]}
+              style={navbar.search}
               source={require("../../assets/search.png")}
             ></Image>
           </TouchableOpacity>
@@ -155,7 +203,7 @@ export default function Home() {
             }}
           >
             <Image
-              style={[navbar.menu, {color:colors.text}]}
+              style={navbar.menu}
               source={require("../../assets/menu.png")}
             ></Image>
           </TouchableOpacity>
@@ -166,7 +214,10 @@ export default function Home() {
         <View style={[chat.wrapper, {backgroundColor:colors.backgroundcolor}]}>
           <FlatList
             data={chatsFromUser}
-            renderItem={({ item }) => <Chat item={item} colors={colors} />}
+
+            renderItem={({ item }) => <Chat nav={navigation} item={item} colors={colors} />}
+
+
           />
         </View>
       )}

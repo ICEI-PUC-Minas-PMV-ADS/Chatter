@@ -17,7 +17,8 @@ import axios from "axios";
 
 const { width, height } = Dimensions.get("screen");
 
-const apiUrl = 'http://192.168.0.29:5000'; //coloque seu endereço aqui
+const apiUrl = "http://192.168.0.6:5000"; // Substitua pela URL correta da sua API
+
 
 const RegisterPage = ({ navigation }) => {
   const [username, setUsername] = useState("");
