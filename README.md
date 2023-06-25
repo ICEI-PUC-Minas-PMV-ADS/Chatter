@@ -128,7 +128,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/53b5f1f3-bc3a-
 
 <div align="center" dir="auto"> 
 
-<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/mini026.gif" alt=""><a href="https://youtu.be/_qoCVoYbyEE"> **Assistir no Youtube.** </a> 
+<img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/mini026.gif" alt=""><a href="https://www.youtube.com/watch?v=_qoCVoYbyEE"> **Assistir no Youtube.** </a> 
 
  </div>
 
