@@ -1,6 +1,6 @@
 <div align="center" dir="auto"> 
 
-![Design sem nome (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/9edeecd4-6b39-46eb-87a9-e745cd5450c7)
+![testechatter](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/28733204-3d0e-473c-b987-c7d7b2adbd84)
 
 
  </div>
@@ -131,6 +131,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/53b5f1f3-bc3a-
 <img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/mini026.gif" alt=""><a href="https://www.youtube.com/watch?v=_qoCVoYbyEE"> **Assistir no Youtube.** </a> 
 
  </div>
+
 
 
 
