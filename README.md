@@ -1,6 +1,6 @@
 <div align="center" dir="auto"> 
 
-![Chatter](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/00aad896-6202-4472-804f-191cf8fa3319)
+![Design sem nome](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/373595a5-79a9-435c-b0c1-7c0c618ad845)
 
 
  </div>
@@ -13,6 +13,7 @@
 <div align="center" dir="auto"> 
 
 <img src="https://lh3.googleusercontent.com/blogger_img_proxy/AByxGDSyn8CafajBPlsYQAz2b5ghEAwycXv8LmSEJA9zvu8-nzcdlh5nTHx_v6xJ5qHuyYLlSBTrP1GiCmbU5BJa88eIIDTfqO6NpQUXRgrvB37bMIrbKEkS0ho=s0-d"> _Este projeto tem como intuito criar uma aplicação de mensagens distribuída que possa ser usada para comunicação em grupo. O sistema deve ser escalável e tolerante a falhas, permitindo que vários usuários possam se conectar ao mesmo tempo e enviar mensagens._
+
 
  </div>
 
