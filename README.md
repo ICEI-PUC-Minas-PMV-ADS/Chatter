@@ -1,6 +1,6 @@
 <div align="center" dir="auto"> 
 
-![Design sem nome](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/373595a5-79a9-435c-b0c1-7c0c618ad845)
+![Design sem nome (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/9edeecd4-6b39-46eb-87a9-e745cd5450c7)
 
 
  </div>
