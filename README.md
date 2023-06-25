@@ -49,7 +49,7 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn o
 
 <img src="http://i11.photobucket.com/albums/a168/evelynregly/minigifs/setinhu.gif" alt=""> **Utilizando npm**
 
-1. Abra a Pasta Server e utilize os seguintes comandos:
+1. **Abra a Pasta Server e utilize os seguintes comandos:**
 
  ```bash
   # Atualizar as dependências
@@ -59,14 +59,15 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn o
   ❯ npm start
 ```
  
-2. Agora, na Pasta Public execute:  
+2. **Agora, na Pasta Public execute:**  
    
 ```bash
   # Atualizar as dependências
   ❯ npm install
 
-  # Apicação Web
+  #  **Apicação Web**
   ❯ npm i express mongoose nodemon socket.io bcrypt cors dotenv
+  ❯ npm init -y
 
   # Iniciar o projeto
   ❯ npm start
