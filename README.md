@@ -1,7 +1,8 @@
 <div align="center" dir="auto"> 
 
-![testechatter](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/28733204-3d0e-473c-b987-c7d7b2adbd84)
 
+
+![testechatter](https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/c2af0418-d348-455f-bd10-96a930a3738c)
 
  </div>
 
