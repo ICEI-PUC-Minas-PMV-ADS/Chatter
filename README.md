@@ -122,7 +122,7 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn o
 
 <div align="center" dir="auto"> 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/53b5f1f3-bc3a-4dd0-b781-8b2e5112dc24
+https://github.com/ICEI-PUC-Minas-PMV-ADS/Chatter/assets/78277341/a1d772f8-53d2-4bd2-8a59-da612fd22f5d
 
  </div>
 
